@@ -1,0 +1,14 @@
+interface:
+  display_name: Yushin Career
+  short_description: 김유신의 글로벌 B2B 테크 커리어 전략 판단 시스템
+  default_prompt: Use $yushin-career to evaluate this job opportunity and build a
+    strict application strategy.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
