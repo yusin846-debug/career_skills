@@ -1,0 +1,684 @@
+<title>김유신 포트폴리오</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Gothic+A1:wght@300;400;500;600;700;800&display=swap">
+<style>
+  :root {
+    --paper: #F7F5F1;
+    --card: #FFFFFF;
+    --sunk: #F1EEE8;
+    --ink: #16181A;
+    --ink-2: #4E5359;
+    --ink-3: #8B9095;
+    --ink-4: #B2B6BA;
+    --hair: #E7E3DB;
+    --rule: #D6D1C7;
+    --teal: #125A63;
+    --wash: #E5EEEF;
+    --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px;
+    --s5: 48px; --s6: 64px; --s7: 96px; --s8: 128px;
+    --kr: 'Gothic A1', -apple-system, BlinkMacSystemFont, sans-serif;
+    --lat: 'Cormorant Garamond', Georgia, serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #131517; --card: #1B1E21; --sunk: #0E1012;
+      --ink: #EDEBE7; --ink-2: #A3A8AD; --ink-3: #72777C; --ink-4: #4C5155;
+      --hair: #272B2F; --rule: #343A3F; --teal: #6DB8C1; --wash: #14292C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #131517; --card: #1B1E21; --sunk: #0E1012;
+    --ink: #EDEBE7; --ink-2: #A3A8AD; --ink-3: #72777C; --ink-4: #4C5155;
+    --hair: #272B2F; --rule: #343A3F; --teal: #6DB8C1; --wash: #14292C;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: var(--kr); font-size: 15px; line-height: 1.85; font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-inline: var(--s6); }
+
+  .notice {
+    background: var(--ink); color: var(--paper); font-size: 11px;
+    letter-spacing: 0.02em; padding: 9px 24px; text-align: center;
+  }
+
+  section { padding-block: var(--s7); border-bottom: 1px solid var(--hair); }
+  section:last-of-type { border-bottom: none; }
+
+  .cap {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding-bottom: var(--s2); border-bottom: 1px solid var(--rule); margin-bottom: var(--s5);
+  }
+  .cap .no { font-family: var(--lat); font-size: 22px; color: var(--teal); line-height: 1; }
+  .cap .en { font-size: 9.5px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-4); }
+
+  h2 {
+    font-family: var(--kr); font-weight: 700; font-size: clamp(23px, 3.2vw, 31px);
+    line-height: 1.5; letter-spacing: -0.035em; margin: 0 0 var(--s3); text-wrap: balance;
+  }
+  .dek { font-size: 14.5px; color: var(--ink-2); line-height: 1.95; max-width: 60ch; margin: 0 0 var(--s5); }
+  p { margin: 0 0 var(--s2); }
+  p:last-child { margin-bottom: 0; }
+  .subhd { font-size: 15px; font-weight: 700; letter-spacing: -0.02em; margin: var(--s6) 0 var(--s3); }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* ─── HERO ─── */
+  .hero { padding-block: var(--s8) var(--s7); border-bottom: 1px solid var(--rule); }
+  .hero .meta { font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-4); margin-bottom: var(--s5); }
+  .brand {
+    font-family: var(--lat); font-weight: 300; font-size: clamp(32px, 6vw, 66px);
+    line-height: 1.1; letter-spacing: -0.015em; margin: 0 0 var(--s6); max-width: 15ch;
+  }
+  .brand em { font-style: italic; font-weight: 400; color: var(--teal); }
+  .hero-foot { display: grid; grid-template-columns: 220px 1fr; gap: var(--s6); align-items: start; padding-top: var(--s4); border-top: 1px solid var(--hair); }
+  .hero-name .kr { font-size: 29px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.2; margin-bottom: 5px; }
+  .hero-name .en { font-family: var(--lat); font-size: 12px; letter-spacing: 0.3em; color: var(--ink-3); }
+  .creed { display: flex; flex-direction: column; gap: 10px; margin-bottom: var(--s4); }
+  .creed div { font-size: 16.5px; line-height: 1.8; font-weight: 500; letter-spacing: -0.02em; }
+  .creed div span { color: var(--teal); }
+  .creed .tail { font-size: 14.5px; font-weight: 400; color: var(--ink-2); letter-spacing: 0; margin-top: 6px; }
+  .roles { display: flex; flex-wrap: wrap; gap: 6px; }
+  .roles span { font-size: 11px; padding: 6px 13px; border: 1px solid var(--hair); border-radius: 999px; color: var(--ink-3); }
+  .roles span.on { border-color: var(--teal); color: var(--teal); }
+
+  /* ─── BOARD ─── */
+  .board { display: grid; grid-template-columns: 190px 1fr; gap: var(--s6); align-items: start; }
+  .bnav { position: sticky; top: var(--s3); display: flex; flex-direction: column; gap: 3px; }
+  .bnav .ghd { font-size: 9.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-4); padding: 0 0 var(--s2); }
+  .bnav .sep { height: 1px; background: var(--hair); margin: var(--s2) 0; }
+  .bt {
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    font-family: var(--kr); font-size: 13.5px; text-align: left; width: 100%;
+    padding: 8px 11px; border: none; border-radius: 4px; background: transparent;
+    color: var(--ink-2); cursor: pointer; transition: background .16s, color .16s;
+  }
+  .bt:hover { background: var(--sunk); color: var(--ink); }
+  .bt .ct { font-size: 11px; color: var(--ink-4); font-variant-numeric: tabular-nums; }
+  .bt[aria-pressed="true"] { background: var(--teal); color: #fff; font-weight: 600; }
+  :root[data-theme="dark"] .bt[aria-pressed="true"], :root:not([data-theme="light"]) .bt[aria-pressed="true"] { color: #131517; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .bt[aria-pressed="true"] { color: #131517; } }
+  .bt[aria-pressed="true"] .ct { color: inherit; opacity: .7; }
+
+  .btools { display: flex; justify-content: space-between; align-items: center; gap: var(--s3); padding-bottom: var(--s3); border-bottom: 1px solid var(--hair); margin-bottom: var(--s3); flex-wrap: wrap; }
+  .sort { display: flex; gap: 4px; }
+  .sb {
+    font-family: var(--kr); font-size: 12px; padding: 6px 13px; border-radius: 999px;
+    border: 1px solid var(--hair); background: transparent; color: var(--ink-3); cursor: pointer; transition: all .16s;
+  }
+  .sb[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); font-weight: 600; }
+  .bcount { font-size: 11.5px; color: var(--ink-4); }
+
+  .entries { display: flex; flex-direction: column; gap: var(--s2); }
+  .en { background: var(--card); border: 1px solid var(--hair); border-radius: 6px; }
+  .en[hidden] { display: none; }
+  .en-hd { padding: var(--s4); }
+  .en-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: var(--s2); }
+  .en-cat { font-size: 9.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal); }
+  .en-org { font-size: 11px; color: var(--ink-3); }
+  .en-yr { font-size: 10.5px; color: var(--ink-4); margin-left: auto; font-variant-numeric: tabular-nums; }
+  .en-t { font-size: clamp(17px, 2vw, 21px); font-weight: 700; line-height: 1.55; letter-spacing: -0.035em; margin-bottom: 12px; text-wrap: balance; }
+  .en-s { font-size: 14px; color: var(--ink-2); line-height: 1.95; max-width: 64ch; }
+  .en-s b { color: var(--ink); font-weight: 600; }
+  .more {
+    width: 100%; text-align: left; background: transparent; border: none; border-top: 1px solid var(--hair);
+    padding: 14px var(--s4); cursor: pointer; font-family: var(--kr); font-size: 11.5px;
+    font-weight: 600; letter-spacing: 0.1em; color: var(--ink-3); transition: color .16s;
+  }
+  .more:hover { color: var(--teal); }
+  .body { padding: var(--s5) var(--s4); border-top: 1px solid var(--hair); background: var(--sunk); }
+  .art { max-width: 60ch; }
+  .art p { font-size: 14.5px; line-height: 2.05; color: var(--ink-2); margin: 0 0 var(--s3); }
+  .art p:last-child { margin-bottom: 0; }
+  .art p b { color: var(--ink); font-weight: 600; }
+  .art .beat { font-size: 17px; font-weight: 700; color: var(--ink); letter-spacing: -0.03em; margin: var(--s5) 0 var(--s3); line-height: 1.6; }
+  .pull { margin: var(--s5) 0 0; padding: var(--s4) 0 0; border-top: 1px solid var(--rule); font-size: 15px; line-height: 1.95; color: var(--ink); }
+  .slot { margin-top: var(--s5); border: 1px solid var(--rule); border-radius: 6px; background: var(--card); padding: var(--s6) var(--s4); text-align: center; font-size: 11px; color: var(--ink-4); line-height: 2; }
+
+  /* ─── METHOD ─── */
+  .meth { display: flex; flex-direction: column; }
+  .meth-row { display: grid; grid-template-columns: 60px 1fr; gap: var(--s4); padding-block: var(--s4); border-top: 1px solid var(--hair); }
+  .meth-row:last-child { border-bottom: 1px solid var(--hair); }
+  .meth-n { font-family: var(--lat); font-size: 34px; font-weight: 300; color: var(--ink-4); line-height: 0.9; }
+  .meth-t { font-size: 17px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: var(--s2); line-height: 1.55; }
+  .meth-d { font-size: 13.5px; color: var(--ink-2); line-height: 1.95; max-width: 62ch; }
+
+  /* ─── MISC ─── */
+  .logos { display: flex; flex-wrap: wrap; gap: 7px; }
+  .logo { font-size: 13px; padding: 9px 16px; border: 1px solid var(--rule); border-radius: 999px; background: var(--card); }
+  .logo.pipe { border-style: dashed; border-color: var(--hair); color: var(--ink-3); }
+  .note { font-size: 13px; color: var(--ink-3); line-height: 2; margin-top: var(--s4); max-width: 64ch; }
+  .press a { display: block; font-size: 13.5px; color: var(--ink); text-decoration: none; line-height: 1.7; padding-block: 13px; border-bottom: 1px solid var(--hair); }
+  .press a:first-child { border-top: 1px solid var(--hair); }
+  .press a:hover { color: var(--teal); }
+  .press .src { color: var(--ink-4); font-size: 11px; letter-spacing: 0.06em; display: block; margin-top: 3px; }
+  .tools { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s2); }
+  .tool { background: var(--card); border: 1px solid var(--hair); border-radius: 6px; padding: var(--s4); }
+  .tool-k { font-family: var(--lat); font-size: 13px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); padding-bottom: var(--s2); margin-bottom: var(--s3); border-bottom: 1px solid var(--hair); }
+  .tool-v { font-size: 13.5px; line-height: 1.95; color: var(--ink-2); }
+  .arc { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s2); }
+  .arc-c { background: var(--card); border: 1px solid var(--hair); border-radius: 6px; padding: var(--s4); }
+  .arc-n { font-family: var(--lat); font-size: 14px; font-weight: 500; color: var(--teal); letter-spacing: 0.12em; padding-bottom: var(--s2); margin-bottom: var(--s3); border-bottom: 1px solid var(--hair); }
+  .arc-t { font-size: 16px; font-weight: 700; margin-bottom: var(--s2); line-height: 1.55; letter-spacing: -0.03em; }
+  .arc-d { font-size: 13px; color: var(--ink-2); line-height: 1.9; }
+  .creds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s2); }
+  .cred { background: var(--card); border: 1px solid var(--hair); border-radius: 6px; padding: var(--s3) var(--s4); }
+  .cred-t { font-size: 13.5px; font-weight: 600; line-height: 1.65; margin-bottom: 4px; }
+  .cred-d { font-size: 11.5px; color: var(--ink-4); font-variant-numeric: tabular-nums; }
+  .closer { font-size: clamp(19px, 2.6vw, 25px); font-weight: 700; line-height: 1.75; letter-spacing: -0.04em; max-width: 28ch; margin-top: var(--s7); padding-top: var(--s4); border-top: 2px solid var(--ink); }
+  footer { padding: var(--s5) 0; font-size: 11px; color: var(--ink-4); display: flex; justify-content: space-between; gap: var(--s2); flex-wrap: wrap; letter-spacing: 0.06em; }
+
+  [hidden] { display: none !important; }
+  :focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+  @media (max-width: 900px) {
+    .wrap { padding-inline: var(--s3); }
+    section { padding-block: var(--s6); }
+    .hero { padding-block: var(--s6); }
+    .hero-foot { grid-template-columns: 1fr; gap: var(--s4); }
+    .board { grid-template-columns: 1fr; gap: var(--s4); }
+    .bnav { position: static; flex-direction: row; flex-wrap: wrap; gap: 6px; }
+    .bnav .ghd { width: 100%; padding-bottom: 4px; }
+    .bnav .sep { display: none; }
+    .bt { width: auto; border: 1px solid var(--hair); border-radius: 999px; padding: 6px 13px; font-size: 12.5px; }
+    .bt .ct { display: none; }
+    .tools, .arc, .creds { grid-template-columns: 1fr; }
+    .en-hd, .more, .body { padding-inline: var(--s3); }
+    .meth-row { grid-template-columns: 42px 1fr; gap: var(--s3); }
+    .en-yr { margin-left: 0; }
+  }
+</style>
+
+<div class="notice">초안 — 수치는 기억 기준이며 기록 대조 전입니다.</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero"><div class="wrap">
+  <div class="meta">Sales Director · Planz Coffee · 2016 — 2026</div>
+  <p class="brand">Making complex work clear, <em>workable,</em> and human.</p>
+  <div class="hero-foot">
+    <div class="hero-name">
+      <div class="kr">김유신</div>
+      <div class="en">KIM YUSHIN</div>
+    </div>
+    <div>
+      <div class="creed">
+        <div>막힌 곳을 <span>먼저 찾고,</span></div>
+        <div>상대에게 <span>도움이 되는 쪽으로</span> 풀고,</div>
+        <div>그 과정에서 <span>서로 남는 게 있게</span> 만듭니다.</div>
+        <div class="tail">10년 동안 B2B 영업과 고객 운영을 하며 익힌 방식입니다.</div>
+      </div>
+      <div class="roles">
+        <span>B2B Sales &amp; Pipeline Development</span>
+        <span class="on">Salesforce Certified Platform Administrator</span>
+        <span>CRM, Data &amp; AI</span>
+        <span>Full-Funnel GTM</span>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ══ 01 ARCHIVE ══ -->
+<section id="archive"><div class="wrap">
+  <div class="cap"><span class="no">01</span><span class="en">Archive</span></div>
+  <h2>프로젝트 아카이브</h2>
+  <p class="dek">10년 동안 맡았던 일들을 업무별로 모아뒀습니다. 왼쪽에서 분류를 고르면 해당하는 것만 보입니다.</p>
+
+  <div class="board">
+
+    <!-- board nav -->
+    <nav class="bnav">
+      <div class="ghd">업무</div>
+      <button class="bt" data-cat="all" aria-pressed="true">전체 <span class="ct">15</span></button>
+      <button class="bt" data-cat="sales" aria-pressed="false">Sales <span class="ct">5</span></button>
+      <button class="bt" data-cat="gtm" aria-pressed="false">GTM <span class="ct">3</span></button>
+      <button class="bt" data-cat="product" aria-pressed="false">Product <span class="ct">4</span></button>
+      <button class="bt" data-cat="bm" aria-pressed="false">BM <span class="ct">3</span></button>
+      <div class="sep"></div>
+      <div class="ghd">그 밖에</div>
+      <button class="bt" data-cat="fun" aria-pressed="false">For fun <span class="ct">2</span></button>
+      <button class="bt" data-cat="life" aria-pressed="false">Life <span class="ct">2</span></button>
+    </nav>
+
+    <!-- entries -->
+    <div>
+      <div class="btools">
+        <div class="sort">
+          <button class="sb" data-sort="fit" aria-pressed="true">직무 순</button>
+          <button class="sb" data-sort="time" aria-pressed="false">시간 순</button>
+        </div>
+        <div class="bcount" id="bcount">15개</div>
+      </div>
+
+      <div class="entries" id="entries">
+
+        <!-- SALES -->
+        <article class="en" data-cat="sales" data-fit="1" data-time="12">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Sales</span><span class="en-org">CJ올리브네트웍스</span><span class="en-yr">2023 — 2025</span></div>
+            <div class="en-t">네 개 지사의 카페 관리를 한 번에 덜어낸 제안</div>
+            <div class="en-s">유인 카페를 운영하고 있었지만 관리가 감당이 안 되는 상태였습니다. 한 번 무산됐다가, 회사 예산 구조를 새로 만들어 <b>1년 반 만에 5대 계약</b>을 맺었습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p>2023년 가을, 인바운드로 문의가 들어왔습니다. CJ올리브네트웍스 인사팀 차장이었습니다.</p>
+              <p>이미 <b>유인 카페를 운영하고 있었습니다.</b> 문제는 커피가 아니라 그 카페를 누가 관리하느냐였습니다. 시설팀은 총무팀 일이라고 했고, 총무팀은 인사팀 복지라고 했고, 인사팀은 시설 관리가 자기 소관이 아니라고 했습니다. 지사가 네 개로 늘면서 그 부담이 계속 커지고 있었습니다.</p>
+              <p>그러니까 이 회사에 필요한 건 더 좋은 카페가 아니라 <b>관리하지 않아도 되는 카페</b>였습니다.</p>
+              <p>돈 쓸 결정은 재무에서 났습니다. 재무 팀장을 설득하려면 각 팀이 실제로 무엇 때문에 힘든지 알아야 했습니다. 팀장들을 한 명씩 만나 인터뷰했고, 그 내용을 근거로 서울역 본사 2대, KDB건물 1대, 판교 1대, 송도 1대, 올리브영 3대 — 총 8대 구성을 설계했습니다.</p>
+              <div class="beat">첫 시도는 무산됐습니다.</div>
+              <p>기존 업체와의 계약기간이 남아 있었고 중도 해지에 위약벌이 걸려 있었습니다. 제안이 나빠서가 아니라 <b>계약 구조 때문에 움직일 수 없는 상태</b>였습니다.</p>
+              <p>이건 우리 쪽에서 풀 수 있는 문제였습니다. 회사에 제안해 <b>위약금을 대신 부담할 수 있는 영업 예산</b>을 만들었습니다. 고객이 넘지 못하는 문턱이라면 우리가 없애면 됐습니다.</p>
+              <p>2025년 5월, <b>올리브영 3대를 제외한 5대 계약</b>을 맺었습니다. 처음 문의를 받고 1년 반이 지나 있었습니다. 올리브영은 끝내 따지 못했습니다.</p>
+            </div>
+            <div class="slot">이미지 자리 — 설치 현장 또는 제안 구성도</div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="sales" data-fit="2" data-time="9">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Sales</span><span class="en-org">두산테스나</span><span class="en-yr">POC → 전면 도입</span></div>
+            <div class="en-t">쓰던 제품을 그대로 두고 시작한 계약</div>
+            <div class="en-s">이미 다른 무인카페가 들어가 있었습니다. 교체를 요구하는 대신 <b>기존 제품 관리까지 맡겠다</b>고 해서, 담당자가 결정을 내릴 수 있게 만들었습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p>두산테스나는 이미 무인카페를 쓰고 있었습니다. 고장이 잦았고 관리가 번거로웠습니다. 두산 HQ에서 인사총무 부장을 만났을 때 그 이야기가 나왔습니다.</p>
+              <p>여기서 흔한 실수는 "저희 제품이 더 낫습니다"로 밀어붙이는 것입니다. 그런데 담당자 입장에서 <b>교체는 그 자체로 일</b>입니다. 기존 계약을 정리해야 하고, 결정을 정당화해야 하고, 새 제품이 또 말썽이면 그 책임을 집니다.</p>
+              <p>그래서 <b>기존 제품의 운영관리까지 우리가 돕겠다</b>는 제안을 얹었습니다. 당장 전부 걷어내지 않아도 되는 경로를 만든 것입니다.</p>
+              <p>서안성 지사에 1년 POC로 들어갔습니다. 작게 시작해서 잘 돌아가는 걸 보여주는 편이 빨랐습니다.</p>
+              <p>POC가 끝난 뒤 <b>평택 본사와 안성 지사의 카페테리아를 대체</b>했습니다. 이때는 기기만 넣지 않고 <b>공간 설계를 함께 진행</b>했습니다. 카페테리아가 서비스에 맞춰 다시 만들어졌고, 장기 계약 구조는 거기서 자연스럽게 나왔습니다.</p>
+            </div>
+            <div class="slot">이미지 자리 — 카페테리아 공간 설계 전후</div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="sales" data-fit="3" data-time="10">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Sales</span><span class="en-org">현대자동차 양재 본사</span><span class="en-yr">→ 아모레퍼시픽 · LG전자</span></div>
+            <div class="en-t">놓친 계약이 알려준 축, ESG</div>
+            <div class="en-s">계약 직전까지 갔다가 결국 놓쳤습니다. 그때 알게 된 것으로 제품을 고쳤고, 그 구성이 <b>아모레퍼시픽과 LG전자 계약</b>으로 이어졌습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p>패스트파이브에 설치된 걸 본 현대차 HR 담당자와 연결됐습니다. 기존 고객이 만들어준 리드였습니다.</p>
+              <p>진행은 순조로웠습니다. 이미 설치된 장소들을 함께 투어했고 반응도 좋았습니다. 계약 직전까지 갔지만 수주하지는 못했습니다.</p>
+              <p>나중에 확인해보니 경쟁사는 커피만 이야기하고 있지 않았습니다. <b>텀블러와 리유저블 굿즈를 함께 제공하면서 ESG를 이야기하고 있었습니다.</b> 대기업 총무와 HR은 그 지표로 평가받습니다. 그들에게 무인카페는 복지 항목이면서 동시에 <b>ESG 실적 항목</b>이었습니다.</p>
+              <p>돌아보면 제품 문제가 아니었습니다. 자이에서도, CJ에서도, 두산테스나에서도 저는 항상 <b>그 조직이 실제로 무엇으로 평가받는지</b>를 먼저 물었습니다. 이 건에서는 제품 경쟁력만으로 접근했습니다. 방법을 알면서 쓰지 않은 것이 원인이었습니다.</p>
+              <p>그 다음에 한 일은 제품을 고치는 것이었습니다. <b>텀블러를 쓸 수 있도록 기기를 일부 수정</b>하고 리유저블 컵을 제공하는 구성을 만들었습니다. 이 구성으로 <b>아모레퍼시픽과 LG전자 계약</b>을 맺었고, 기존 고객들에게도 같은 제안을 돌려 갱신을 늘렸습니다.</p>
+              <div class="pull">현대차는 못 땄지만, 그 딜이 알려준 것으로 다른 계약을 얻었습니다.</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="sales" data-fit="4" data-time="14">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Sales</span><span class="en-org">계약 · 파이프라인</span></div>
+            <div class="en-t">업종이 전부 다른 열 곳과 계약했습니다</div>
+            <div class="en-s">공유오피스 · 대기업 · 공공기관 · 건설 · 식음료 · IT · 반도체 · 화장품 · 전자. 업종마다 구매 절차가 달랐고, <b>그 차이를 익히는 게 일의 절반</b>이었습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p style="font-weight:600;color:var(--ink);margin-bottom:12px;">계약</p>
+              <div class="logos" style="margin-bottom:28px;">
+                <span class="logo">패스트파이브</span><span class="logo">두산그룹</span><span class="logo">한국벤처투자</span>
+                <span class="logo">자이 · GS건설</span><span class="logo">국순당</span><span class="logo">CJ올리브네트웍스</span>
+                <span class="logo">두산테스나</span><span class="logo">아모레퍼시픽</span><span class="logo">LG전자</span><span class="logo">SK D&amp;D</span>
+              </div>
+              <p style="font-weight:600;color:var(--ink);margin-bottom:12px;">미팅 단계</p>
+              <div class="logos" style="margin-bottom:24px;">
+                <span class="logo pipe">삼성</span><span class="logo pipe">현대</span><span class="logo pipe">SK</span>
+              </div>
+              <p>계약이 성사된 곳과 미팅까지 간 곳을 나눠 적습니다. 섞으면 둘 다 믿기 어려워지기 때문입니다.</p>
+              <p><span class="num">연 30~40건</span> 규모로 계약했고, 대부분 월 <span class="num">80~100만원</span>대, 큰 건이 월 <span class="num">250만원 · 2년</span> 조건이었습니다. <span class="num">연간 해지율은 약 4%</span>였습니다.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="sales" data-fit="5" data-time="11">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Sales</span><span class="en-org">SK D&amp;D</span><span class="en-yr">구로 생각공장</span></div>
+            <div class="en-t">블로그 글 하나에서 시작된 계약</div>
+            <div class="en-s">영업하려고 쓴 글이 아니었습니다. 담당이 디자인팀이라는 데서 예산 구조를 읽었고, <b>자이 때 만들어둔 법적 요건</b>이 경쟁사를 막았습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p>브런치에 무인카페 운영에 대한 글을 쓰고 있었습니다. 영업하려고 쓴 건 아니었습니다. 그런데 SK D&amp;D에서 그 글을 보고 연락이 왔습니다.</p>
+              <p>담당이 디자인팀이라는 게 흥미로웠습니다. 총무나 시설이 아니라 디자인팀이 공간을 맡고 있다는 건 <b>예산과 결정 권한이 그쪽에 있다</b>는 뜻이었습니다. 접근 방식을 거기 맞췄습니다.</p>
+              <p>계약 구조도 바꿨습니다. 월 구독이 아니라 <b>기기 2대를 매각하고 우리가 위탁운영하는 형태</b>로 만들었습니다. 그쪽 예산 집행 방식에 그게 더 맞았습니다.</p>
+              <p>그리고 자이 건에서 만들어둔 것을 꺼냈습니다. <b>공용부 상업행위에 관한 법적 요건</b> — 우리는 이미 그 절차를 통과해본 회사였고 경쟁사는 아니었습니다. 그게 조건이 됐습니다.</p>
+              <p><b>구로 생각공장 메인 카페테리아를 수주</b>했습니다.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- GTM -->
+        <article class="en" data-cat="gtm" data-fit="6" data-time="7">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">GTM</span><span class="en-org">자이S&amp;D · GS건설</span><span class="en-yr">4개월</span></div>
+            <div class="en-t">아파트에 무인카페가 생긴 첫 사례를 만들기까지</div>
+            <div class="en-s">전례가 없어 <b>법적 근거부터 함께 만들었습니다.</b> 최초로 합법적인 영업신고를 받았고, 그때 주거 무인카페라는 시장이 생겼습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p>중기청 IT박람회 부스에서 자이S&amp;D 담당자를 처음 만났습니다.</p>
+              <p>이야기를 나누면서 알게 된 건, 이 회사가 커피를 찾고 있는 게 아니라는 사실이었습니다. 자이S&amp;D는 주거 운영 서비스 회사입니다. 신규 단지 입찰에 들어가거나 새 단지를 기획할 때 <b>"우리는 다르다"고 말할 거리</b>가 필요했습니다.</p>
+              <p>그래서 제안을 바꿨습니다. "저희 커피를 도입해주세요"가 아니라 <b>"저희를 자이의 차별화 요소로 쓰세요"</b>였습니다. 무인카페를 단지 서비스의 일부로 넣고, 자이가 자사 마케팅에 활용할 수 있는 구조로 MOU를 설계했습니다. 상무와 전무를 설득하는 데 4개월이 걸렸습니다.</p>
+              <div class="beat">그런데 막상 설치하려니 문제가 있었습니다.</div>
+              <p><b>아파트 공용부에서 상업 행위를 하는 것의 법적 근거가 불분명했습니다.</b> 전례가 없었고 지자체에서도 명확한 답이 없었습니다.</p>
+              <p>GS건설과 함께 법리를 정리했습니다. 관련 규정을 찾고, 해석을 맞추고, 신고 요건을 만들었습니다. 그리고 <b>최초로 합법적인 지자체 영업신고</b>를 받았습니다.</p>
+              <p>그 뒤로 시장이 열렸습니다. 자이에서 시작해 AJ대원이 운영하는 단지, 롯데캐슬, 호반베르디움, 푸르지오로 이어졌습니다.</p>
+              <div class="pull">이때 만든 법적 근거는 나중에 SK D&amp;D 건에서 경쟁사가 넘기 어려운 조건이 됐습니다. 한 번 만든 것이 다음 딜의 무기가 된 첫 경험이었습니다.</div>
+            </div>
+            <div class="slot">이미지 자리 — 주거단지 설치 현장</div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="gtm" data-fit="7" data-time="6">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">GTM</span><span class="en-org">수요 창출</span><span class="en-yr">2020 — 2026</span></div>
+            <div class="en-t">여섯 개 채널을 혼자 돌렸습니다</div>
+            <div class="en-s">DM · 퍼포먼스 마케팅 · PR · 아웃바운드 · 박람회 · 세미나. 인바운드와 아웃바운드를 <b>같이 설계하고 운영</b>했습니다.</div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="gtm" data-fit="8" data-time="13">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">GTM</span><span class="en-org">브런치</span></div>
+            <div class="en-t">글을 쓰다 보니 리드가 들어왔습니다</div>
+            <div class="en-s">무인카페 운영에 대해 정리해서 올리던 글이었는데, 그걸 보고 연락이 온 곳에서 실제 계약이 나왔습니다. <b>콘텐츠가 채널이 된 경우</b>입니다.</div>
+          </div>
+        </article>
+
+        <!-- PRODUCT -->
+        <article class="en" data-cat="product" data-fit="9" data-time="8">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Product</span><span class="en-org">에너지 뿜뿜</span></div>
+            <div class="en-t">고객사 매출 데이터를 받아서 신제품을 만들었습니다</div>
+            <div class="en-s">매출이 커피에만 몰려 있었습니다. 고객사에 요청해 <b>기존 자판기 매출 데이터를 받아 분석</b>하고, OEM으로 비타민C·타우린 드링크를 개발했습니다. <span class="num">전체 음료 매출 4위</span>에 올랐습니다.</div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="product" data-fit="10" data-time="5">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Product</span><span class="en-org">멸균농축크림우유</span></div>
+            <div class="en-t">우유 하나 때문에 공급사와 6개월을 붙었습니다</div>
+            <div class="en-s">멸균우유는 맛이, 분말은 위생과 기계 고장이 문제였습니다. <b>기능요구서를 표준화해 공급사에 전달</b>하고 6개월 공동 개발해 위생·기호성·물류효율을 함께 해결했습니다.</div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="product" data-fit="11" data-time="4">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Product</span><span class="en-org">위생 SOP</span></div>
+            <div class="en-t">전공이 여기서 쓰일 줄은 몰랐습니다</div>
+            <div class="en-s">무인 식음료 서비스의 <b>위생 표준운영절차와 밸리데이션 체계</b>를 만들었습니다. 생물학 전공이 실무 근거가 된 영역입니다.</div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="product" data-fit="12" data-time="15">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Product</span><span class="en-org">CorePress · 교육용 POC</span><span class="en-yr">2026</span></div>
+            <div class="en-t">6인 팀으로 만든 Salesforce 설계안</div>
+            <div class="en-s">Salesforce AI CRM 엔지니어 과정의 최종 프로젝트입니다. <b>가상의 산업장비 제조사를 상정한 교육용 POC</b>이며, 최종 발표에서 대상을 받았습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p><b>먼저 분명히 해둘 것이 있습니다.</b> CorePress는 실제 고객이 아니라 교육 과정에서 설정한 가상의 산업장비 제조사입니다. 상용 구축 경험이 아니고, 여기서 만든 것은 설계안과 시연입니다.</p>
+              <p>팀은 6명이었고 제가 팀장을 맡았습니다. 설계한 것은 <b>Experience Cloud → Opportunity → Asset → Case → Field Service → 리포팅</b>으로 이어지는 흐름과, 제한된 범위의 Agentforce 활용 시나리오였습니다.</p>
+              <p>제가 맡은 부분은 프로젝트 범위와 역할 분담을 정리하고, <b>비즈니스 시나리오를 Salesforce 프로세스로 번역</b>하고, 최종 발표의 구성과 발표를 맡는 일이었습니다.</p>
+              <p>10년간 고객의 요구를 듣고 그것을 계약과 제품 요건으로 옮기는 일을 해왔는데, 이번에는 그 대상이 <b>시스템</b>이었습니다. 하는 일의 성격은 같았습니다.</p>
+              <div class="pull">최종 발표에서 대상을 받았고, 과정 전체에서 MVP로 선정됐습니다. 선정 사유에 팀 커뮤니케이션과 동료들의 이해를 도운 점이 적혀 있었는데, 개인적으로는 그쪽이 더 반가웠습니다.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BM -->
+        <article class="en" data-cat="bm" data-fit="13" data-time="3">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">BM</span><span class="en-org">가격 구조</span></div>
+            <div class="en-t">고객마다 다른 가격을 만들고, 그걸 관리했습니다</div>
+            <div class="en-s">기기 매각 + 위탁운영, 운영관리 대행 포함, 마케팅 활용권 — 고객의 예산 집행 방식에 맞는 구조를 만들고 <b>계약 전체를 하나의 체계로 관리</b>했습니다. 연간 해지율 약 4%가 그 결과입니다.</div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="bm" data-fit="14" data-time="2">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">BM</span><span class="en-org">파이프라인</span><span class="en-yr">2020 — 2026</span></div>
+            <div class="en-t">CRM을 살 수 없어서 직접 만들었습니다</div>
+            <div class="en-s">트렐로에 잠재고객·영업기회·운영중 단계를 만들어 운영했고, 이후 아사나와 릴레잇으로 옮겼습니다. <b>그 불편이 지금 Salesforce를 배우게 만들었습니다.</b></div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="bm" data-fit="15" data-time="1">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">BM</span><span class="en-org">고른햇살 · 가족 사업</span><span class="en-yr">21억 → 30억</span></div>
+            <div class="en-t">직원을 내보내지 않는다는 조건으로 시작했습니다</div>
+            <div class="en-s">매출은 늘고 있는데 적자가 쌓이던 외식 사업입니다. <b>인건비는 건드리지 않는다</b>는 전제에서 원가·금융비용·세무·매출 구조를 바꿔 영업이익률 12%로 돌려놨습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p>친척 누나가 운영하던 분식 사업입니다. 연매출 21억, 숫자만 보면 나쁘지 않았지만 적자가 쌓이고 있었습니다. 마진이 얇았고 금융비용이 컸습니다. 코로나를 버티는 동안 빌린 돈이 이자로 돌아오고 있었습니다.</p>
+              <p>이런 상황에서 가장 먼저 손대는 건 대개 인건비입니다. 누나는 그걸 하지 않겠다고 했습니다. <b>20년을 함께한 이모님들이었습니다.</b> 본인이 빚에 무너지더라도 그분들을 내보낼 수는 없다고 했습니다.</p>
+              <p>그 말을 듣고 합류했습니다. 사람을 건드리지 않고도 이 사업을 살릴 수 있는지 궁금하기도 했습니다.</p>
+              <div class="beat">그러면 남은 건 나머지 전부였습니다.</div>
+              <p>원가부터 봤습니다. 커피와 음료 재료의 물류 원가를 협상해온 경험이 그대로 쓰였습니다. 업종은 달랐지만 하는 일은 같았습니다 — 유통 단계를 줄이고, 물량을 묶고, 조건을 다시 쓰는 것.</p>
+              <p>그 다음은 보이게 만드는 일이었습니다. 전문가를 고용해 전 업무의 SOP를 만들었고, 그것을 근거로 <b>ERP를 도입</b>했습니다. 그제서야 회계가 가능한 구조가 됐습니다. 무엇에 돈이 새는지 숫자로 볼 수 있게 된 게 분기점이었습니다.</p>
+              <p>돈의 시간도 바꿨습니다. 세무를 정리하고 정책자금으로 장·단기 유동성을 확보했고, 대환대출과 금리 조정으로 이자 부담을 줄였습니다.</p>
+              <p>그리고 매출을 올렸습니다. 배달 플랫폼을 최적화하고 메뉴를 다각화하면서 브랜드와 메뉴를 표준화했습니다. 표준화가 되니 <b>2호점</b>을 열 수 있었습니다.</p>
+              <div class="beat">지금 연매출 30억, 영업이익률 12%입니다.</div>
+              <p><b>이모님들은 한 분도 나가지 않았습니다.</b></p>
+              <div class="pull">이 일에서 크게 배운 건 원가 협상이 다른 업종에서도 통한다는 사실이 아니었습니다. 지켜야 할 것을 먼저 정해놓고 시작하면, 나머지를 푸는 방법은 대체로 있다는 쪽이었습니다.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FOR FUN -->
+        <article class="en" data-cat="fun" data-fit="16" data-time="16">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">For fun</span><span class="en-org">디자인</span></div>
+            <div class="en-t">팀에 디자이너가 없어서 배웠는데, 꽤 재밌었습니다</div>
+            <div class="en-s">프로덕트 디자인부터 각 수주 건의 공간 설계까지 직접 했습니다. 지금은 Figma와 Adobe로 실무를 합니다. 후반에는 <b>JOH 출신 공간디자인 실장</b>과 함께 진행했습니다.</div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="fun" data-fit="17" data-time="17">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">For fun</span><span class="en-org">글쓰기</span></div>
+            <div class="en-t">브런치에 일 이야기를 씁니다</div>
+            <div class="en-s">무인카페를 운영하면서 알게 된 것들을 정리해 올렸습니다. 영업하려고 쓴 게 아니었는데 계약이 나오기도 했습니다. <b>정리해두는 습관이 일이 되기도 합니다.</b></div>
+          </div>
+        </article>
+
+        <!-- LIFE -->
+        <article class="en" data-cat="life" data-fit="18" data-time="18">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Life</span><span class="en-org">생물학</span><span class="en-yr">2013 — 2018</span></div>
+            <div class="en-t">생물학과를 나와서 영업을 하고 있습니다</div>
+            <div class="en-s">전공을 살릴 생각은 없었는데, 무인 식음료 서비스의 위생 기준을 짜야 할 때 그게 제 일이 됐습니다. <b>돌아보면 버린 경로가 아니었습니다.</b></div>
+          </div>
+        </article>
+
+        <article class="en" data-cat="life" data-fit="19" data-time="19">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Life</span><span class="en-org">그 밖에</span></div>
+            <div class="en-t">여기는 아직 비어 있습니다</div>
+            <div class="en-s">취미, 요즘 빠져 있는 것, 주말에 하는 일 — 채워 넣을 자리입니다.</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ══ 02 METHOD ══ -->
+<section id="method"><div class="wrap">
+  <div class="cap"><span class="no">02</span><span class="en">Method</span></div>
+  <h2>넓게 보고 빠르게 익혀서, 멈춰 있는 걸 움직이게 합니다</h2>
+  <p class="dek">영역은 달랐지만 대체로 같은 순서로 일했습니다.</p>
+
+  <div class="meth">
+    <div class="meth-row">
+      <div class="meth-n">01</div>
+      <div>
+        <div class="meth-t">어디가 막혀 있는지 먼저 묻습니다</div>
+        <div class="meth-d">요청은 늘 "카페"였습니다. 실제로 막힌 지점은 자이에서는 신규 단지 입찰의 차별화였고, CJ올리브네트웍스에서는 네 개 지사로 흩어진 카페 관리 부담이었으며, 두산테스나에서는 기존 장비의 고장이었습니다. 제품 설명보다 질문이 먼저입니다.</div>
+      </div>
+    </div>
+    <div class="meth-row">
+      <div class="meth-n">02</div>
+      <div>
+        <div class="meth-t">고객에 맞는 가격 구조를 만들고, 그걸 관리합니다</div>
+        <div class="meth-d">예산 집행 방식이 회사마다 다릅니다. 월 구독이 맞는 곳도 있고, 기기를 사고 운영만 맡기는 편이 맞는 곳도 있습니다. SK D&amp;D에는 매각 후 위탁으로, 두산테스나에는 기존 제품 관리를 포함한 구성으로 갔습니다. 만들고 끝내는 게 아니라 계약 전체를 하나의 체계로 관리했고, 연간 해지율 약 4%가 그 결과입니다.</div>
+      </div>
+    </div>
+    <div class="meth-row">
+      <div class="meth-n">03</div>
+      <div>
+        <div class="meth-t">한 번 만든 것을 표준으로 두고 계속 활용합니다</div>
+        <div class="meth-d">자이와 정리한 법적 근거는 이후 SK D&amp;D 건에서 경쟁사가 넘기 어려운 조건이 됐습니다. 커피 원가 협상 방식은 외식업 식자재 구조를 바꾸는 데 그대로 쓰였고, 위생 SOP는 전 지점에 같은 기준으로 적용됐습니다. 매번 새로 만들지 않는 것이 속도의 대부분입니다.</div>
+      </div>
+    </div>
+    <div class="meth-row">
+      <div class="meth-n">04</div>
+      <div>
+        <div class="meth-t">안 된 건 원인을 찾아 제품이나 구조를 고칩니다</div>
+        <div class="meth-d">CJ올리브네트웍스는 위약벌에 막혀 한 번 무산됐고, 위약금을 부담할 영업 예산을 만든 뒤 1년 반 만에 계약했습니다. 현대차에서는 ESG 소구가 없어서 놓쳤고, 텀블러를 쓸 수 있게 제품을 고쳐 아모레퍼시픽과 LG전자에서 다시 얻었습니다.</div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ══ 03 PRESS ══ -->
+<section id="press"><div class="wrap">
+  <div class="cap"><span class="no">03</span><span class="en">Press</span></div>
+  <h2>바깥에 남은 기록</h2>
+  <p class="dek">회사에 대한 보도입니다. 개인 성과를 증명하는 자료는 아니지만, 여기 적은 일들이 실제로 있었다는 것은 확인됩니다.</p>
+  <div class="press">
+    <a href="https://magazine.hankyung.com/job-joy/article/202102164448d" target="_blank" rel="noopener">“자판기 커피는 싸구려 커피?” 럭셔리 커피 자판기 만든 경희대 창업동아리 ‘플랜즈’<span class="src">한경 JOB&amp;JOY</span></a>
+    <a href="https://www.junggi.co.kr/article/articleView.html?no=28307" target="_blank" rel="noopener">‘자판기 커피’의 편견을 깨고 ‘무인카페’로 변신<span class="src">중기이코노미</span></a>
+    <a href="https://www.ajunews.com/view/20210608091456169" target="_blank" rel="noopener">“바리스타 커피 무인 벤딩머신”… 플랜즈커피, 분당두산타워 입점<span class="src">아주경제</span></a>
+    <a href="https://kr.aving.net/news/articleView.html?idxno=1606019" target="_blank" rel="noopener">플랜즈커피, 두산그룹 신사옥 무인 카페 서비스 시작<span class="src">AVING</span></a>
+    <a href="https://platum.kr/archives/178197" target="_blank" rel="noopener">플랜즈커피, 거점오피스형 무인카페 확장<span class="src">플래텀</span></a>
+    <a href="https://sisunnews.co.kr/news/articleView.html?idxno=149315" target="_blank" rel="noopener">무인 사내카페 ‘플랜즈커피’, 한국벤처투자 입점<span class="src">시선뉴스</span></a>
+    <a href="https://www.startuptoday.kr/news/articleView.html?idxno=46004" target="_blank" rel="noopener">플랜즈커피, 프리미엄 무인카페 서비스 제공… 사무실에 쉽게 사내카페 도입<span class="src">스타트업투데이</span></a>
+  </div>
+</div></section>
+
+<!-- ══ 04 TOOLS ══ -->
+<section id="tools"><div class="wrap">
+  <div class="cap"><span class="no">04</span><span class="en">Tools</span></div>
+  <h2>쓸 수 있는 것</h2>
+  <div class="tools">
+    <div class="tool"><div class="tool-k">Sales &amp; Ops</div><div class="tool-v">Trello · Asana · Relate<br>파이프라인 설계 · 채널 운영</div></div>
+    <div class="tool"><div class="tool-k">CRM &amp; Data</div><div class="tool-v">Salesforce <span style="color:var(--teal)">Certified Platform Admin</span><br>Agentforce · SQL · JavaScript</div></div>
+    <div class="tool"><div class="tool-k">Design</div><div class="tool-v">Figma · Sketch<br>Adobe Creative Cloud</div></div>
+    <div class="tool"><div class="tool-k">Business</div><div class="tool-v">원가 · 물류 협상<br>ERP 도입 · 세무 구조</div></div>
+    <div class="tool"><div class="tool-k">Product</div><div class="tool-v">요구사항 정의<br>OEM 공동 개발</div></div>
+    <div class="tool"><div class="tool-k">Quality</div><div class="tool-v">위생 SOP<br>밸리데이션</div></div>
+  </div>
+</div></section>
+
+<!-- ══ 05 NOW ══ -->
+<section id="now"><div class="wrap">
+  <div class="cap"><span class="no">05</span><span class="en">Now</span></div>
+  <h2>다음으로 하려는 것</h2>
+  <p class="dek">10년을 한 회사에서 보냈습니다. 다루는 문제의 크기를 키우고 싶어서 지분을 정리하고 나왔습니다.</p>
+
+  <div class="arc">
+    <div class="arc-c">
+      <div class="arc-n">2020 — 2026</div>
+      <div class="arc-t">도구 없이 6년</div>
+      <div class="arc-d">CRM을 살 수 없어 트렐로에 파이프라인을 직접 만들어 썼고, 아사나와 릴레잇으로 옮겨다녔습니다.</div>
+    </div>
+    <div class="arc-c">
+      <div class="arc-n">고른햇살</div>
+      <div class="arc-t">시스템을 올려본 경험</div>
+      <div class="arc-d">SOP를 만들고 ERP를 도입해, 숫자가 보이지 않던 사업을 회계가 가능한 구조로 바꿨습니다.</div>
+    </div>
+    <div class="arc-c">
+      <div class="arc-n">2026</div>
+      <div class="arc-t">제대로 배웠습니다</div>
+      <div class="arc-d">Salesforce AI CRM 엔지니어 과정 616시간을 마치고, Platform Administrator 자격을 취득했습니다.</div>
+    </div>
+  </div>
+
+  <div class="subhd">자격 · 수상</div>
+  <div class="creds">
+    <div class="cred"><div class="cred-t">Salesforce Certified Platform Administrator</div><div class="cred-d">Salesforce · 2026.08 · 식별번호 8066536</div></div>
+    <div class="cred"><div class="cred-t">Program MVP — Salesforce AI CRM Engineer Program</div><div class="cred-d">Salesforce · 2026.09 · 616시간 과정 수료자 중 선정</div></div>
+    <div class="cred"><div class="cred-t">대상 — CorePress Salesforce Team POC</div><div class="cred-d">Salesforce · 2026.09 · 6인 팀 리드</div></div>
+    <div class="cred"><div class="cred-t">전국 TOP 7 — SKT 청년 창업 프로그램</div><div class="cred-d">SK Telecom · 2017.09 · 교내 대상 후 전국 선발</div></div>
+    <div class="cred"><div class="cred-t">대상 — 경희대 창업 공모전</div><div class="cred-d">경희대학교 · 2017</div></div>
+    <div class="cred"><div class="cred-t">경희대학교 생물학</div><div class="cred-d">2013.03 — 2018.02</div></div>
+  </div>
+
+  <p class="closer">겪어본 불편을 제대로 다루는 쪽으로 가려고 합니다.</p>
+</div></section>
+
+<div class="wrap"><footer>
+  <span>KIM YUSHIN</span>
+  <span>2016 — 2026</span>
+</footer></div>
+
+<script>
+(function () {
+  document.querySelectorAll('.more').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var body = btn.nextElementSibling;
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      body.hidden = open;
+      btn.textContent = open ? '자세히 보기' : '접기';
+    });
+  });
+
+  var list = document.getElementById('entries');
+  var items = Array.prototype.slice.call(list.querySelectorAll('.en'));
+  var cats = Array.prototype.slice.call(document.querySelectorAll('.bt'));
+  var sorts = Array.prototype.slice.call(document.querySelectorAll('.sb'));
+  var count = document.getElementById('bcount');
+  var cat = 'all', mode = 'fit';
+
+  function apply() {
+    var n = 0;
+    items.forEach(function (el) {
+      var show = cat === 'all' || el.dataset.cat === cat;
+      el.hidden = !show;
+      if (show) n++;
+    });
+    count.textContent = n + '개';
+    items.slice().sort(function (a, b) {
+      return (+a.dataset[mode]) - (+b.dataset[mode]);
+    }).forEach(function (el) { list.appendChild(el); });
+  }
+
+  cats.forEach(function (b) {
+    b.addEventListener('click', function () {
+      cats.forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true');
+      cat = b.dataset.cat;
+      apply();
+    });
+  });
+
+  sorts.forEach(function (b) {
+    b.addEventListener('click', function () {
+      sorts.forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true');
+      mode = b.dataset.sort;
+      apply();
+    });
+  });
+
+  apply();
+})();
+</script>
