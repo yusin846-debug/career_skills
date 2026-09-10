@@ -81,13 +81,13 @@ corporate accounts over this period; I ran new business and account expansion.
   <!-- ★★ CS 레인 최상급 근거. CSM을 직접 관리했다는 것은 이 직무의 직접 리더십 경험이다.
        규모(2명)보다 구성이 중요하다는 점을 문장이 스스로 증명하게 쓸 것 -->
 
-- **Owned a product area outside my own company.** Took the leisure & recreation
-  product at Yeogi Eottae through a six-month product-owner sprint, introduced via
-  FuturePlay and working to their CPO — the first time in ten years I executed inside
-  someone else's organization and method.
+- **Six-month Product Owner sprint program** (participant; introduced via FuturePlay,
+  working to the CPO of Yeogi Eottae) — carried the leisure & recreation product area
+  through the program. After ten years of deciding alone, this was the first sustained
+  stretch of working to someone else's method.
   <!-- ★ 조직 적응 + 코칭 수용성의 유일한 직접 증거. SKT 항목 사용금지로 열린 공백을 메움 -->
-  <!-- ⚠️ 고용이 아니라 스프린트 프로그램 참여. SKT 오류 재발 방지 — "여기어때에서 일했다"로
-       읽히는 표현 금지. [[정확한 관계: 파견 / 프로그램 / 계약]] 확정 후 문구 확정 -->
+  <!-- ⚠️ 고용 아님 — **프로그램 참여** 확정. "여기어때에서 일했다 / 재직했다"로 읽히는 표현 금지.
+       EXPERIENCE 항목이 아니라 교육·프로그램 계열로 배치할지 검토 (아래 주석 참조) -->
 
 **PLANZ COFFEE** — Marketing Director · Seoul
 *2016 – 2019*
@@ -97,7 +97,7 @@ corporate accounts over this period; I ran new business and account expansion.
   this period. Kyung Hee University co-op adopted the service and referred us onward to
   the national university co-op association.
 
-**GOREUNHAETSAL** — Business Turnaround *(concurrent project)*
+**GOREUNHAETSAL** — Advisor, Business Turnaround *(advisory engagement, concurrent)*
 *Jan 2024 – May 2026*
 
 - Took over the P&L of a loss-making food franchise while the operator stayed on stores

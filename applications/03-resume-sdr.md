@@ -66,13 +66,13 @@ campus channel — running prospecting through close solo.
   response, which went into the Amorepacific and LG Electronics wins.
   <!-- 실패를 정직하게 쓰는 것이 Associate 지원에서 코칭 수용성의 증거가 된다 -->
 
-- **Worked inside someone else's method for six months.** Took the leisure & recreation
-  product at Yeogi Eottae through a product-owner sprint, introduced via FuturePlay and
-  working to their CPO. After ten years of deciding alone, this was the part I most
-  wanted more of.
+- **Six-month Product Owner sprint program** (participant; introduced via FuturePlay,
+  working to the CPO of Yeogi Eottae) — carried the leisure & recreation product area
+  through the program. After ten years of deciding alone, working to someone else's
+  method was the part I most wanted more of.
   <!-- ★ 이 레인에서 가장 중요한 불릿. "10년간 스스로 결정하던 사람이 배울 수 있는가"에
        대한 유일한 직접 증거 -->
-  <!-- ⚠️ 고용 아님. "여기어때에서 일했다"로 읽히는 표현 금지 -->
+  <!-- ⚠️ 고용 아님 — **프로그램 참여** 확정. "여기어때에서 일했다"로 읽히는 표현 금지 -->
 
 - **Hired and managed a BDR from 2023**, after doing the prospecting myself for three
   years. I set what counted as a qualified handoff and coached against it — which is

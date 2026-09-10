@@ -78,12 +78,13 @@ after COVID removed the company's original channel.
   [[채용 / 목표설정 / 평가 / 코칭 중 실제 범위]]
   <!-- ★★ 이 레인의 핵심. 스테이지 설계(트렐로)와 역할 간 핸드오프 설계가 한 세트로 읽힌다 -->
 
-- **Owned a product area inside another company's organization.** Took the leisure &
-  recreation product at Yeogi Eottae through a six-month product-owner sprint,
-  introduced via FuturePlay and working to their CPO.
-  <!-- ⚠️ 고용 아님. "여기어때에서 일했다"로 읽히는 표현 금지 -->
+- **Six-month Product Owner sprint program** (participant; introduced via FuturePlay,
+  working to the CPO of Yeogi Eottae) — carried the leisure & recreation product area
+  through the program.
+  <!-- ⚠️ 고용 아님 — **프로그램 참여** 확정. "여기어때에서 일했다"로 읽히는 표현 금지 -->
 
-**GOREUNHAETSAL** — Business Turnaround *(concurrent project)* · *Jan 2024 – May 2026*
+**GOREUNHAETSAL** — Advisor, Business Turnaround *(advisory engagement, concurrent)*
+*Jan 2024 – May 2026*
 
 - **Put a business without systems onto systems.** Hired a specialist to author
   company-wide SOPs and implement ERP ([[제품명]]), which is what finally made the books
