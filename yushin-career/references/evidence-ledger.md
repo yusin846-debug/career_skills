@@ -131,14 +131,22 @@ LinkedIn에 "Grand Prize — SKT Youth Entrepreneurship Program"으로 기재되
   단, 이 수상 항목 본문 안에서 "프로그램의 일환으로"라는 맥락과 함께라면
   고용 오해 소지가 낮으므로, 사용자가 원할 경우 한 줄 추가 가능.
 
-### 🚨 갱신 지표 — LinkedIn과 포트폴리오가 다른 숫자를 말하고 있음
+### 갱신 지표 — 해결됨 (사용자 확인: 연 해지율이 맞음)
 
-| 출처 | 수치 |
-|---|---|
-| LinkedIn (공개 중) | "achieving an **85% renewal rate**" |
-| 사용자 결정 (본 세션) | **연간 해지율 4%** 사용, 85%는 폐기 |
+LinkedIn에 기재된 **"85% renewal rate"는 사실과 다르다.**
+정확한 지표는 **연간 해지율 약 4%**이며, 85%는 모든 산출물에서 폐기한다.
 
-두 문서가 다른 숫자를 말하면 둘 다 의심받는다. **하나로 통일할 것.**
+**LinkedIn 수정 문구 (해당 불릿 교체)**
+
+> 기존: `...service improvements, achieving an 85% renewal rate.`
+>
+> 수정: `Managed post-implementation accounts through performance reviews,
+> client communication, and service improvements, keeping annual account
+> churn at approximately 4%.`
+
+**국문 표기**
+
+> "도입 이후 계정을 운영하며 연간 해지율을 약 4% 수준으로 유지했습니다."
 
 ### 직함 — 확정: 세일즈 디렉터
 
