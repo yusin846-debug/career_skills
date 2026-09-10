@@ -1,6 +1,7 @@
-# 이력서 — Customer Success 레인
+# Resume — Customer Success lane
 
 **커버 대상 (점수순)**
+
 | 순위 | 회사 | 직무 | 점수 |
 |---|---|---|---|
 | 1 | Microsoft | Customer Success Account Manager | 74 |
@@ -8,111 +9,146 @@
 | 4 | Adobe | Sr Manager, CS & TAM Korea | 72 |
 | 7 | Datadog | Customer Success | Apply Now |
 
-**작성 규칙**: 1페이지 영문 · 불릿 논리 = `문제/목표 → 행동과 판단 → 측정 가능한 결과 → 범위`
-`[[ ]]` = 유신님 입력 필요 · 채우기 전 제출 금지
+**근거**: `yushin-career/references/evidence-ledger.md`, `deal-cases.md`
+**표기 원칙**: 연간 해지율 4% 사용 · 갱신율 85% 사용 금지 · 회사 실적과 본인 담당 범위 분리
+`[[ ]]` = 유신님 확인 필요
 
 ---
 
-## [[ENGLISH FULL NAME]]
+## KIM YUSHIN
 
-Seoul, Korea · yusin846@gmail.com · [[phone]] · [[linkedin.com/in/...]]
+Seoul, Korea · yusin846@gmail.com · [[phone]] · [[linkedin]]
 
 ---
 
 ### SUMMARY
 
-B2B GTM practitioner with ~10 years in startup operations and ~6 years owning sales-related
-outcomes. Owns the full post-sale cycle — onboarding, adoption, renewal risk, commercial
-objection handling, and expansion — and translates operating signals into retention decisions.
-Completing a 616-hour Salesforce AI CRM Engineer program (Sep 2026); Salesforce Platform
-Administrator. Seeking a Customer Success role in a method-driven global organization.
-
-> 📌 이 문단이 첫 스크린을 결정합니다. 각 사 JD 상위 5개 요건 중 4개가 이 안에서 보여야 합니다.
-
----
-
-### PROFESSIONAL EXPERIENCE
-
-**[[Company Name]]** — [[Title]] · Seoul, Korea
-*[[YYYY.MM – YYYY.MM]]*
-
-- Owned end-to-end customer relationships across [[N]] corporate accounts, from problem discovery
-  and commercial structuring through delivery coordination, renewal, and expansion.
-  <!-- 원장 C: 200개사 = 고유 계정인지 누적인지 확정 후 숫자 확정 -->
-
-- **[이탈 위험 회복]** [[D-2 스토리]] — 도입이 정체된 고객의 사용 신호를 점검해 원인을 규명하고,
-  [[행동]]을 실행해 [[결과: 갱신/확장 금액 또는 계정 수]]로 전환.
-  <!-- ⚠️ CS 레인 최우선 불릿. 원장 D-2가 비어 있어 현재 작성 불가 -->
-
-- **[상업적 반론 처리]** 예산 제약으로 도입이 중단된 고객에게 계약기간·월정액·이용요금 조합을
-  재설계해 고객사 내부 승인이 가능한 안으로 전환. [[결과: 계약 규모/기간]]
-  <!-- 원장 D-1. 본인 단독 설계 범위 확인 필요 -->
-
-- **[갱신 운영]** [[측정 기간]] 동안 [[분모: 계정 수 or 금액]] 기준 갱신율 [[85%]]를 유지 —
-  [[갱신 로직: 어떤 신호를 언제 보고 무엇을 했는지]]
-  <!-- ⚠️ 스킬 규칙: 설명 없는 % 단독 기재 금지. 로직 없으면 이 불릿 삭제 -->
-
-- **[부서 간 조율]** [[D-5 스토리 — 영업·개발·CS 사이 이슈를 조율해 해결한 사례]]
-  <!-- 글로벌 매트릭스 경험 부재 리스크를 상쇄하는 불릿. 원장 D-5 필요 -->
-
-**[[Previous Company]]** — [[Title]] · Seoul, Korea
-*[[YYYY.MM – YYYY.MM]]*
-
-- [[불릿 2개 — 위와 동일 논리]]
+B2B customer-facing operator with six years owning the full commercial cycle for a
+mid-market subscription service — discovery, contract structuring, delivery, renewal,
+and expansion. Built the account base from zero after the company's original channel
+collapsed, and held annual churn at ~4% through contract design and operational
+ownership rather than escalation. Completing a 616-hour Salesforce AI CRM Engineer
+program (Sep 2026). Moving into customer success to work the same problems at
+enterprise scale, on systems I previously had to build by hand.
 
 ---
 
-### TECHNICAL & CERTIFICATION
+### EXPERIENCE
 
-- **Salesforce AI CRM Engineer Program** (616 hours) — expected completion Sep 2026.
-  Coursework: Salesforce, Agentforce, SQL, JavaScript/Node.js, Java OOP labs.
-- **Salesforce Certified Platform Administrator** [[취득 연월]]
+**PLANZ COFFEE** — Head of Sales & Growth · Seoul
+*2020 – Mar 2026*
 
-**CorePress — Salesforce Service Cloud POC** *(FICTIONAL / EDUCATIONAL POC, 6-person team)*
-- Designed the service flow connecting Experience Cloud → Asset/Case management →
-  Service Appointments → a limited Agentforce use case.
-- Personally [[designed / configured / implemented — 정확한 동사로 구분]] [[본인 담당 영역]];
-  presented the solution and tradeoffs to [[대상]].
+Owned sales, marketing, and account management for the company's B2B unmanned-café
+service after COVID eliminated its original campus channel. Company reached ~200
+corporate accounts over this period; I ran new business and account expansion.
 
-> ⚠️ FICTIONAL / EDUCATIONAL POC 라벨은 절대 누락 금지. 고객 성과·도입 실적으로 읽히면 탈락 사유.
+- **Expanded a competitor-held account from a 1-year pilot to full replacement.**
+  Doosan Tesna ran a rival system with frequent breakdowns. Rather than demanding
+  removal, I added operational management of their existing units to the proposal,
+  removing switching cost. Entered as a 1-year POC at the Seoan-seong site, then
+  replaced the cafeterias at Pyeongtaek HQ and Anseong — designing each space so the
+  service integrated with the site, which is what made the long-term structure hold.
+
+- **Turned a lost deal into a product change and two new contracts.** Lost Hyundai
+  Motor HQ at final stage; post-mortem showed the competitor was selling an ESG angle
+  through reusable goods, which we had no answer to. I had found the buying
+  organization's real evaluation metric in every other deal and had not done it here.
+  Drove a product update to support tumblers plus a reusable-cup offer, which went into
+  the Amorepacific and LG Electronics wins and into renewal conversations with
+  existing accounts.
+
+- **Changed the product roadmap using customer usage data.** Revenue concentrated in
+  coffee; I hypothesized non-coffee demand in office sites, asked customers for their
+  existing vending sales data, analyzed it, and specified an OEM vitamin-C/taurine
+  drink. It became the 4th highest-selling beverage in the lineup.
+
+- **Held annual churn at ~4%** across a base of 30–40 contracts signed per year,
+  typically KRW 0.8–1.0M/month, largest at KRW 2.5M/month on a two-year term.
+  Low churn came from contract structure and integrated installation, not from
+  post-hoc save motions.
+
+- **Ran the pipeline without a CRM for six years.** Built stages
+  (`prospect → opportunity → live`) in Trello because Salesforce was out of budget,
+  then migrated to Asana and Relate. Also designed and ran six demand channels
+  solo — DM, performance marketing, PR, outbound, trade shows, seminars.
+
+- **Managed a team of [[N]] [[직무: 세일즈/마케팅]]** from [[YYYY]] to 2026 —
+  [[hiring / target-setting / coaching 중 실제 수행 범위]].
+  <!-- ⚠️ 유신님이 "정식 매니저" 확인. 원장에는 "세일즈 조직 규모 — 끝까지 혼자였는가"가
+       미해결로 남아 있음. Adobe 두 건이 Manager 직급이므로 이 불릿이 결정적. 인원수·기간·
+       실제 관리 범위 확정 필요 -->
+
+- Learned product ownership under the CPO of Yanolja's Yeogi Eottae through a
+  FuturePlay introduction — [[기간·형태]], applied to [[적용한 것]].
+  <!-- 코칭 수용성 증거. "10년 창업자가 남에게 배울 수 있는가"에 대한 직접적 답 -->
+
+**PLANZ COFFEE** — Marketing Director · Seoul
+*2016 – 2019*
+
+- Campus unmanned-café business, working as a two-person team with the CEO on product
+  planning, design, and sales strategy; individual and joint work were not separated in
+  this period. Kyung Hee University co-op adopted the service and referred us onward to
+  the national university co-op association.
+
+**GOREUNHAETSAL** — Business Turnaround *(independent project, [[재직 중 병행 / 퇴사 후]])*
+*[[YYYY – YYYY]]*
+
+- Took over the P&L of a loss-making food franchise while the operator stayed on stores
+  and staffing. Renegotiated food-cost and distribution structure, hired a specialist to
+  build company-wide SOPs and implement ERP, restructured tax position and secured
+  policy financing, refinanced debt, and standardized menu and brand across delivery
+  platforms. **Revenue KRW 2.1B → 3.0B, from accumulating losses to 12% operating margin.**
+  <!-- 친척 사업임을 숨기지 않되, 역할을 명확히. 공식 지위 [[자문/등기임원/지분]] 확정 필요 -->
 
 ---
 
-### EDUCATION
+### TECHNICAL & EDUCATION
 
-[[학교 · 전공 · 졸업 연월 / 졸업 여부]]
+- **Salesforce AI CRM Engineer Program** — 616 hours, [[2026.MM]] – Sep 2026.
+  Salesforce, Agentforce, SQL, JavaScript/Node.js, Java OOP.
+- **CorePress** *(FICTIONAL / EDUCATIONAL POC — 6-person team project)* — designed a
+  service flow across Experience Cloud → Asset/Case → Service Appointments → a limited
+  Agentforce use case; personally [[designed/configured/implemented]] [[본인 영역]] and
+  presented the tradeoffs.
+- Tools: Salesforce, Agentforce, Trello, Asana, Relate, Figma, Sketch, Adobe CC, SQL
 
----
-
-## 회사별 조정 포인트
-
-### 1순위 — Microsoft CSAM (74)
-- CSAM은 **기술 도입 성과 책임 + 고객 계정 관리** 복합. Summary에 "adoption"과 "consumption"
-  언어를 넣을 것.
-- Azure/M365 제품 깊이는 없으므로 **학습 근거(Salesforce 616h)를 학습 속도의 증거로만** 사용.
-- 매트릭스 조직 조율 사례(D-5)가 있으면 Microsoft에서 가장 강하게 작동.
-
-### 2순위 — Adobe ICX Sales & CS Manager (73)
-- **Sales + CS 복합 역할** → 리드 퍼널 운영(D-4) 불릿을 CS 불릿 위로 올릴 것.
-- Manager 직급이므로 **팀/프로세스 소유 범위**를 명시. 없으면 리스크 정직하게 인정.
-
-### 4순위 — Adobe Sr Mgr CS & TAM Korea (72)
-- Senior Manager + 팀 관리 → 현재 프로필의 최대 격차. **팀 리딩 경험 유무가 지원 여부를 좌우.**
-- 팀 관리 경험 없으면 이 건은 Stretch로 하향 재평가 권장.
-
-### 7순위 — Datadog Customer Success
-- 옵저버빌리티 도메인 학습 의지를 **구체적 행동**으로 (무엇을 이미 읽고 시도했는지).
-- 기술 배경 요구가 가장 높음 → CorePress의 기술적 판단 부분을 앞세울 것.
+**Kyung Hee University** — B.S. Biology [[졸업 연월 / 졸업 여부]]
+Biology background was operationally used: I built the hygiene SOP and validation
+system for the unmanned food-and-beverage service.
 
 ---
 
-## 제출 게이트 체크
+## 회사별 조정
 
-- [ ] JD 상위 5개 요건 중 4개가 1페이지 안에 보이는가
-- [ ] 모든 숫자에 범위·기간·분모·기여도가 붙는가
-- [ ] "왜 옮기는가"와 "왜 남는가"를 3분 안에 말할 수 있는가
-- [ ] 과잉스펙·직접경험부재·잔류 리스크에 답이 있는가
-- [ ] CS 레인이 명확히 하나로 읽히는가
-- [ ] CorePress에 FICTIONAL/EDUCATIONAL POC 라벨이 있는가
-- [ ] 회사명·직무명·Job ID·링크가 정확한가
-- [ ] PDF 렌더링 후 눈으로 확인했는가
+### 1순위 · Microsoft CSAM (74)
+- CSAM은 **소비(consumption)와 도입 성과 책임**. 두산테스나 land-and-expand 불릿을 최상단으로.
+- 매트릭스 조직 적응 우려 → **여기어때 CPO 학습 불릿이 이 자리를 방어**. 반드시 채울 것.
+- Azure 제품 깊이 없음 → 616시간 과정은 *학습 속도의 증거*로만, 제품 지식으로 위장 금지.
+
+### 2순위 · Adobe ICX Sales & CS Manager (73)
+- **Sales + CS 복합** → 6채널 수요창출 불릿과 팀 관리 불릿을 위로.
+- Manager 직급 → 팀 관리 불릿이 핵심. `[[N]]` 확정 전 제출 불가.
+
+### 4순위 · Adobe Sr Mgr CS & TAM (72)
+- Senior Manager + TAM 팀 관리. **팀 규모가 작으면 Stretch로 하향 재평가.**
+- TAM 요소 → CorePress 기술 판단 + 위생 SOP/밸리데이션(프로세스 표준화)로 연결.
+
+### 7순위 · Datadog CS
+- 기술 배경 요구 최상. **트렐로 파이프라인 자체 설계 + ERP 도입**을 앞세울 것 —
+  "도구 없이 6년 → 제대로 배우러 감" 서사가 Datadog에서 가장 잘 먹힘.
+- 옵저버빌리티 도메인은 모름을 인정하고 학습 행동으로 답할 것.
+
+---
+
+## 제출 게이트
+
+- [ ] 팀 관리 불릿의 `[[N]]`·기간·범위 확정 — Adobe 2건의 당락 요인
+- [ ] 여기어때 CPO 학습 기간·형태 확정 — 조직 적응 증거의 유일한 근거
+- [ ] 고른햇살 시기와 공식 지위 확정 — 이력서 기재 방식이 달라짐
+- [ ] 영문명 표기, 전화번호, LinkedIn
+- [ ] 경희대 졸업 여부·연월
+- [ ] 모든 숫자에 단가·기간·분모 병기 확인 (해지율 4%, 30–40건, 200개사)
+- [ ] 갱신율 85% 표현이 어디에도 없는지 확인
+- [ ] CorePress에 FICTIONAL / EDUCATIONAL POC 라벨 확인
+- [ ] SKT 관련 표현 전무한지 확인 (사용 금지 항목)
+- [ ] 1페이지 분량 확인 후 PDF 렌더링 검수
