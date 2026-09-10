@@ -72,15 +72,17 @@ corporate accounts over this period; I ran new business and account expansion.
   then migrated to Asana and Relate. Also designed and ran six demand channels
   solo — DM, performance marketing, PR, outbound, trade shows, seminars.
 
-- **Managed a team of [[N]] [[직무: 세일즈/마케팅]]** from [[YYYY]] to 2026 —
-  [[hiring / target-setting / coaching 중 실제 수행 범위]].
-  <!-- ⚠️ 유신님이 "정식 매니저" 확인. 원장에는 "세일즈 조직 규모 — 끝까지 혼자였는가"가
-       미해결로 남아 있음. Adobe 두 건이 Manager 직급이므로 이 불릿이 결정적. 인원수·기간·
-       실제 관리 범위 확정 필요 -->
+- **Managed a team of 2** from 2023 to 2026 — [[채용 / 목표설정 / 평가 / 코칭 중
+  실제 수행한 것]].
+  <!-- 규모 2명 확정. Adobe ICX Manager(73)에는 충분하나 Adobe Sr Mgr(72)에는 얇음 -->
 
-- Learned product ownership under the CPO of Yanolja's Yeogi Eottae through a
-  FuturePlay introduction — [[기간·형태]], applied to [[적용한 것]].
-  <!-- 코칭 수용성 증거. "10년 창업자가 남에게 배울 수 있는가"에 대한 직접적 답 -->
+- **Owned a product area outside my own company.** Took the leisure & recreation
+  product at Yeogi Eottae through a six-month product-owner sprint, introduced via
+  FuturePlay and working to their CPO — the first time in ten years I executed inside
+  someone else's organization and method.
+  <!-- ★ 조직 적응 + 코칭 수용성의 유일한 직접 증거. SKT 항목 사용금지로 열린 공백을 메움 -->
+  <!-- ⚠️ 고용이 아니라 스프린트 프로그램 참여. SKT 오류 재발 방지 — "여기어때에서 일했다"로
+       읽히는 표현 금지. [[정확한 관계: 파견 / 프로그램 / 계약]] 확정 후 문구 확정 -->
 
 **PLANZ COFFEE** — Marketing Director · Seoul
 *2016 – 2019*
@@ -90,8 +92,8 @@ corporate accounts over this period; I ran new business and account expansion.
   this period. Kyung Hee University co-op adopted the service and referred us onward to
   the national university co-op association.
 
-**GOREUNHAETSAL** — Business Turnaround *(independent project, [[재직 중 병행 / 퇴사 후]])*
-*[[YYYY – YYYY]]*
+**GOREUNHAETSAL** — Business Turnaround *(concurrent project)*
+*Jan 2024 – May 2026*
 
 - Took over the P&L of a loss-making food franchise while the operator stayed on stores
   and staffing. Renegotiated food-cost and distribution structure, hired a specialist to
@@ -129,9 +131,11 @@ system for the unmanned food-and-beverage service.
 - **Sales + CS 복합** → 6채널 수요창출 불릿과 팀 관리 불릿을 위로.
 - Manager 직급 → 팀 관리 불릿이 핵심. `[[N]]` 확정 전 제출 불가.
 
-### 4순위 · Adobe Sr Mgr CS & TAM (72)
-- Senior Manager + TAM 팀 관리. **팀 규모가 작으면 Stretch로 하향 재평가.**
-- TAM 요소 → CorePress 기술 판단 + 위생 SOP/밸리데이션(프로세스 표준화)로 연결.
+### 4순위 · Adobe Sr Mgr CS & TAM (72) → **Stretch로 하향**
+- 팀 규모 2명(2023~)은 Senior Manager + TAM 조직 관리에 얇다. 72점 유지 근거가 약해졌다.
+- **버리지는 말 것.** 대신 지원서에서 팀 규모를 숨기지 말고, 관리 인원수가 아니라
+  **P&L 전체를 소유한 경험(고른햇살)** 으로 시니어리티를 방어한다.
+- TAM 요소 → CorePress 기술 판단 + 위생 SOP/밸리데이션(프로세스 표준화)으로 연결.
 
 ### 7순위 · Datadog CS
 - 기술 배경 요구 최상. **트렐로 파이프라인 자체 설계 + ERP 도입**을 앞세울 것 —
@@ -142,9 +146,12 @@ system for the unmanned food-and-beverage service.
 
 ## 제출 게이트
 
-- [ ] 팀 관리 불릿의 `[[N]]`·기간·범위 확정 — Adobe 2건의 당락 요인
-- [ ] 여기어때 CPO 학습 기간·형태 확정 — 조직 적응 증거의 유일한 근거
-- [ ] 고른햇살 시기와 공식 지위 확정 — 이력서 기재 방식이 달라짐
+- [x] 팀 관리 규모·기간 — 2명, 2023~2026 확정
+- [x] 여기어때 — 6개월 PO 스프린트, 레저·여가 프로덕트 담당 확정
+- [x] 고른햇살 시기 — 2024.1 ~ 2026.5 (플랜즈 재직 중 병행) 확정
+- [ ] 팀 관리에서 **실제 수행 범위** (채용/목표설정/평가/코칭 중 무엇을 했는가)
+- [ ] 여기어때와의 **정확한 관계** (파견/프로그램/계약) — 고용으로 읽히면 SKT 오류 재발
+- [ ] 고른햇살 **공식 지위** (자문/등기임원/지분) 및 ERP 제품명
 - [ ] 영문명 표기, 전화번호, LinkedIn
 - [ ] 경희대 졸업 여부·연월
 - [ ] 모든 숫자에 단가·기간·분모 병기 확인 (해지율 4%, 30–40건, 200개사)

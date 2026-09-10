@@ -70,10 +70,14 @@ after COVID removed the company's original channel.
 - **Standardized process and validation for the service.** Authored the hygiene SOP and
   validation system covering unmanned food-and-beverage operations.
 
-- **Managed a team of [[N]]** from [[YYYY]] — [[target-setting / performance review /
-  coaching 중 실제 범위]]. <!-- ServiceNow는 Senior Manager. 이 불릿 필수 -->
+- **Managed a team of 2** from 2023 to 2026 — [[채용 / 목표설정 / 평가 / 코칭 중 실제 범위]].
 
-**GOREUNHAETSAL** — Business Turnaround *(independent project, [[시기]])*
+- **Owned a product area inside another company's organization.** Took the leisure &
+  recreation product at Yeogi Eottae through a six-month product-owner sprint,
+  introduced via FuturePlay and working to their CPO.
+  <!-- ⚠️ 고용 아님. "여기어때에서 일했다"로 읽히는 표현 금지 -->
+
+**GOREUNHAETSAL** — Business Turnaround *(concurrent project)* · *Jan 2024 – May 2026*
 
 - **Put a business without systems onto systems.** Hired a specialist to author
   company-wide SOPs and implement ERP ([[제품명]]), which is what finally made the books

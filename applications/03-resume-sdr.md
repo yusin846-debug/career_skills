@@ -66,11 +66,13 @@ campus channel — running prospecting through close solo.
   response, which went into the Amorepacific and LG Electronics wins.
   <!-- 실패를 정직하게 쓰는 것이 Associate 지원에서 코칭 수용성의 증거가 된다 -->
 
-- **Took coaching from a senior operator.** Learned product ownership under the CPO of
-  Yeogi Eottae through a FuturePlay introduction — [[기간·형태]], and applied
-  [[적용한 것]].
+- **Worked inside someone else's method for six months.** Took the leisure & recreation
+  product at Yeogi Eottae through a product-owner sprint, introduced via FuturePlay and
+  working to their CPO. After ten years of deciding alone, this was the part I most
+  wanted more of.
   <!-- ★ 이 레인에서 가장 중요한 불릿. "10년간 스스로 결정하던 사람이 배울 수 있는가"에
        대한 유일한 직접 증거 -->
+  <!-- ⚠️ 고용 아님. "여기어때에서 일했다"로 읽히는 표현 금지 -->
 
 - Closed 30–40 contracts per year, typically KRW 0.8–1.0M/month; annual churn ~4%.
 
