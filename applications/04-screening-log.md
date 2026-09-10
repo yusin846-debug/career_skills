@@ -67,24 +67,44 @@
 
 ---
 
-## 별도 쟁점 — 학위가 아니라 **경력 연차** 미달군
+## 삭제 (13건) — 55~58점 Stretch 구간 전수 정리
 
-삭제하지 않았으나, 다수 공고가 **7~10년의 "엔터프라이즈 SaaS 세일즈"** 직접 경력을
-요구한다. 유신님의 6년은 미드마켓·자체 브랜드 영업이라 성격이 다르다.
+**사용자 결정.** 결격이 아니라 **확률 판단**이다. 이 구간은 대부분
+`7~10년 엔터프라이즈 SaaS 세일즈` 직접 경력을 요구하는데, 유신님의 6년은
+미드마켓·자체 브랜드 영업이라 성격이 다르다. 2주 집중 캠페인에서 상위 점수 건에
+시간을 몰아주기 위해 정리한다.
 
-| 공고 | 요구 | 점수 |
+| 날짜 | 회사 · 직무 | 점수 |
 |---|---|---|
-| GitLab Strategic AE | 7년+ 엔터프라이즈 SaaS | 58 |
-| Okta AE Korea | 7년+ 엔터프라이즈 SaaS + C-Level | 57 |
-| Nutanix Sr Services Sales Mgr | 7–10년+ 엔터프라이즈 서비스 세일즈 | 56 |
-| Google Cloud Partner Sales Mgr | 8년 채널 세일즈/파트너 관리 | Stretch |
-| ServiceNow Sr Mgr Sales Ops | 8년+ Sales Ops | 72 |
-| Microsoft Strategic AE (Samsung) | 최고 레벨 | 55 |
-| Elastic Sr Named AE | Senior Named | 58 |
+| 9/21 | Cloudflare Sr Territory AE | 58 |
+| 9/21 | Elastic Sr Named AE Korea | 58 |
+| 9/22 | NetApp Google Cloud Sales Specialist | 58 |
+| 9/22 | Microsoft Strategic AE (Samsung) | 55 |
+| 9/22 | GE Vernova Sr Sales Mgr, Grid Software | 58 |
+| 9/22 | Akamai Sr Security Sales Specialist | 57 |
+| 9/22 | Thermo Fisher Commercial Leader Korea | 56 |
+| 9/22 | Autodesk Named Account Sales Exec | 58 |
+| 9/23 | Nutanix Sr Services Sales Mgr | 56 |
+| 9/23 | GitLab Sr Strategic Enterprise AE | 58 |
+| 9/23 | Okta Account Executive Korea | 57 |
+| 9/23 | NVIDIA AM, Automotive | 55 |
+| 9/23 | NVIDIA Sr AM, Consumer Sales | 56 |
 
-> 이건 **결격이 아니라 확률 문제**다. 점수 55~58 구간은 이미 Stretch로 분류돼 있으므로
-> 판정 체계는 정상 작동했다. 다만 2주 집중 캠페인에서 이 구간에 시간을 쓸 것인지는
-> 별도 판단이 필요하다.
+**유지한 경계선 (59~60점)** — 삭제 기준 밖이라 남김:
+Nutanix Sr Commercial AM(59) · Workday AE(60) · Veeva Enterprise AE(60) ·
+Workato Enterprise AE(60) · Autodesk Manufacturing Sales Exec(60) · Dyson Sales AM(60)
+
+> ⚠️ **일정 공백 발생:** 9/22는 2건, 9/23은 1건만 남았다. 마지막 이틀이 사실상 비었으므로
+> 앞 구간을 뒤로 분산하거나 캠페인을 9/21에 종료하는 편이 낫다.
+
+---
+
+## 삭제 총계: 16건
+
+| 구분 | 건수 |
+|---|---|
+| 학위·자격 결격 | 3 |
+| 55~58점 Stretch 정리 | 13 |
 
 ---
 
@@ -92,4 +112,6 @@
 
 - [ ] Adobe 2건 · Philips 1건 · Toss 1건 — 공고 본문 확보 후 학위 요건 판정
 - [ ] 지원서 학력란 작성 표준 문구 확정 (`Biology, 2013–2018, coursework completed`)
-- [ ] 55~58점 Stretch 구간 유지 여부 결정
+- [ ] 9/22–9/23 공백 처리 — 앞 구간 재배치 또는 캠페인 조기 종료
+- [ ] 남은 Stretch 중 점수 미표기 건(Apple Channel Sales, Notion Consultant,
+      Palo Alto, Google Cloud Partner, Snowflake Partner Dev, Atlassian) 점수 부여 후 재판정
