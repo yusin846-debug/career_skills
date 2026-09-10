@@ -1,0 +1,4 @@
+# Seeded design canvas — regenerated from the .dc.html sources and the
+# design skill's payload template. ~2.5 MB of bundled editor code per file.
+design/*.html
+!design/*.dc.html
