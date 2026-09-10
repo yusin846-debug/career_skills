@@ -14,7 +14,17 @@ Turn verified facts about Kim Yushin's experience and a live opportunity into a 
 1. Always read `references/profile-and-evidence.md`.
 2. Read `references/decision-framework.md` for job, company, prioritization, or deadline decisions.
 3. Read `references/deliverables.md` before producing a resume, cover letter, portfolio, interview story, or application schedule.
-4. If the user refers to prior work, retrieve relevant personal context before making a decision. Treat retrieved history as evidence to reconcile, not unquestioned truth.
+4. **Read `references/projects.md` before writing any document that cites the user's work.**
+   It holds the project record in a form ready to lift — settled wording, per-project
+   scope and results, lane placement, and the four patterns that tie them together.
+   Its opening table lists phrasings that are already decided; do not reopen them.
+5. Read `references/evidence-ledger.md` when a claim's verification status matters —
+   it marks each fact as documented, recalled, or unchecked, and records what was
+   retracted and why.
+6. Read `references/deal-cases.md` for the full narrative of an individual deal, and for
+   the wording warnings attached to each.
+7. If the user refers to prior work, retrieve relevant personal context before making a
+   decision. Treat retrieved history as evidence to reconcile, not unquestioned truth.
 
 ## Workflow
 
@@ -76,8 +86,10 @@ Lead with the verdict. Then show the decisive evidence, risks, selected lane, an
 
 ## Hard guardrails
 
-- Describe CorePress only as a fictional educational team POC unless later evidence proves otherwise. Never present it as a commercial customer implementation.
+- Describe CorePress only as a fictional educational team POC unless later evidence proves otherwise. Never present it as a commercial customer implementation. The grand prize it won does not change this.
 - Never invent or inflate metrics, customers, quotas, tools, English proficiency, degrees, certifications, production scale, or technical depth.
+- **Never restate a figure downward either.** Lowering a number to look modest or to avoid seeming boastful is the same fabrication as raising it, and the lowered figure becomes the expected performance once it wins an offer. When a real number reads as implausible, publish the unit economics beside it instead of changing it.
+- Separate signed contracts from accounts that only reached a meeting. Mixing them makes both unbelievable; splitting them yourself reads as rigour.
 - Reconcile the scope, period, denominator, and ownership of every important number before publication.
 - Distinguish individual ownership, collaboration, and company-wide results. Avoid a solo-hero narrative.
 - Use first-person, active, factual language. Make confidence come from specificity rather than superlatives.

@@ -16,7 +16,15 @@ Direct system work is welcome at roughly 20–40% of the role, but the target is
 
 ## Core career evidence
 
-The working profile is approximately ten years as a startup operator and approximately six years leading or owning sales-related work. Translate this history into an end-to-end B2B cycle:
+The record is **Planz Coffee, Sales Director, April 2016 – March 2026** — ten years, of
+which the last six (2020–2026) were spent owning sales outright. Use *Sales Director*
+in every document; an earlier "marketing director" phrasing is retired.
+
+The two halves are different jobs and must be written differently. Until 2019 work was
+undivided between two founders, so **nothing from that period carries sole ownership**;
+write it as shared and use it for background only. From 2020, after COVID erased the
+campus channel for roughly three years, the user personally opened the office B2B market
+— that is where every claimable case comes from. Translate this history into an end-to-end B2B cycle:
 
 1. discover a customer or partner problem;
 2. construct the offer, pricing, and economics;
@@ -24,22 +32,54 @@ The working profile is approximately ten years as a startup operator and approxi
 4. coordinate delivery and operations;
 5. renew, expand, or redesign the relationship using operating evidence.
 
-Previously discussed scale includes approximately 200 corporate customers, 250 contracts, KRW 2 billion in ARR, and an 85% renewal rate. These are provisional evidence, not publication-ready facts. Before using them, reconcile:
+Working scale figures: approximately 200 corporate customers and 250 contracts across
+2020–2026, roughly KRW 2 billion in ARR, at an **annual churn rate of about 4%**.
 
-- unique accounts versus cumulative contracts;
-- the measurement period;
-- ARR definition and calculation;
-- renewal cohort and denominator;
-- individual contribution versus team or company result;
-- documentary or source support.
+**The previously recorded "85% renewal rate" has been retired.** The user confirmed
+that annual churn is the metric actually measured. Do not use the renewal figure in
+any document; the LinkedIn profile still carries it and needs correcting.
+
+These figures reconcile against the unit economics: at roughly KRW 10 million average
+annual contract value, 200 accounts give the reported ARR, and 30–40 deals a year over
+six years give the contract count. **Always publish them with the unit price attached**
+— typical contracts ran KRW 800,000–1,000,000 per month, the largest at KRW 2.5 million
+per month on a two-year term. Stating the price is what removes the impression of
+bluffing that omitting it creates.
+
+**Never restate these figures downward to appear modest.** An arbitrary reduction is
+the same category of fabrication as inflation, and a lowered number becomes the
+performance baseline once it wins an offer. Where the concern is credibility, add
+context — scope, period, denominator, ownership — rather than changing the number.
+
+Still to reconcile before publication: whether each figure is company-wide or the
+user's own book, the exact measurement period, and documentary support.
+
+See `projects.md` for the full project record in a form ready to lift into a resume,
+and `evidence-ledger.md` for verification status on each claim.
 
 Useful evidence categories include pricing architecture, contract negotiation, recovery of stalled opportunities, retention or expansion, operating-data decisions, stakeholder coordination, and service-process improvement.
 
 ## Technical and education evidence
 
-The working record includes a 616-hour Salesforce AI CRM Engineer program with expected completion in September 2026. Relevant exposure includes Salesforce, Agentforce, SQL, JavaScript or Node.js, and Java object-oriented programming labs. Confirm final completion, exact course title, and any certification before publication.
+The 616-hour Salesforce AI CRM Engineer program is **complete**, and the user holds the
+**Salesforce Certified Platform Administrator** credential (issued August 2026,
+identifier 8066536). They were also selected **Program MVP** among the cohort. Relevant
+exposure includes Salesforce, Agentforce, SQL, JavaScript or Node.js, and Java
+object-oriented programming labs.
 
-CorePress is a fictional educational POC completed by a six-person team. Its designed flow connects Experience Cloud, Asset and Case management, Service Appointments or Field Service, service history, and a limited Agentforce use case. It may support claims about:
+The MVP citation carries unusual weight for this candidate. A ten-year founder's
+sharpest hiring risk is whether they can work inside someone else's structure, and the
+award was given for supporting team communication and helping peers understand the
+tooling — **a third party's judgement rather than a self-claim.** Reach for it whenever
+organizational fit is questioned.
+
+CorePress is a fictional educational POC. The user **led the six-person team and the
+project took the program's grand prize.** Its designed flow connects Experience Cloud,
+Opportunity, Asset and Case management, Field Service, reporting, and a limited
+Agentforce use case. Their own scope covered project scoping and task ownership,
+translating the business scenario into Salesforce processes, and the final presentation.
+
+It may support claims about:
 
 - requirements and user-flow reasoning;
 - data-object and process decisions;
@@ -47,7 +87,11 @@ CorePress is a fictional educational POC completed by a six-person team. Its des
 - presentation and team delivery;
 - tradeoffs and next-step thinking.
 
-It does not prove commercial deployment, a real customer outcome, production scale, or solo ownership. Position the user as commercially experienced and increasingly fluent in CRM, data, and AI—not as a senior software engineer.
+**The grand prize does not move this boundary.** It does not prove commercial
+deployment, a real customer outcome, or production scale. State the educational nature
+in the first sentence whenever CorePress appears — the self-disclosure is what makes
+the rest credible. Position the user as commercially experienced and increasingly
+fluent in CRM, data, and AI, not as a senior software engineer.
 
 ## Preferred positioning
 
