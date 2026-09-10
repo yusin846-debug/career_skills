@@ -93,21 +93,43 @@
 | 이후 | 사내 무인카페(오피스 B2B)로 확장 | `[검색요약]` |
 | — | FuturePlay 투자 포트폴리오사 | `[검색요약]` |
 
-### 🚨 SKT 수상 등급 — LinkedIn과 사용자 진술이 충돌 (최우선 해결)
+### SKT 수상 등급 — 해결됨 (사용자 결정: TOP 7로 정정)
 
-| 출처 | 내용 |
-|---|---|
-| **LinkedIn (본인 작성, 공개 중)** | **"Grand Prize — SKT Youth Entrepreneurship Program (2017)"** · SK Telecom · 2017.09 |
-| **사용자 진술 (본 세션)** | "교내 대상을 받은 다음에 전국에 진출하여 **TOP7 선정, 이후에는 순위 없었음**" |
-| 검색 요약 | "경희대 창업 공모전 **대상** + SKT 청년비상프로그램 **전국 TOP7 선정**" |
+LinkedIn에 "Grand Prize — SKT Youth Entrepreneurship Program"으로 기재되어 있었으나,
+사용자 진술("TOP7 선정 이후에는 순위 없었음")과 충돌했다.
+**사용자가 TOP 7로 정정하기로 결정했다.**
 
-**양립하지 않는다.** TOP7 이후 순위가 없었다면 SKT 프로그램에서 Grand Prize를 받은 것이 아니다.
+**확정 표기 — 영문 (LinkedIn 수상 항목)**
 
-- 현재 **LinkedIn이 사실보다 높게 기재되어 있을 가능성**이 크다.
-- 수상 이력은 리크루터가 실제로 검증하는 항목이며,
-  하나가 어긋나면 나머지 전체(자격증·매출·고객사)의 신뢰가 함께 무너진다.
-- **포트폴리오에 반영하기 전에 확정하고, 필요하면 LinkedIn을 수정해야 한다.**
-- 확인 방법: 2017년 수상 증빙, SKT 프로그램 공식 결과 공지, 당시 보도자료.
+> 제목: `Top 7 Nationwide — Youth Entrepreneurship Program`
+> 발행처: SK Telecom · 2017.09
+>
+> Selected as one of seven teams nationwide in SK Telecom's Youth
+> Entrepreneurship Program, after winning the Grand Prize at Kyung Hee
+> University's startup competition earlier that year.
+>
+> The project focused on identifying workplace customer needs, designing
+> the service and revenue model, and translating the concept into an
+> executable business plan.
+>
+> This became the foundation for Planz Coffee and for my subsequent work
+> in B2B sales, customer development, and business operations.
+
+**확정 표기 — 국문**
+
+> 전국 TOP 7 — SKT 청년 창업 프로그램 (2017)
+>
+> 경희대 교내 창업 공모전에서 대상을 받은 뒤 전국 단위에 진출해,
+> SK텔레콤 청년 창업 프로그램에서 전국 7개 팀에 선발됐습니다.
+
+**원칙**
+
+- 교내 대상은 실제 수상이므로 **버리지 않고 본문 또는 별도 항목으로 살린다.**
+- "one of seven teams nationwide"는 사실 그대로이면서 충분히 강하다.
+  정확성을 위해 성과를 실제보다 약하게 쓸 필요는 없다.
+- SKT 본사 6개월은 여전히 **제외**한다 (사용자 결정 유지).
+  단, 이 수상 항목 본문 안에서 "프로그램의 일환으로"라는 맥락과 함께라면
+  고용 오해 소지가 낮으므로, 사용자가 원할 경우 한 줄 추가 가능.
 
 ### 🚨 갱신 지표 — LinkedIn과 포트폴리오가 다른 숫자를 말하고 있음
 
