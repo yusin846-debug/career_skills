@@ -93,7 +93,42 @@
 | 이후 | 사내 무인카페(오피스 B2B)로 확장 | `[검색요약]` |
 | — | FuturePlay 투자 포트폴리오사 | `[검색요약]` |
 
-### 공모전 이력 — 확정됨
+### 🚨 SKT 수상 등급 — LinkedIn과 사용자 진술이 충돌 (최우선 해결)
+
+| 출처 | 내용 |
+|---|---|
+| **LinkedIn (본인 작성, 공개 중)** | **"Grand Prize — SKT Youth Entrepreneurship Program (2017)"** · SK Telecom · 2017.09 |
+| **사용자 진술 (본 세션)** | "교내 대상을 받은 다음에 전국에 진출하여 **TOP7 선정, 이후에는 순위 없었음**" |
+| 검색 요약 | "경희대 창업 공모전 **대상** + SKT 청년비상프로그램 **전국 TOP7 선정**" |
+
+**양립하지 않는다.** TOP7 이후 순위가 없었다면 SKT 프로그램에서 Grand Prize를 받은 것이 아니다.
+
+- 현재 **LinkedIn이 사실보다 높게 기재되어 있을 가능성**이 크다.
+- 수상 이력은 리크루터가 실제로 검증하는 항목이며,
+  하나가 어긋나면 나머지 전체(자격증·매출·고객사)의 신뢰가 함께 무너진다.
+- **포트폴리오에 반영하기 전에 확정하고, 필요하면 LinkedIn을 수정해야 한다.**
+- 확인 방법: 2017년 수상 증빙, SKT 프로그램 공식 결과 공지, 당시 보도자료.
+
+### 🚨 갱신 지표 — LinkedIn과 포트폴리오가 다른 숫자를 말하고 있음
+
+| 출처 | 수치 |
+|---|---|
+| LinkedIn (공개 중) | "achieving an **85% renewal rate**" |
+| 사용자 결정 (본 세션) | **연간 해지율 4%** 사용, 85%는 폐기 |
+
+두 문서가 다른 숫자를 말하면 둘 다 의심받는다. **하나로 통일할 것.**
+
+### 🚨 직함 표기 불일치
+
+| 출처 | 직함 |
+|---|---|
+| LinkedIn | **세일즈 디렉터** (Planz coffee, 2016.04 – 2026.03) |
+| 사용자 진술 | **마케팅이사** (프로덕트 기획 · 디자인 · 판매전략) |
+
+시기에 따라 달랐던 것인지, 표기만 다른 것인지 확정 필요.
+1기(공동 수행)와 2기(세일즈 총괄)로 역할이 바뀌었으므로 시기별 직함이 달랐을 가능성이 있다.
+
+### 공모전 이력 — 재확인 필요
 
 앞서 `[상충]`으로 표시했던 항목이 사용자 확인으로 해소되었다. 정확한 순서는:
 
@@ -635,14 +670,63 @@ SDR/BDR 레인(아웃바운드 실행)과 Demand Gen 성격을 동시에 커버�
 
 ---
 
-## 2026.3– · 현재
+## 2026.3– · 현재 `[LinkedIn 확인]`
 
 - **2026.3 플랜즈 퇴사** (지분 일부 정리)
-- Salesforce AI CRM Engineer 616시간 과정 (2026.9 수료 예정)
-- CorePress 교육 POC (6인 팀)
+- **Salesforce Certified Platform Administrator** — 2026.08 취득, 식별번호 **8066536**
+- **Salesforce AI CRM Engineer Program** — 2026.05 발행, 616시간
+- **Program MVP** — 616시간 과정 수료자 중 선정 (2026.09)
+- **대상 — CorePress Salesforce Team POC** — 6인 팀 리드 (2026.09)
 
-> 퇴사부터 현재까지 약 6개월. **교육 과정이 이 기간을 채우므로 공백이 아니다.**
-> 이력서에 과정 기간을 명시해 공백으로 보이지 않게 한다.
+> 퇴사부터 현재까지 약 6개월. **교육 과정과 자격 취득이 이 기간을 채우므로 공백이 아니다.**
+
+### ★★ Program MVP — 조직 적응 증거가 채워졌다
+
+SKT 항목을 삭제하면서 다시 비었던 **"조직 적응 · 협업"** 칸을 이 항목이 채운다.
+그리고 SKT보다 강하다 — **제3자가 심사해 수여한 상**이기 때문이다.
+
+LinkedIn 기재 선정 사유:
+
+> "combined business-process thinking with Salesforce implementation,
+> **actively supported team communication and decision-making**,
+> and **helped peers understand technical concepts and tools**."
+
+"10년간 스스로 결정하던 창업자가 팀 안에서 일할 수 있는가"에 대해,
+본인 주장이 아니라 **운영기관의 판단**으로 답할 수 있게 됐다.
+
+### CorePress — 위상이 달라졌다
+
+기존 인식: 6인 팀이 수행한 교육 POC (참여)
+확인된 사실: **본인이 팀장**이었고 **최종 발표에서 대상** 수상
+
+담당 범위 (LinkedIn 기재):
+프로젝트 범위·역할 분담 조율 / 비즈니스 시나리오를 Salesforce 프로세스로 번역 /
+최종 스토리 구성 및 발표
+
+설계 범위: Experience Cloud → Opportunity → Asset → Case → Field Service →
+리포팅 + 제한된 Agentforce 시나리오
+
+> **가드레일은 그대로 유지한다.** 가상의 산업장비 제조사를 상정한 교육용 POC이며,
+> 상용 구축 경험이 아니다. 대상 수상 사실이 이 경계를 바꾸지 않는다.
+
+### LinkedIn 공개 프로필 요약 `[확인됨]`
+
+| 항목 | 내용 |
+|---|---|
+| 배너 브랜드 라인 | **"Making complex work clear, workable, and human."** |
+| 헤드라인 | B2B Sales & Pipeline Development \| Salesforce Certified Platform Administrator \| CRM, Data & AI \| Full-Funnel GTM |
+| 경력 | 세일즈 디렉터 · Planz coffee · 2016.04 – 2026.03 (10년) |
+| 학력 | 경희대학교 Biology · 2013.03 – 2018.02 |
+| 위치 | 대한민국 서울 |
+
+**About 핵심 문장:**
+
+> "I build B2B growth by turning customer problems into workable commercial models
+> and long-term operating relationships."
+
+> 배너 라인 **"Making complex work clear, workable, and human"**은 이미 확립된
+> 개인 브랜드다. 포트폴리오 히어로에 그대로 사용해 일관성을 만든다.
+> 이력서·커버레터에서도 같은 축을 유지할 것.
 
 ### 남은 확인 사항 (전체)
 
