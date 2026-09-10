@@ -102,17 +102,20 @@ after COVID removed the company's original channel.
 
 ---
 
-### TECHNICAL & EDUCATION
+### CERTIFICATION & EDUCATION
 
+- **Salesforce Certified Platform Administrator** — Aug 2026 · Credential ID 8066536
 - **Salesforce AI CRM Engineer Program** — 616 hours, [[2026.MM]] – Sep 2026.
-  Salesforce, Agentforce, SQL, JavaScript/Node.js, Java OOP.
-- **CorePress** *(FICTIONAL / EDUCATIONAL POC — 6-person team)* — designed the service
-  flow across Experience Cloud → Asset/Case → Service Appointments → limited Agentforce;
-  personally [[designed/configured/implemented]] [[영역]].
+  **Selected as Program MVP** among course completers.
+- **CorePress** *(FICTIONAL / EDUCATIONAL POC — 6-person team)* — **led the team.**
+  Designed the flow across Experience Cloud → Opportunity → Asset → Case → Field
+  Service → reporting. **First prize at final presentation.**
 - Tools: Salesforce, Agentforce, SQL, Trello, Asana, Relate, ERP implementation,
   Figma, Adobe CC
 
-**Kyung Hee University** — B.S. Biology [[졸업 연월]]
+**Kyung Hee University**, Seoul — Biology, 2013 – 2018
+*(coursework completed; degree not conferred)*
+<!-- ⚠️ 학위 없음. "B.S." / "Bachelor" / "졸업" 표기 절대 금지 -->
 
 ---
 

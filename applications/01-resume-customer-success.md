@@ -109,19 +109,24 @@ corporate accounts over this period; I ran new business and account expansion.
 
 ---
 
-### TECHNICAL & EDUCATION
+### CERTIFICATION & EDUCATION
 
+- **Salesforce Certified Platform Administrator** — Aug 2026 · Credential ID 8066536
 - **Salesforce AI CRM Engineer Program** — 616 hours, [[2026.MM]] – Sep 2026.
-  Salesforce, Agentforce, SQL, JavaScript/Node.js, Java OOP.
-- **CorePress** *(FICTIONAL / EDUCATIONAL POC — 6-person team project)* — designed a
-  service flow across Experience Cloud → Asset/Case → Service Appointments → a limited
-  Agentforce use case; personally [[designed/configured/implemented]] [[본인 영역]] and
-  presented the tradeoffs.
-- Tools: Salesforce, Agentforce, Trello, Asana, Relate, Figma, Sketch, Adobe CC, SQL
+  **Selected as Program MVP** among course completers, cited for team communication
+  and helping peers understand the material.
+- **CorePress** *(FICTIONAL / EDUCATIONAL POC — 6-person team)* — **led the team.**
+  Designed the flow across Experience Cloud → Opportunity → Asset → Case → Field
+  Service → reporting with a limited Agentforce scenario, translating the business
+  scenario into Salesforce process. **First prize at final presentation.**
+- Tools: Salesforce, Agentforce, SQL, Trello, Asana, Relate, Figma, Sketch, Adobe CC
 
-**Kyung Hee University** — B.S. Biology [[졸업 연월 / 졸업 여부]]
-Biology background was operationally used: I built the hygiene SOP and validation
+**Kyung Hee University**, Seoul — Biology, 2013 – 2018
+*(coursework completed; degree not conferred)*
+The biology background was used operationally: I built the hygiene SOP and validation
 system for the unmanned food-and-beverage service.
+<!-- ⚠️ 학위 없음. "B.S." / "Bachelor" / "졸업" 표기 절대 금지. 글로벌 기업은 학력 검증을
+     실제로 수행하며 허위 기재는 입사 후에도 해고 사유가 된다. 지원서 학력란에도 동일 적용 -->
 
 ---
 
@@ -160,7 +165,9 @@ system for the unmanned food-and-beverage service.
 - [ ] 여기어때와의 **정확한 관계** (파견/프로그램/계약) — 고용으로 읽히면 SKT 오류 재발
 - [ ] 고른햇살 **공식 지위** (자문/등기임원/지분) 및 ERP 제품명
 - [ ] 영문명 표기, 전화번호, LinkedIn
-- [ ] 경희대 졸업 여부·연월
+- [x] 경희대 — **수료(학위 없음)** 확정. 2013.03–2018.02
+- [ ] 타겟 7개사 공고에 `Bachelor's degree required`가 하드 요건인 곳 확인
+      (`or equivalent experience` 없으면 지원 목록 재조정)
 - [ ] 모든 숫자에 단가·기간·분모 병기 확인 (해지율 4%, 30–40건, 200개사)
 - [ ] 갱신율 85% 표현이 어디에도 없는지 확인
 - [ ] CorePress에 FICTIONAL / EDUCATIONAL POC 라벨 확인
