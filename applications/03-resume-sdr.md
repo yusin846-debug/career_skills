@@ -74,6 +74,14 @@ campus channel — running prospecting through close solo.
        대한 유일한 직접 증거 -->
   <!-- ⚠️ 고용 아님. "여기어때에서 일했다"로 읽히는 표현 금지 -->
 
+- **Hired and managed a BDR from 2023**, after doing the prospecting myself for three
+  years. I set what counted as a qualified handoff and coached against it — which is
+  also why I know what I am applying for here, and why a structured program is what
+  I want rather than something I am settling for.
+  <!-- ⚠️ 양날의 불릿. BDR을 관리해봤다는 사실은 과잉스펙 인상을 키울 수 있으나, 숨기면
+       면접에서 나올 때 더 나쁘다. **시니어리티가 아니라 동기의 근거로** 배치할 것.
+       Summary의 마지막 문장과 짝을 이룬다 -->
+
 - Closed 30–40 contracts per year, typically KRW 0.8–1.0M/month; annual churn ~4%.
 
 **PLANZ COFFEE** — Marketing Director · Seoul · *2016 – 2019*

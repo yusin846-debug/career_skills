@@ -70,7 +70,13 @@ after COVID removed the company's original channel.
 - **Standardized process and validation for the service.** Authored the hygiene SOP and
   validation system covering unmanned food-and-beverage operations.
 
-- **Managed a team of 2** from 2023 to 2026 — [[채용 / 목표설정 / 평가 / 코칭 중 실제 범위]].
+- **Split a one-person revenue function into three seats and defined the handoffs.**
+  Hired and managed a BDR and a CSM from 2023, having personally run prospecting,
+  closing, and retention beforehand. Set the qualification bar for what the BDR passed
+  forward, the handover contents the CSM received at signature, and the rules for which
+  accounts returned to me — the operating definitions a RevOps function owns.
+  [[채용 / 목표설정 / 평가 / 코칭 중 실제 범위]]
+  <!-- ★★ 이 레인의 핵심. 스테이지 설계(트렐로)와 역할 간 핸드오프 설계가 한 세트로 읽힌다 -->
 
 - **Owned a product area inside another company's organization.** Took the leisure &
   recreation product at Yeogi Eottae through a six-month product-owner sprint,

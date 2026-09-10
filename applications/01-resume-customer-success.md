@@ -72,9 +72,14 @@ corporate accounts over this period; I ran new business and account expansion.
   then migrated to Asana and Relate. Also designed and ran six demand channels
   solo — DM, performance marketing, PR, outbound, trade shows, seminars.
 
-- **Managed a team of 2** from 2023 to 2026 — [[채용 / 목표설정 / 평가 / 코칭 중
-  실제 수행한 것]].
-  <!-- 규모 2명 확정. Adobe ICX Manager(73)에는 충분하나 Adobe Sr Mgr(72)에는 얇음 -->
+- **Built and managed a two-person revenue team — a BDR and a CSM — from 2023.**
+  Hiring both roles meant defining the handoffs myself: what qualified a lead well
+  enough to pass on, what the CSM needed at contract signature, and which accounts
+  came back to me. I had run all three seats before splitting them, so the definitions
+  came from having done the work rather than from a template.
+  [[채용 / 목표설정 / 평가 / 코칭 중 실제 수행한 것]]
+  <!-- ★★ CS 레인 최상급 근거. CSM을 직접 관리했다는 것은 이 직무의 직접 리더십 경험이다.
+       규모(2명)보다 구성이 중요하다는 점을 문장이 스스로 증명하게 쓸 것 -->
 
 - **Owned a product area outside my own company.** Took the leisure & recreation
   product at Yeogi Eottae through a six-month product-owner sprint, introduced via
@@ -131,10 +136,12 @@ system for the unmanned food-and-beverage service.
 - **Sales + CS 복합** → 6채널 수요창출 불릿과 팀 관리 불릿을 위로.
 - Manager 직급 → 팀 관리 불릿이 핵심. `[[N]]` 확정 전 제출 불가.
 
-### 4순위 · Adobe Sr Mgr CS & TAM (72) → **Stretch로 하향**
-- 팀 규모 2명(2023~)은 Senior Manager + TAM 조직 관리에 얇다. 72점 유지 근거가 약해졌다.
-- **버리지는 말 것.** 대신 지원서에서 팀 규모를 숨기지 말고, 관리 인원수가 아니라
-  **P&L 전체를 소유한 경험(고른햇살)** 으로 시니어리티를 방어한다.
+### 4순위 · Adobe Sr Mgr CS & TAM (72) → **Selective 유지** (하향 철회)
+- 앞서 팀 2명을 이유로 Stretch 하향을 검토했으나, **구성이 BDR + CSM으로 확인되어 철회한다.**
+  CSM을 직접 채용·관리한 것은 이 직무의 **직접 리더십 경험**이다.
+- 여전히 규모는 작다. **숨기지 말고 구성으로 답한다** — 인원수가 아니라
+  "세 직무를 다 해본 뒤 나눴고 핸드오프를 직접 정의했다"가 시니어리티의 근거다.
+- 보조 방어선: **고른햇살 P&L 전체 소유**.
 - TAM 요소 → CorePress 기술 판단 + 위생 SOP/밸리데이션(프로세스 표준화)으로 연결.
 
 ### 7순위 · Datadog CS
