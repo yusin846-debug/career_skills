@@ -721,7 +721,7 @@
     <div class="cred"><div class="cred-t">대상 — CorePress Salesforce Team POC</div><div class="cred-d">Salesforce · 2026.09 · 6인 팀 리드</div></div>
     <div class="cred"><div class="cred-t">전국 TOP 7 — SKT 청년 창업 프로그램</div><div class="cred-d">SK Telecom · 2017.09 · 교내 대상 후 전국 선발</div></div>
     <div class="cred"><div class="cred-t">대상 — 경희대 창업 공모전</div><div class="cred-d">경희대학교 · 2017</div></div>
-    <div class="cred"><div class="cred-t">경희대학교 생물학</div><div class="cred-d">2013.03 — 2018.02</div></div>
+    <div class="cred"><div class="cred-t">경희대학교 생물학 (수료)</div><div class="cred-d">2013.03 — 2018.02 · 학위 미취득</div></div>
   </div>
 
   <p class="closer">겪어본 불편을 제대로 다루는 쪽으로 가려고 합니다.</p>
@@ -821,15 +821,8 @@
   });
   document.getElementById('chatX').addEventListener('click', function () { panel.hidden = true; fab.setAttribute('aria-expanded', 'false'); });
 
-  var kb = null;
-  function knowledge() {
-    if (kb) return kb;
-    var t = [];
-    document.querySelectorAll('section, footer').forEach(function (s) { t.push(s.textContent.replace(/\s+/g, ' ').trim()); });
-    kb = t.join('\n\n').slice(0, 18000);
-    return kb;
-  }
-  var SYS = '너는 김유신의 포트폴리오 페이지에 있는 안내 에이전트다. 아래 포트폴리오 전문만을 근거로 답한다. 규칙: (1) 본문에 없는 사실은 만들지 않고 "포트폴리오에 없는 내용"이라고 말한다. (2) 수치는 기록 대조 전 초안 기준임을 필요할 때 밝힌다. (3) CorePress는 교육용 POC이며 상용 구축 경험이 아니다. (4) 계약 완료 고객사와 미팅 단계(삼성·현대·SK)를 섞지 않는다. (5) 과장 없이 담담하게, 존댓말로, 3~5문장 이내로 답한다.\n\n=== 포트폴리오 전문 ===\n';
+  // 시스템 프롬프트와 지식 베이스는 /api/chat 안에 있다. 클라이언트가 보내면
+  // 누구든 바꿔치기해서 범용 LLM으로 쓸 수 있으므로 여기서는 대화만 보낸다.
   var history = [];
 
   function add(cls, text) {
@@ -848,23 +841,25 @@
     input.value = '';
     add('u', q);
     history.push({ role: 'user', content: q });
-    if (!(window.claude && window.claude.complete)) {
-      add('a', '이 환경에서는 AI 응답을 쓸 수 없습니다. 게시된 페이지에서 다시 시도해주세요.');
-      return;
-    }
     send.disabled = true;
     var wait = add('a wait', '생각 중…');
-    window.claude.complete({
-      system: SYS + knowledge(),
-      messages: history.slice(-12),
-      max_tokens: 700
-    }).then(function (text) {
+    fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages: history.slice(-12) })
+    }).then(function (r) {
+      if (r.status === 429) throw new Error('rate_limited');
+      if (!r.ok) throw new Error('http_' + r.status);
+      return r.json();
+    }).then(function (data) {
       wait.remove();
-      add('a', text);
-      history.push({ role: 'assistant', content: text });
-    }).catch(function () {
+      add('a', data.text);
+      history.push({ role: 'assistant', content: data.text });
+    }).catch(function (err) {
       wait.remove();
-      add('a', '응답에 실패했습니다. 잠시 후 다시 시도해주세요.');
+      add('a', err.message === 'rate_limited'
+        ? '질문이 너무 빠릅니다. 잠시 후 다시 시도해주세요.'
+        : '응답에 실패했습니다. 잠시 후 다시 시도해주세요.');
       history.pop();
     }).finally(function () { send.disabled = false; });
   });

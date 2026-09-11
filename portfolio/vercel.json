@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/chat.ts": {
+      "includeFiles": "index.html"
+    }
+  }
+}
