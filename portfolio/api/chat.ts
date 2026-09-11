@@ -1,8 +1,9 @@
-import Anthropic from "@anthropic-ai/sdk";
+import { GoogleGenAI, ApiError } from "@google/genai";
 import fs from "node:fs";
 import path from "node:path";
 
-const MODEL = "claude-opus-5";
+// Overridable without a code change, since which models the free tier serves moves.
+const MODEL = process.env.GEMINI_MODEL ?? "gemini-2.5-flash";
 const MAX_TOKENS = 700;
 const MAX_QUESTION_CHARS = 500;
 const MAX_HISTORY_TURNS = 12;
@@ -55,8 +56,7 @@ function knowledge(): string {
 }
 
 // Best-effort only: serverless instances each hold their own counter, so this slows
-// casual abuse rather than preventing it. The spend cap in the Anthropic console is
-// what actually bounds the damage.
+// casual abuse rather than preventing it. The free tier's own quota is the real bound.
 const hits = new Map<string, number[]>();
 
 function rateLimited(ip: string): boolean {
@@ -77,7 +77,7 @@ function allowedOrigin(origin: string | undefined): boolean {
   return !!origin && allowList.includes(origin);
 }
 
-const client = new Anthropic();
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export default async function handler(req: any, res: any) {
   if (req.method !== "POST") {
@@ -99,7 +99,7 @@ export default async function handler(req: any, res: any) {
 
   // Only role and text survive from the client. The system prompt and the knowledge
   // base are assembled here so a crafted request cannot repurpose the endpoint.
-  const messages: Anthropic.MessageParam[] = incoming
+  const contents = incoming
     .slice(-MAX_HISTORY_TURNS)
     .filter(
       (m: any) =>
@@ -108,50 +108,34 @@ export default async function handler(req: any, res: any) {
         m.content.trim(),
     )
     .map((m: any) => ({
-      role: m.role as "user" | "assistant",
-      content: m.content.slice(0, MAX_QUESTION_CHARS),
+      role: m.role === "assistant" ? "model" : "user",
+      parts: [{ text: m.content.slice(0, MAX_QUESTION_CHARS) }],
     }));
 
-  if (!messages.length || messages[messages.length - 1].role !== "user") {
+  if (!contents.length || contents[contents.length - 1].role !== "user") {
     return res.status(400).json({ error: "bad_request" });
   }
 
   try {
-    const response = await client.messages.create({
+    const response = await ai.models.generateContent({
       model: MODEL,
-      max_tokens: MAX_TOKENS,
-      output_config: { effort: "low" },
-      system: [
-        {
-          type: "text",
-          text: SYSTEM_RULES + "\n" + knowledge(),
-          cache_control: { type: "ephemeral" },
-        },
-      ],
-      messages,
+      contents,
+      config: {
+        systemInstruction: SYSTEM_RULES + "\n" + knowledge(),
+        maxOutputTokens: MAX_TOKENS,
+      },
     });
 
-    if (response.stop_reason === "refusal") {
-      return res.status(200).json({ text: "이 질문에는 답변하기 어렵습니다." });
-    }
-
-    const text = response.content
-      .filter((b): b is Anthropic.TextBlock => b.type === "text")
-      .map((b) => b.text)
-      .join("")
-      .trim();
-
+    const text = response.text?.trim();
     return res.status(200).json({ text: text || "답변을 생성하지 못했습니다." });
   } catch (error) {
-    if (error instanceof Anthropic.RateLimitError) {
-      return res.status(429).json({ error: "rate_limited" });
-    }
-    if (error instanceof Anthropic.AuthenticationError) {
-      console.error("ANTHROPIC_API_KEY is missing or invalid");
-      return res.status(500).json({ error: "server_error" });
-    }
-    if (error instanceof Anthropic.APIError) {
-      console.error(`Anthropic API error ${error.status}: ${error.message}`);
+    if (error instanceof ApiError) {
+      // 429 is the free tier's own quota, which the visitor cannot do anything about
+      // beyond waiting — surface it as rate limiting rather than a generic failure.
+      if (error.status === 429) {
+        return res.status(429).json({ error: "rate_limited" });
+      }
+      console.error(`Gemini API error ${error.status}: ${error.message}`);
       return res.status(502).json({ error: "upstream_error" });
     }
     console.error(error);

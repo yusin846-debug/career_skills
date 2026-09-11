@@ -2,11 +2,11 @@
   "name": "yushin-portfolio",
   "private": true,
   "version": "1.0.0",
-  "dependencies": {
-    "@anthropic-ai/sdk": "^0.125.0"
-  },
   "devDependencies": {
     "@types/node": "^22.20.2",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@google/genai": "^2.22.0"
   }
 }
