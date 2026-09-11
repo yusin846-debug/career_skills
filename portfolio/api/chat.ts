@@ -87,13 +87,16 @@ function suggestions(query: string, asked: string[]): string[] {
 // casual abuse rather than providing a global usage or spending limit.
 const hits = new Map<string, number[]>();
 
-function rateLimited(ip: string): boolean {
+function retryAfter(ip: string): number {
   const now = Date.now();
   const recent = (hits.get(ip) ?? []).filter((t) => now - t < RATE_WINDOW_MS);
+  if (recent.length >= RATE_MAX_PER_WINDOW) {
+    return Math.max(1, Math.ceil((recent[0] + RATE_WINDOW_MS - now) / 1000));
+  }
   recent.push(now);
   hits.set(ip, recent);
   if (hits.size > 5000) hits.clear();
-  return recent.length > RATE_MAX_PER_WINDOW;
+  return 0;
 }
 
 function allowedOrigin(origin: string | undefined): boolean {
@@ -117,8 +120,10 @@ export default async function handler(req: any, res: any) {
   const ip =
     (req.headers["x-forwarded-for"] ?? "").toString().split(",")[0].trim() ||
     "unknown";
-  if (rateLimited(ip)) {
-    return res.status(429).json({ error: "rate_limited" });
+  const seconds = retryAfter(ip);
+  if (seconds) {
+    res.setHeader("Retry-After", String(seconds));
+    return res.status(429).json({ error: "rate_limited", retry_after: seconds });
   }
 
   let body;
@@ -172,8 +177,8 @@ export default async function handler(req: any, res: any) {
       const providerCode = failure?.error?.code;
       const safeCode = ["insufficient_quota", "rate_limit_exceeded", "invalid_api_key", "model_not_found"].includes(providerCode) ? providerCode : "unknown";
       console.error("OpenAI upstream status", response.status, "code", safeCode);
-      return res.status(response.status === 429 ? 429 : 502).json({
-        error: response.status === 429 ? "rate_limited" : "upstream_error",
+      return res.status(response.status === 429 ? 503 : 502).json({
+        error: response.status === 429 ? "provider_unavailable" : "upstream_error",
       });
     }
     const data = await response.json();
