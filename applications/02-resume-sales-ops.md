@@ -22,8 +22,9 @@ Seoul, Korea · yusin846@gmail.com · +82 10-5319-6972
 ### SUMMARY
 
 Sales operator who built the operating system for his own revenue function. Designed
-pipeline stages and migrated tooling three times without budget for a CRM, ran six
-demand channels solo, and knows his own unit economics well enough to reconcile ACV,
+pipeline stages and migrated tooling three times without budget for a CRM, ran every
+demand channel solo — including building the outbound target database from scratch —
+and knows his own unit economics well enough to reconcile ACV,
 contract mix, and churn against headline numbers. Separately took a loss-making
 business onto SOPs and ERP until its books could actually be closed. Completed a
 616-hour Salesforce AI CRM Engineer program in Sep 2026 and certified as a Salesforce
