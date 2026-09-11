@@ -91,7 +91,8 @@ after COVID removed the company's original channel.
   closing, and retention beforehand. Set the qualification bar for what the BDR passed
   forward, the handover contents the CSM received at signature, and the rules for which
   accounts returned to me — the operating definitions a RevOps function owns.
-  [[채용 / 목표설정 / 평가 / 코칭 중 실제 범위]]
+  **Hired both, set their targets, worked alongside them, ran their reviews, and coached
+  them**: the full management cycle, not a slice of it.
   <!-- ★★ 이 레인의 핵심. 스테이지 설계(트렐로)와 역할 간 핸드오프 설계가 한 세트로 읽힌다 -->
 
 - **Six-month Product Owner sprint program** (participant; introduced via FuturePlay,
@@ -155,7 +156,7 @@ after COVID removed the company's original channel.
 
 - [x] 채널별 성과 확정 — DM 1,000건당 4건, 퍼포먼스/SEO/콘텐츠/박람회 각 대표 계정 확보
 - [ ] 트렐로/아사나/릴레잇 사용 시기·리드 규모·이관 사유 확정
-- [ ] 팀 관리 규모·기간 확정
+- [x] 팀 관리 — BDR+CSM 2명, 2023~2026, 채용~코칭 전 사이클
 - [x] 고른햇살 — 이카운트(ECOUNT), 2024.1~2026.5, 자문
 - [ ] 모든 숫자에 단가·기간·분모 병기
 - [ ] 갱신율 85% 미사용 확인 / 해지율 4%로 통일

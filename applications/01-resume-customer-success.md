@@ -73,15 +73,17 @@ corporate accounts over this period; I ran new business and account expansion.
 
 - **Ran the pipeline without a CRM for six years.** Built stages
   (`prospect → opportunity → live`) in Trello because Salesforce was out of budget,
-  then migrated to Asana and Relate. Also designed and ran six demand channels
-  solo — DM, performance marketing, PR, outbound, trade shows, seminars.
+  then migrated to Asana and Relate. Also designed and ran every demand channel
+  solo — direct mail on a target list I built myself, paid, SEO, content, trade
+  shows, seminars, and partner-led.
 
 - **Built and managed a two-person revenue team — a BDR and a CSM — from 2023.**
   Hiring both roles meant defining the handoffs myself: what qualified a lead well
   enough to pass on, what the CSM needed at contract signature, and which accounts
   came back to me. I had run all three seats before splitting them, so the definitions
-  came from having done the work rather than from a template.
-  [[채용 / 목표설정 / 평가 / 코칭 중 실제 수행한 것]]
+  came from having done the work rather than from a template. **Hired both, set their
+  targets, worked accounts alongside them, ran their reviews, and coached them** — the
+  full people-management cycle on a small team rather than a slice of it on a large one.
   <!-- ★★ CS 레인 최상급 근거. CSM을 직접 관리했다는 것은 이 직무의 직접 리더십 경험이다.
        규모(2명)보다 구성이 중요하다는 점을 문장이 스스로 증명하게 쓸 것 -->
 
@@ -138,7 +140,7 @@ system for the unmanned food-and-beverage service.
 
 ### 1순위 · Microsoft CSAM (74)
 - CSAM은 **소비(consumption)와 도입 성과 책임**. 두산테스나 land-and-expand 불릿을 최상단으로.
-- 매트릭스 조직 적응 우려 → **여기어때 CPO 학습 불릿이 이 자리를 방어**. 반드시 채울 것.
+- 매트릭스 조직 적응 우려 → **PO 스프린트 프로그램 불릿이 이 자리를 방어**한다.
 - Azure 제품 깊이 없음 → 616시간 과정은 *학습 속도의 증거*로만, 제품 지식으로 위장 금지.
 
 ### 2순위 · Adobe ICX Sales & CS Manager (73)
@@ -165,7 +167,7 @@ system for the unmanned food-and-beverage service.
 - [x] 팀 관리 규모·기간 — 2명, 2023~2026 확정
 - [x] 여기어때 — 6개월 PO 스프린트, 레저·여가 프로덕트 담당 확정
 - [x] 고른햇살 시기 — 2024.1 ~ 2026.5 (플랜즈 재직 중 병행) 확정
-- [ ] 팀 관리에서 **실제 수행 범위** (채용/목표설정/평가/코칭 중 무엇을 했는가)
+- [x] 팀 관리 수행 범위 — 채용→목표설정→협업→평가→코칭 전 사이클
 - [ ] 여기어때와의 **정확한 관계** (파견/프로그램/계약) — 고용으로 읽히면 SKT 오류 재발
 - [x] 고른햇살 — 자문(Advisor), ERP는 이카운트(ECOUNT)
 - [x] 전화번호·LinkedIn 기재 완료 (영문명은 KIM YUSHIN으로 통일)
