@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/chat.ts": {
-      "includeFiles": "index.html"
+      "includeFiles": "data/public-grounding.json"
     }
   }
 }
