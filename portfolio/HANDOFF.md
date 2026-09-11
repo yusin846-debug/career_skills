@@ -50,16 +50,29 @@
 **Vercel 프로젝트:** `yushin-portfolio` (`prj_IQdcDGlX6BQk79PSMkewilrTz3rH`)
 GitHub `yusin846-debug/career_skills` 연동, Root Directory = `portfolio`
 
-### ⚠️ 프로덕션 브랜치 문제 — 미해결
+### ✅ 프로덕션 배포 — 해결됨
 
-프로젝트의 프로덕션 브랜치가 `main`인데, **포트폴리오는 `claude/magical-cori-6x6auf`에만 있다.**
-그래서 main 배포는 `NOW_SANDBOX_WORKER_ROOTDIR_NOT_EXIST`로 실패한다.
+**라이브 주소: https://yushin-portfolio.vercel.app**
 
-둘 중 하나를 해야 한다:
-1. Vercel 프로젝트 설정에서 **Production Branch를 `claude/magical-cori-6x6auf`로 변경**, 또는
-2. `portfolio/`를 `main`에 머지
+`claude/magical-cori-6x6auf`를 `main`에 머지해서 해결했다(2026-09-11).
+이제 **main에 푸시하면 프로덕션이 자동 배포**되고, 다른 브랜치 푸시는 프리뷰를 만든다.
 
-브랜치 푸시는 프리뷰 배포를 만들므로, 그전까지는 프리뷰 URL로 확인한다.
+### ⛔ 레포는 Private이다 — 되돌리지 말 것
+
+`yusin846-debug/career_skills`는 2026-09-11에 **public → private으로 변경**했다.
+
+이유: 레포에 `evidence-ledger.md`(퇴사 사유, 대표와의 비전 차이, 고른햇살 친척 사업
+재무 상태, 학위 미취득)와 `deal-cases.md`(고객사 내부 부서 갈등, 위약벌 대응 전략,
+전환비용을 높인 계정 전략)가 들어 있다. **구직 중에 면접관이 읽으면 안 되는 문서들이다.**
+포트폴리오가 이 레포에서 배포되므로 리크루터가 타고 들어오는 경로가 실재한다.
+
+Private이어도 Vercel 빌드는 정상 동작한다. 공개로 되돌릴 이유가 없다.
+
+### 배포 보호(Deployment Protection)
+
+`ssoProtection`을 **껐다**(2026-09-11). 켜져 있으면 방문자가 Vercel 로그인 화면을 만나
+리크루터가 페이지를 볼 수 없다. 새 Vercel 프로젝트는 기본값이 켜짐이므로,
+프로젝트를 다시 만들면 반드시 다시 꺼야 한다.
 
 ### 환경변수 (Vercel Project Settings)
 
