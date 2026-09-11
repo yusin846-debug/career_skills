@@ -64,10 +64,12 @@ corporate accounts over this period; I ran new business and account expansion.
   existing vending sales data, analyzed it, and specified an OEM vitamin-C/taurine
   drink. It ranked 4th of 21 menu items and took 14% of beverage revenue.
 
-- **Held annual churn at ~4%** across a base of 30–40 contracts signed per year,
-  typically KRW 0.8–1.0M/month, largest at KRW 2.5M/month on a two-year term.
-  Low churn came from contract structure and integrated installation, not from
-  post-hoc save motions.
+- **Held annual churn at ~4% by designing for it in the contract, not after the fact.**
+  Each installation put over KRW 10M of equipment in ahead of revenue, with break-even
+  averaging ~8 months, so I designed an operating-subsidy clause into the pricing model
+  that recovered the investment within 1.8 years at minimum. Across 30–40 contracts a
+  year at typically KRW 0.8–1.0M/month, that clause — not save motions — is what held
+  retention.
 
 - **Ran the pipeline without a CRM for six years.** Built stages
   (`prospect → opportunity → live`) in Trello because Salesforce was out of budget,

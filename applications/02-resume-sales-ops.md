@@ -50,11 +50,16 @@ after COVID removed the company's original channel.
   <!-- ★ 이 레인의 핵심 불릿. 도구 선정·스테이지 정의·마이그레이션 실행 전부 포함 -->
   <!-- 확인 필요: 각 도구 사용 시기, 관리한 리드 규모, 이관 사유 -->
 
-- **Knows the unit economics of the book.** 30–40 contracts closed per year at
-  typically KRW 0.8–1.0M/month, largest at KRW 2.5M/month on a two-year term
+- **Knows the unit economics of the book, capital included.** 30–40 contracts closed
+  per year at typically KRW 0.8–1.0M/month, largest at KRW 2.5M/month on a two-year term
   (TCV KRW 60M), against a company base of ~200 corporate accounts over 2020–2026.
-  Annual churn ~4%, driven by two-year terms, integrated installation, and taking on
-  operational management — not by retention campaigns.
+  Each installation put **over KRW 10M of equipment in ahead of revenue**, so break-even
+  averaged **around 8 months** and early termination was the real risk — not churn in
+  the abstract.
+
+- **Moved that risk into the contract.** Designed an operating-subsidy clause into the
+  pricing model so equipment investment was recovered **within 1.8 years at minimum**.
+  Annual churn of ~4% is the output of that clause, not of retention campaigns.
 
 - **Built and ran every demand channel single-handed, and can account for each one.**
   Direct mail was the early workhorse: with no list to buy, I built the target database
@@ -64,10 +69,9 @@ after COVID removed the company's original channel.
   S&D deal. PR I ran as conversion support for the other channels rather than as a
   source — channels were managed as a mix, not as separate scoreboards.
 
-- **Allocated against cost per acquisition, by channel.** KRW 1.25M per contract on
-  direct mail, 2.0M on partner-led sales, 2.5M on paid — against KRW 0.8–1.0M/month
-  contracts, that is payback in roughly 1.5, 2 and 3 months. The channel whose list I
-  built myself came in at half the cost of the one I bought.
+- **Allocated against cost per acquisition, by channel.** In direct channel spend,
+  KRW 1.25M per contract on direct mail, 2.0M on partner-led, 2.5M on paid. The channel
+  whose list I built myself came in at half the cost of the one I bought.
 
 - **Changed a product decision with customer usage data.** Requested and analyzed
   customers' existing vending sales data to test a non-coffee demand hypothesis, then
