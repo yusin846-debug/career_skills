@@ -57,9 +57,13 @@ after COVID removed the company's original channel.
   averaged **around 8 months** and early termination was the real risk — not churn in
   the abstract.
 
-- **Moved that risk into the contract.** Designed an operating-subsidy clause into the
-  pricing model so equipment investment was recovered **within 1.8 years at minimum**.
-  Annual churn of ~4% is the output of that clause, not of retention campaigns.
+- **Modelled the worst site, not the average one, and wrote the floor into the contract.**
+  Revenue came in two layers — subscription plus beverage consumption — and small
+  experimental sites (a 60-person branch office) produced almost no consumption while
+  costing the same in equipment. I sized that case first, then designed an
+  operating-subsidy clause so that even at near-zero consumption the equipment was
+  recovered **within 1.8 years**. Annual churn of ~4% is the output of that clause, not
+  of retention campaigns.
 
 - **Built and ran every demand channel single-handed, and can account for each one.**
   Direct mail was the early workhorse: with no list to buy, I built the target database
