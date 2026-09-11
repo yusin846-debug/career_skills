@@ -17,7 +17,8 @@
 
 ## KIM YUSHIN
 
-Seoul, Korea · yusin846@gmail.com · [[phone]] · [[linkedin]]
+Seoul, Korea · yusin846@gmail.com · +82 10-5319-6972
+[linkedin.com/in/유신-김-289428415](https://www.linkedin.com/in/%EC%9C%A0%EC%8B%A0-%EA%B9%80-289428415/) · [Portfolio](https://yushin-portfolio.vercel.app)
 
 ---
 
@@ -105,7 +106,7 @@ corporate accounts over this period; I ran new business and account expansion.
   build company-wide SOPs and implement ERP, restructured tax position and secured
   policy financing, refinanced debt, and standardized menu and brand across delivery
   platforms. **Revenue KRW 2.1B → 3.0B, from accumulating losses to 12% operating margin.**
-  <!-- 친척 사업임을 숨기지 않되, 역할을 명확히. 공식 지위 [[자문/등기임원/지분]] 확정 필요 -->
+  <!-- 친척 사업임을 숨기지 않되, 역할을 명확히. 공식 지위는 자문(Advisor)으로 확정됨 -->
 
 ---
 
@@ -139,7 +140,7 @@ system for the unmanned food-and-beverage service.
 
 ### 2순위 · Adobe ICX Sales & CS Manager (73)
 - **Sales + CS 복합** → 6채널 수요창출 불릿과 팀 관리 불릿을 위로.
-- Manager 직급 → 팀 관리 불릿이 핵심. `[[N]]` 확정 전 제출 불가.
+- Manager 직급 → 팀 관리 불릿이 핵심. BDR+CSM 2명 구성이 이 직무와 정확히 겹친다.
 
 ### 4순위 · Adobe Sr Mgr CS & TAM (72) → **Selective 유지** (하향 철회)
 - 앞서 팀 2명을 이유로 Stretch 하향을 검토했으나, **구성이 BDR + CSM으로 확인되어 철회한다.**
@@ -164,7 +165,7 @@ system for the unmanned food-and-beverage service.
 - [ ] 팀 관리에서 **실제 수행 범위** (채용/목표설정/평가/코칭 중 무엇을 했는가)
 - [ ] 여기어때와의 **정확한 관계** (파견/프로그램/계약) — 고용으로 읽히면 SKT 오류 재발
 - [ ] 고른햇살 **공식 지위** (자문/등기임원/지분) 및 ERP 제품명
-- [ ] 영문명 표기, 전화번호, LinkedIn
+- [x] 전화번호·LinkedIn 기재 완료 (영문명은 KIM YUSHIN으로 통일)
 - [x] 경희대 — **수료(학위 없음)** 확정. 2013.03–2018.02
 - [ ] 타겟 7개사 공고에 `Bachelor's degree required`가 하드 요건인 곳 확인
       (`or equivalent experience` 없으면 지원 목록 재조정)

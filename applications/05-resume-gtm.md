@@ -21,8 +21,8 @@
 
 ## 김유신
 
-[[연락처]] · [[이메일: yusin846@gmail.com]] · [[LinkedIn]]
-포트폴리오 https://yushin-portfolio.vercel.app
+010-5319-6972 · yusin846@gmail.com
+[linkedin.com/in/유신-김-289428415](https://www.linkedin.com/in/%EC%9C%A0%EC%8B%A0-%EA%B9%80-289428415/) · [포트폴리오](https://yushin-portfolio.vercel.app)
 
 ---
 
@@ -189,7 +189,7 @@ B2B 영업과 수요 창출을 10년 했고, 그중 6년은 혼자서 파이프�
 
 ## 제출 게이트
 
-- [ ] 연락처·LinkedIn 기재
+- [x] 연락처·LinkedIn 기재
 - [ ] 팀 관리 실제 수행 범위 확정
 - [ ] 채널별 성과 확정 — 이 레인 면접 1순위 질문
 - [ ] "음료 매출 4위" 분모 확인
