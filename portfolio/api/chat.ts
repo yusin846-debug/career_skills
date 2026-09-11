@@ -1,9 +1,8 @@
-import { GoogleGenAI, ApiError, ThinkingLevel } from "@google/genai";
 import fs from "node:fs";
 import path from "node:path";
 
-// Overridable without a code change, since which models the free tier serves moves.
-const MODEL = process.env.GEMINI_MODEL ?? "gemini-3.6-flash";
+// Fast text model; configurable independently from the previous provider.
+const MODEL = process.env.OPENAI_MODEL ?? "gpt-5.4-mini";
 const MAX_TOKENS = 700;
 const MAX_QUESTION_CHARS = 500;
 const MAX_HISTORY_TURNS = 12;
@@ -85,7 +84,7 @@ function suggestions(query: string, asked: string[]): string[] {
 }
 
 // Best-effort only: serverless instances each hold their own counter, so this slows
-// casual abuse rather than preventing it. The free tier's own quota is the real bound.
+// casual abuse rather than providing a global usage or spending limit.
 const hits = new Map<string, number[]>();
 
 function rateLimited(ip: string): boolean {
@@ -106,9 +105,6 @@ function allowedOrigin(origin: string | undefined): boolean {
   return !!origin && allowList.includes(origin);
 }
 
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY || process.env.career_key,
-});
 
 export default async function handler(req: any, res: any) {
   if (req.method !== "POST") {
@@ -141,44 +137,61 @@ export default async function handler(req: any, res: any) {
         m.content.trim(),
     )
     .map((m: any) => ({
-      role: m.role === "assistant" ? "model" : "user",
-      parts: [{ text: m.content.slice(0, MAX_QUESTION_CHARS) }],
+      role: m.role,
+      content: m.content.slice(0, MAX_QUESTION_CHARS),
     }));
 
   if (!contents.length || contents[contents.length - 1].role !== "user") {
     return res.status(400).json({ error: "bad_request" });
   }
 
+  const key = process.env.OPENAI_API_KEY;
+  if (!key) {
+    console.error("OPENAI_API_KEY is not configured");
+    return res.status(503).json({ error: "service_unavailable" });
+  }
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 15_000);
   try {
-    const response = await ai.models.generateContent({
-      model: MODEL,
-      contents,
-      config: {
-        systemInstruction: SYSTEM_RULES + "\n" + knowledge(contents[contents.length - 1].parts[0].text),
-        maxOutputTokens: MAX_TOKENS,
-        // Leave room for the short answer within the existing token cap.
-        ...(MODEL === "gemini-3.6-flash"
-          ? { thinkingConfig: { thinkingLevel: ThinkingLevel.MINIMAL } }
-          : {}),
-      },
+    const query = contents[contents.length - 1].content;
+    const response = await fetch("https://api.openai.com/v1/responses", {
+      method: "POST",
+      signal: controller.signal,
+      headers: { Authorization: "Bearer " + key, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: MODEL,
+        instructions: SYSTEM_RULES + "\n" + knowledge(query),
+        input: contents,
+        max_output_tokens: MAX_TOKENS,
+        store: false,
+        ...(MODEL.startsWith("gpt-5") ? { reasoning: { effort: "none" } } : {}),
+      }),
     });
-
-    const text = response.text?.trim();
+    if (!response.ok) {
+      console.error("OpenAI upstream status", response.status);
+      return res.status(response.status === 429 ? 429 : 502).json({
+        error: response.status === 429 ? "rate_limited" : "upstream_error",
+      });
+    }
+    const data = await response.json();
+    const text = (Array.isArray(data.output) ? data.output : [])
+      .filter((item: any) => item.type === "message" && item.role === "assistant")
+      .flatMap((item: any) => Array.isArray(item.content) ? item.content : [])
+      .filter((part: any) => part.type === "output_text" && typeof part.text === "string")
+      .map((part: any) => part.text).join("\n").trim();
+    if (data.status !== "completed" || !text) {
+      return res.status(502).json({ error: "incomplete_response" });
+    }
     return res.status(200).json({
-      text: text || "답변을 생성하지 못했습니다.",
-      suggestions: text ? suggestions(contents[contents.length - 1].parts[0].text, contents.filter((m: any)=>m.role === "user").map((m: any)=>m.parts[0].text)) : [],
+      text,
+      suggestions: suggestions(query, contents.filter((m: any) => m.role === "user").map((m: any) => m.content)),
     });
   } catch (error) {
-    if (error instanceof ApiError) {
-      // 429 is the free tier's own quota, which the visitor cannot do anything about
-      // beyond waiting — surface it as rate limiting rather than a generic failure.
-      if (error.status === 429) {
-        return res.status(429).json({ error: "rate_limited" });
-      }
-      console.error(`Gemini API error ${error.status}: ${error.message}`);
-      return res.status(502).json({ error: "upstream_error" });
-    }
-    console.error(error);
+    if (controller.signal.aborted) return res.status(504).json({ error: "upstream_timeout" });
+    console.error("Chat request failed", error instanceof Error ? error.name : "unknown");
     return res.status(500).json({ error: "server_error" });
+  } finally {
+    clearTimeout(timeout);
   }
 }
+
