@@ -18,7 +18,7 @@
 ## KIM YUSHIN
 
 Seoul, Korea · yusin846@gmail.com · +82 10-5319-6972
-[linkedin.com/in/유신-김-289428415](https://www.linkedin.com/in/%EC%9C%A0%EC%8B%A0-%EA%B9%80-289428415/) · [Portfolio](https://yushin-portfolio.vercel.app)
+[linkedin.com/in/유신-김-289428415](https://www.linkedin.com/in/%EC%9C%A0%EC%8B%A0-%EA%B9%80-289428415/) · [yushin-portfolio.vercel.app](https://yushin-portfolio.vercel.app)
 
 ---
 

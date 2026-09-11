@@ -22,7 +22,7 @@
 ## 김유신
 
 010-5319-6972 · yusin846@gmail.com
-[linkedin.com/in/유신-김-289428415](https://www.linkedin.com/in/%EC%9C%A0%EC%8B%A0-%EA%B9%80-289428415/) · [포트폴리오](https://yushin-portfolio.vercel.app)
+[linkedin.com/in/유신-김-289428415](https://www.linkedin.com/in/%EC%9C%A0%EC%8B%A0-%EA%B9%80-289428415/) · [yushin-portfolio.vercel.app](https://yushin-portfolio.vercel.app)
 
 ---
 
