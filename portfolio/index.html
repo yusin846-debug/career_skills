@@ -979,9 +979,21 @@
       suggestionBox.appendChild(b);
     });
   }
+  var requestBusy = false, cooldownUntil = 0, cooldownTimer;
   function setBusy(busy) {
-    send.disabled = busy;
-    suggestionBox.querySelectorAll('button').forEach(function(b) { b.disabled = busy; });
+    requestBusy = busy;
+    var seconds = Math.max(0, Math.ceil((cooldownUntil - Date.now()) / 1000));
+    send.disabled = busy || seconds > 0;
+    send.textContent = seconds ? seconds + '초 후 전송' : '전송';
+    suggestionBox.querySelectorAll('button').forEach(function(b) { b.disabled = send.disabled; });
+  }
+  function startCooldown(seconds) {
+    cooldownUntil = Date.now() + seconds * 1000;
+    clearInterval(cooldownTimer);
+    cooldownTimer = setInterval(function() {
+      setBusy(requestBusy);
+      if (Date.now() >= cooldownUntil) clearInterval(cooldownTimer);
+    }, 1000);
   }
   showSuggestions(['왜 B2B SaaS·CRM으로 옮기려 하나요?', '유신의 온화한 리더십과 능동적인 팔로워십은 어떤 모습인가요?', '유신의 취미와 여행 이야기가 궁금해요.']);
 
@@ -1007,9 +1019,14 @@
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ messages: history.slice(-12) })
     }).then(function (r) {
-      if (r.status === 429) throw new Error('rate_limited');
-      if (!r.ok) throw new Error('http_' + r.status);
-      return r.json();
+      return r.json().catch(function() { return {}; }).then(function(data) {
+        if (!r.ok) {
+          var err = new Error(data.error || 'http_' + r.status);
+          err.retryAfter = Math.min(60, Math.max(1, Number(data.retry_after) || 60));
+          throw err;
+        }
+        return data;
+      });
     }).then(function (data) {
       wait.remove();
       add('a', data.text);
@@ -1018,9 +1035,13 @@
       setBusy(true);
     }).catch(function (err) {
       wait.remove();
-      add('a', err.message === 'rate_limited'
-        ? '질문이 너무 빠릅니다. 잠시 후 다시 시도해주세요.'
-        : '응답에 실패했습니다. 잠시 후 다시 시도해주세요.');
+      if (err.message === 'rate_limited') {
+        startCooldown(err.retryAfter);
+        add('a', '잠깐 쉬어갈게요. ' + err.retryAfter + '초 후에 다시 질문하실 수 있어요.');
+      } else {
+        add('a', '답변 서비스 연결이 잠시 원활하지 않아요. 잠시 후 다시 시도해 주세요.');
+      }
+      input.value = q;
       history.pop();
     }).finally(function () { setBusy(false); input.focus(); });
   }
