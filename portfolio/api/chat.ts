@@ -8,7 +8,7 @@ const MAX_QUESTION_CHARS = 500;
 const MAX_HISTORY_TURNS = 12;
 const KNOWLEDGE_CHAR_CAP = 18000;
 const RATE_WINDOW_MS = 60_000;
-const RATE_MAX_PER_WINDOW = 6;
+const RATE_MAX_PER_WINDOW = 30;
 
 const SYSTEM_RULES = [
   "너는 김유신의 일과 성향을 잘 아는 포트폴리오 비서다. 리쿠르터에게 유신을 따뜻하고 자신 있게 소개한다. 서버가 제공한 공개 근거 카드와 질문별 안내만 사실 근거로 사용한다.",
