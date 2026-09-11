@@ -1,9 +1,9 @@
-import { GoogleGenAI, ApiError } from "@google/genai";
+import { GoogleGenAI, ApiError, ThinkingLevel } from "@google/genai";
 import fs from "node:fs";
 import path from "node:path";
 
 // Overridable without a code change, since which models the free tier serves moves.
-const MODEL = process.env.GEMINI_MODEL ?? "gemini-2.5-flash";
+const MODEL = process.env.GEMINI_MODEL ?? "gemini-3.6-flash";
 const MAX_TOKENS = 700;
 const MAX_QUESTION_CHARS = 500;
 const MAX_HISTORY_TURNS = 12;
@@ -126,6 +126,10 @@ export default async function handler(req: any, res: any) {
       config: {
         systemInstruction: SYSTEM_RULES + "\n" + knowledge(),
         maxOutputTokens: MAX_TOKENS,
+        // Leave room for the short answer within the existing token cap.
+        ...(MODEL === "gemini-3.6-flash"
+          ? { thinkingConfig: { thinkingLevel: ThinkingLevel.MINIMAL } }
+          : {}),
       },
     });
 
