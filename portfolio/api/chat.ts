@@ -1,4 +1,4 @@
-import { GoogleGenAI, ApiError } from "@google/genai";
+import { GoogleGenAI, ApiError, ThinkingLevel } from "@google/genai";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -126,6 +126,10 @@ export default async function handler(req: any, res: any) {
       config: {
         systemInstruction: SYSTEM_RULES + "\n" + knowledge(),
         maxOutputTokens: MAX_TOKENS,
+        // Leave room for the short answer within the existing token cap.
+        ...(MODEL === "gemini-3.6-flash"
+          ? { thinkingConfig: { thinkingLevel: ThinkingLevel.MINIMAL } }
+          : {}),
       },
     });
 
