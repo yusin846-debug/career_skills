@@ -25,9 +25,10 @@ Sales operator who built the operating system for his own revenue function. Desi
 pipeline stages and migrated tooling three times without budget for a CRM, ran six
 demand channels solo, and knows his own unit economics well enough to reconcile ACV,
 contract mix, and churn against headline numbers. Separately took a loss-making
-business onto SOPs and ERP until its books could actually be closed. Completing a
-616-hour Salesforce AI CRM Engineer program (Sep 2026), moving into sales operations
-to run these systems properly rather than improvise them.
+business onto SOPs and ERP until its books could actually be closed. Completed a
+616-hour Salesforce AI CRM Engineer program in Sep 2026 and certified as a Salesforce
+Platform Administrator, moving into sales operations to run these systems properly
+rather than improvise them.
 
 ---
 
@@ -61,7 +62,8 @@ after COVID removed the company's original channel.
 
 - **Changed a product decision with customer usage data.** Requested and analyzed
   customers' existing vending sales data to test a non-coffee demand hypothesis, then
-  specified an OEM product from the result. It reached 4th in beverage sales.
+  specified an OEM product from the result. It ranked 4th of 21 menu items and took
+  14% of beverage revenue.
 
 - **Created a new internal budget line to unblock a stalled deal.** CJ OliveNetworks
   was lost in 2024 to an incumbent's termination penalty. I established a sales budget
@@ -88,7 +90,7 @@ after COVID removed the company's original channel.
 *Jan 2024 – May 2026*
 
 - **Put a business without systems onto systems.** Hired a specialist to author
-  company-wide SOPs and implement ERP ([[제품명]]), which is what finally made the books
+  company-wide SOPs and implement ERP (ECOUNT), which is what finally made the books
   closable. Renegotiated food-cost and distribution structure, restructured the tax
   position, secured policy financing, refinanced debt, optimized delivery-platform mix,
   and standardized menu and brand. Opened a second location.
@@ -106,7 +108,7 @@ after COVID removed the company's original channel.
 ### CERTIFICATION & EDUCATION
 
 - **Salesforce Certified Platform Administrator** — Aug 2026 · Credential ID 8066536
-- **Salesforce AI CRM Engineer Program** — 616 hours, [[2026.MM]] – Sep 2026.
+- **Salesforce AI CRM Engineer Program** — 616 hours, May – Sep 2026.
   **Selected as Program MVP** among course completers.
 - **CorePress** *(FICTIONAL / EDUCATIONAL POC — 6-person team)* — **led the team.**
   Designed the flow across Experience Cloud → Opportunity → Asset → Case → Field
@@ -141,7 +143,7 @@ after COVID removed the company's original channel.
 - [ ] 채널별 성과 확정 — 이 레인 면접 1순위 질문
 - [ ] 트렐로/아사나/릴레잇 사용 시기·리드 규모·이관 사유 확정
 - [ ] 팀 관리 규모·기간 확정
-- [ ] 고른햇살 ERP 제품명, 시기, 공식 지위
+- [x] 고른햇살 — 이카운트(ECOUNT), 2024.1~2026.5, 자문
 - [ ] 모든 숫자에 단가·기간·분모 병기
 - [ ] 갱신율 85% 미사용 확인 / 해지율 4%로 통일
 - [ ] CorePress FICTIONAL 라벨 확인

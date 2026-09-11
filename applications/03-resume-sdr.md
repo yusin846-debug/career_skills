@@ -95,7 +95,7 @@ campus channel — running prospecting through close solo.
 ### CERTIFICATION & EDUCATION
 
 - **Salesforce Certified Platform Administrator** — Aug 2026 · Credential ID 8066536
-- **Salesforce AI CRM Engineer Program** — 616 hours, [[2026.MM]] – Sep 2026.
+- **Salesforce AI CRM Engineer Program** — 616 hours, May – Sep 2026.
   **Selected as Program MVP** among course completers, cited for team communication
   and helping peers understand the material.
 - **CorePress** *(FICTIONAL / EDUCATIONAL POC — 6-person team)* — **led the team**;

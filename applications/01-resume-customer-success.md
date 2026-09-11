@@ -28,8 +28,9 @@ B2B customer-facing operator with six years owning the full commercial cycle for
 mid-market subscription service — discovery, contract structuring, delivery, renewal,
 and expansion. Built the account base from zero after the company's original channel
 collapsed, and held annual churn at ~4% through contract design and operational
-ownership rather than escalation. Completing a 616-hour Salesforce AI CRM Engineer
-program (Sep 2026). Moving into customer success to work the same problems at
+ownership rather than escalation. Completed a 616-hour Salesforce AI CRM Engineer
+program in Sep 2026 and certified as a Salesforce Platform Administrator. Moving
+into customer success to work the same problems at
 enterprise scale, on systems I previously had to build by hand.
 
 ---
@@ -61,7 +62,7 @@ corporate accounts over this period; I ran new business and account expansion.
 - **Changed the product roadmap using customer usage data.** Revenue concentrated in
   coffee; I hypothesized non-coffee demand in office sites, asked customers for their
   existing vending sales data, analyzed it, and specified an OEM vitamin-C/taurine
-  drink. It became the 4th highest-selling beverage in the lineup.
+  drink. It ranked 4th of 21 menu items and took 14% of beverage revenue.
 
 - **Held annual churn at ~4%** across a base of 30–40 contracts signed per year,
   typically KRW 0.8–1.0M/month, largest at KRW 2.5M/month on a two-year term.
@@ -113,7 +114,7 @@ corporate accounts over this period; I ran new business and account expansion.
 ### CERTIFICATION & EDUCATION
 
 - **Salesforce Certified Platform Administrator** — Aug 2026 · Credential ID 8066536
-- **Salesforce AI CRM Engineer Program** — 616 hours, [[2026.MM]] – Sep 2026.
+- **Salesforce AI CRM Engineer Program** — 616 hours, May – Sep 2026.
   **Selected as Program MVP** among course completers, cited for team communication
   and helping peers understand the material.
 - **CorePress** *(FICTIONAL / EDUCATIONAL POC — 6-person team)* — **led the team.**
@@ -164,7 +165,7 @@ system for the unmanned food-and-beverage service.
 - [x] 고른햇살 시기 — 2024.1 ~ 2026.5 (플랜즈 재직 중 병행) 확정
 - [ ] 팀 관리에서 **실제 수행 범위** (채용/목표설정/평가/코칭 중 무엇을 했는가)
 - [ ] 여기어때와의 **정확한 관계** (파견/프로그램/계약) — 고용으로 읽히면 SKT 오류 재발
-- [ ] 고른햇살 **공식 지위** (자문/등기임원/지분) 및 ERP 제품명
+- [x] 고른햇살 — 자문(Advisor), ERP는 이카운트(ECOUNT)
 - [x] 전화번호·LinkedIn 기재 완료 (영문명은 KIM YUSHIN으로 통일)
 - [x] 경희대 — **수료(학위 없음)** 확정. 2013.03–2018.02
 - [ ] 타겟 7개사 공고에 `Bachelor's degree required`가 하드 요건인 곳 확인
