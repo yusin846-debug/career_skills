@@ -52,8 +52,15 @@ campus channel — running prospecting through close solo.
   <!-- ⚠️ 계약과 파이프라인을 절대 섞지 말 것. 이 레인에서는 미팅 확보 자체가 직무이므로
        구분해서 쓰는 것이 오히려 강점이 된다 -->
 
-- **Built and ran six demand channels single-handed** — DM, performance marketing, PR,
-  outbound, trade shows, and seminars. A lead from a blog I wrote myself became the
+- **Built my own prospect list before running outbound on it.** There was no list to
+  buy, so I assembled the target database from web crawling and government open data,
+  then ran direct mail against it — **1,000 pieces returned roughly 4 contracts**,
+  including POSCO Mobility. Research and list-building were the job before the outreach
+  was.
+
+- **Ran every other demand channel too** — paid acquisition (Aton, Duksan Neolux,
+  Neptune), Naver SEO that I optimized myself (CJ OliveNetworks), trade shows (Xi S&D),
+  seminars, and PR as conversion support. A blog I wrote for its own sake became the
   SK D&D contract.
 
 - **Led with discovery, not the product.** In every deal that closed, the stated request

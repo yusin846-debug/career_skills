@@ -55,10 +55,13 @@ after COVID removed the company's original channel.
   Annual churn ~4%, driven by two-year terms, integrated installation, and taking on
   operational management — not by retention campaigns.
 
-- **Built and ran six demand channels single-handed** — DM, performance marketing, PR,
-  outbound, trade shows, seminars — covering both inbound and outbound motion.
-  [[채널별 성과: 무엇이 작동했고 무엇을 접었는가]]
-  <!-- Sales Ops 면접에서 반드시 나오는 질문. 원장 미해결 항목 -->
+- **Built and ran every demand channel single-handed, and can account for each one.**
+  Direct mail was the early workhorse: with no list to buy, I built the target database
+  from web crawling and government open data, and **1,000 pieces returned roughly 4
+  contracts**. Paid acquisition brought in Aton, Duksan Neolux and Neptune; Naver SEO,
+  which I optimized myself, brought CJ OliveNetworks; a trade-show booth started the Xi
+  S&D deal. PR I ran as conversion support for the other channels rather than as a
+  source — channels were managed as a mix, not as separate scoreboards.
 
 - **Changed a product decision with customer usage data.** Requested and analyzed
   customers' existing vending sales data to test a non-coffee demand hypothesis, then
@@ -140,7 +143,7 @@ after COVID removed the company's original channel.
 
 ## 제출 게이트
 
-- [ ] 채널별 성과 확정 — 이 레인 면접 1순위 질문
+- [x] 채널별 성과 확정 — DM 1,000건당 4건, 퍼포먼스/SEO/콘텐츠/박람회 각 대표 계정 확보
 - [ ] 트렐로/아사나/릴레잇 사용 시기·리드 규모·이관 사유 확정
 - [ ] 팀 관리 규모·기간 확정
 - [x] 고른햇살 — 이카운트(ECOUNT), 2024.1~2026.5, 자문
