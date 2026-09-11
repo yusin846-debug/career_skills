@@ -406,6 +406,18 @@
 .idx a.on { color:#125a63; }
 .idx a.on .n { font-weight:700; }
 
+
+/* Translucent coffee form on black */
+.coffee-form { color:#f6eee5; background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.045)); border:1px solid rgba(255,255,255,.20); box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 18px 50px rgba(0,0,0,.25); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); }
+.coffee-form label small { color:#bcb5ae; }
+.coffee-form input,.coffee-form textarea { color:#fff7ef; background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.22); color-scheme:dark; }
+.coffee-form input::placeholder,.coffee-form textarea::placeholder { color:#bcb5ae; }
+.coffee-form .coffee-help { color:#c7bfb6; }
+.coffee-direct { color:#e7c6a3; }
+.coffee-direct:hover { color:#fff7ef; }
+.coffee-submit { background:rgba(231,188,136,.16); color:#fff2e2; border:1px solid rgba(231,188,136,.40); }
+.coffee-submit:hover { background:rgba(231,188,136,.25); color:#fff; }
+
 </style>
 
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
@@ -842,7 +854,7 @@
     </div>
     <form id="coffeeForm" class="coffee-form">
       <div class="coffee-fields">
-        <label>성함 <span aria-hidden="true">*</span><input name="name" autocomplete="name" required maxlength="80" placeholder="어떻게 불러드리면 될까요?"></label>
+        <label>성함 <span aria-hidden="true">*</span><input name="name" autocomplete="name" required maxlength="80" placeholder="홍길동"></label>
         <label>회사 · 소속 <small>선택</small><input name="company" autocomplete="organization" maxlength="120" placeholder="어디에서 일하고 계신가요?"></label>
       </div>
       <label>답장받을 이메일 <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" required maxlength="254" placeholder="hello@company.com"></label>
