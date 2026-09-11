@@ -64,6 +64,11 @@ after COVID removed the company's original channel.
   S&D deal. PR I ran as conversion support for the other channels rather than as a
   source — channels were managed as a mix, not as separate scoreboards.
 
+- **Allocated against cost per acquisition, by channel.** KRW 1.25M per contract on
+  direct mail, 2.0M on partner-led sales, 2.5M on paid — against KRW 0.8–1.0M/month
+  contracts, that is payback in roughly 1.5, 2 and 3 months. The channel whose list I
+  built myself came in at half the cost of the one I bought.
+
 - **Changed a product decision with customer usage data.** Requested and analyzed
   customers' existing vending sales data to test a non-coffee demand hypothesis, then
   specified an OEM product from the result. It ranked 4th of 21 menu items and took
