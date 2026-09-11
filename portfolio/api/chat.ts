@@ -78,7 +78,9 @@ function allowedOrigin(origin: string | undefined): boolean {
   return !!origin && allowList.includes(origin);
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI({
+  apiKey: process.env.GEMINI_API_KEY || process.env.career_key,
+});
 
 export default async function handler(req: any, res: any) {
   if (req.method !== "POST") {
