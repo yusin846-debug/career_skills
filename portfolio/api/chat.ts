@@ -31,7 +31,8 @@ let knowledgeCache: string | null = null;
 function knowledge(): string {
   if (knowledgeCache !== null) return knowledgeCache;
 
-  const html = fs.readFileSync(path.join(process.cwd(), "index.html"), "utf8");
+  // Resolve from this module: Vercel may run with the repository root as cwd.
+  const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
   const body = html
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ");
