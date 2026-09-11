@@ -168,7 +168,10 @@ export default async function handler(req: any, res: any) {
       }),
     });
     if (!response.ok) {
-      console.error("OpenAI upstream status", response.status);
+      const failure = await response.json().catch(() => null);
+      const providerCode = failure?.error?.code;
+      const safeCode = ["insufficient_quota", "rate_limit_exceeded", "invalid_api_key", "model_not_found"].includes(providerCode) ? providerCode : "unknown";
+      console.error("OpenAI upstream status", response.status, "code", safeCode);
       return res.status(response.status === 429 ? 429 : 502).json({
         error: response.status === 429 ? "rate_limited" : "upstream_error",
       });
