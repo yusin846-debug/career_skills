@@ -448,12 +448,15 @@
 
 /* Black coffee section with a readable floating index */
 .coffee { background:#000; }
-.idx { background:rgba(255,255,255,.94); border-color:rgba(255,255,255,.98); box-shadow:0 4px 24px rgba(0,0,0,.12); }
-.idx a { color:#46535a; }
+/* Dark translucent glass: retain the responsive index layout above. */
+.idx { background:rgba(10,35,48,.68); border-color:rgba(255,255,255,.16); backdrop-filter:blur(18px) saturate(125%); -webkit-backdrop-filter:blur(18px) saturate(125%); box-shadow:inset 0 1px 0 rgba(255,255,255,.12), 0 12px 32px rgba(7,28,40,.18); }
+.idx a { color:rgba(255,255,255,.78); transition:color .16s; }
 .idx a .l { opacity:1; }
-.idx a:hover { color:#111; }
-.idx a.on { color:#125a63; }
+.idx a:hover { color:rgba(255,255,255,.98); }
+.idx a.on { color:#9DE2D5; }
 .idx a.on .n { font-weight:700; }
+.idx a:focus-visible { outline-color:#9DE2D5; }
+@media (min-width:1341px) { .idx { padding-inline:15px; } }
 
 
 /* Translucent coffee form on black */
