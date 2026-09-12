@@ -268,13 +268,15 @@
   .chat-fab:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 12px 36px rgba(15,60,75,.45); }
   .chat-fab:active { transform: translateY(0) scale(.98); }
   .chat-fab .dot { width: 8px; height: 8px; border-radius: 50%; background: #7FE3B8; animation: fabPulse 2s ease-in-out infinite; }
+  .chat-fab-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; text-align: left; }
+  .chat-fab-label { font-family: var(--kr); font-size: 11px; font-weight: 400; line-height: 1.4; color: rgba(255,255,255,.78); white-space: nowrap; }
   .chat-fab .cta { font-family: var(--lat); font-size: 16.5px; font-weight: 400; letter-spacing: 0.01em; line-height: 1; }
   .chat-fab .cta em { font-style: italic; }
   .chat-fab .arr { font-size: 13px; opacity: .7; transition: transform .18s ease; }
   .chat-fab:hover .arr { transform: translateX(3px); }
   @keyframes fabPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(127,227,184,.55); } 50% { box-shadow: 0 0 0 7px rgba(127,227,184,0); } }
   .chat-fab[aria-expanded="true"] .dot { animation: none; }
-  .chat { position: fixed; right: 20px; bottom: 76px; width: min(370px, calc(100vw - 40px)); height: min(500px, calc(100vh - 120px)); background: var(--card); border: 1px solid var(--rule); border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; z-index: 60; box-shadow: 0 16px 48px rgba(0,0,0,.24); }
+  .chat { position: fixed; right: 20px; bottom: 98px; width: min(370px, calc(100vw - 40px)); height: min(500px, calc(100vh - 142px)); background: var(--card); border: 1px solid var(--rule); border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; z-index: 60; box-shadow: 0 16px 48px rgba(0,0,0,.24); }
   .chat-hd { display: flex; justify-content: space-between; align-items: center; padding: 13px 16px; border-bottom: 1px solid var(--hair); }
   .chat-hd b { font-size: 13px; letter-spacing: -0.02em; }
   .chat-hd small { font-size: 10px; color: var(--ink-4); display: block; font-weight: 400; margin-top: 2px; }
@@ -1006,7 +1008,7 @@
 })();
 </script>
 
-<button class="chat-fab" id="chatFab" aria-expanded="false"><span class="dot"></span><span class="cta">Ask <em>me</em> anything</span><span class="arr">→</span></button>
+<button class="chat-fab" id="chatFab" aria-expanded="false" aria-controls="chat"><span class="dot" aria-hidden="true"></span><span class="chat-fab-copy"><span class="chat-fab-label">유신의 커리어 에이전트</span><span class="cta">Ask <em>me</em> anything</span></span><span class="arr" aria-hidden="true">→</span></button>
 <div class="chat" id="chat" hidden>
   <div class="chat-hd">
     <div><b>Ask me anything</b><small>유신의 커리어 자료를 기반으로 답변드립니다</small></div>
