@@ -459,6 +459,32 @@
 .idx a.on .n { font-weight:700; }
 .idx a:focus-visible { outline-color:#9DE2D5; }
 @media (min-width:1341px) { .idx { padding-inline:15px; } }
+/* Quiet motion and a side index that fits the actual content gutter. */
+.idx { width:max-content; left:22px; padding:14px 15px; gap:14px; max-height:calc(100svh - 24px); overflow-y:auto; opacity:0; visibility:hidden; pointer-events:none; transition:opacity .4s ease, visibility 0s linear .4s; }
+.idx a .l { display:inline; }
+.idx a .n { font-size:16px; }
+.idx.is-compact { left:10px; padding:12px 10px; gap:11px; }
+.idx.is-compact a .l { display:none; }
+.idx.is-compact a .n { font-size:14px; }
+.idx.is-visible { opacity:1; visibility:visible; pointer-events:auto; transition-delay:0s; }
+@media (min-width:901px) and (max-width:1180px) { section > .wrap { padding-left:80px; } }
+.chat-fab-icon circle { opacity:.5; animation:chatDotGlow 5s ease-in-out infinite; }
+.chat-fab-icon circle:nth-of-type(2) { animation-delay:.18s; }
+.chat-fab-icon circle:nth-of-type(3) { animation-delay:.36s; }
+.chat-fab[aria-expanded="true"] .chat-fab-icon circle { animation:none; opacity:1; }
+@keyframes chatDotGlow { 0%, 28%, 100% { opacity:.5; } 12% { opacity:1; } }
+.section-reveal { opacity:0; transform:translateY(8px); transition:opacity .5s ease, transform .5s ease; transition-delay:var(--reveal-delay, 0ms); }
+.section-reveal.is-revealed { opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce) {
+  .chat-fab-icon circle { animation:none; opacity:1; }
+  .idx { transition:none; }
+  .section-reveal { opacity:1; transform:none; transition:none; }
+}
+@media print {
+  .idx { display:none; }
+  .section-reveal { opacity:1; transform:none; transition:none; }
+}
+
 
 
 /* Translucent coffee form on black */
@@ -477,7 +503,7 @@
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
 
 
-<nav class="idx" aria-label="섹션 인덱스">
+<nav class="idx" aria-label="섹션 인덱스" inert>
   <a href="#archive"><span class="n">01</span><span class="l">Archive</span></a>
   <a href="#method"><span class="n">02</span><span class="l">Method</span></a>
   <a href="#press"><span class="n">03</span><span class="l">Press</span></a>
@@ -1139,23 +1165,84 @@
     });
   }
 
-  // side index scrollspy
-  var links = Array.prototype.slice.call(document.querySelectorAll('.idx a'));
-  var map = {};
-  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (es) {
-      es.forEach(function (en) {
-        if (en.isIntersecting) {
-          links.forEach(function (a) { a.classList.remove('on'); });
-          var a = map[en.target.id];
-          if (a) a.classList.add('on');
-        }
+  // Keep the navigation in the real gutter, including after font loading.
+  var index = document.querySelector('.idx');
+  var sections = ['archive', 'method', 'press', 'tools', 'now', 'coffee'].map(function(id) {
+    return document.getElementById(id);
+  }).filter(Boolean);
+  var links = Array.prototype.slice.call(index.querySelectorAll('a'));
+  var archive = document.getElementById('archive');
+  var indexFits = false, scrollFrame = 0;
+  links.forEach(function(link) {
+    var label = link.textContent.replace(/\s+/g, ' ').trim();
+    link.setAttribute('aria-label', label);
+    link.setAttribute('title', label);
+  });
+
+  function updateIndex() {
+    scrollFrame = 0;
+    var visible = indexFits && archive.getBoundingClientRect().top < window.innerHeight * .85;
+    index.classList.toggle('is-visible', visible);
+    index.inert = !visible;
+    var active = sections[0];
+    sections.forEach(function(section) {
+      if (section.getBoundingClientRect().top <= window.innerHeight * .35) active = section;
+    });
+    links.forEach(function(link) {
+      var current = visible && link.hash === '#' + active.id;
+      link.classList.toggle('on', current);
+      if (current) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  }
+
+  function fitIndex() {
+    index.classList.remove('is-compact');
+    indexFits = window.matchMedia('(min-width: 901px)').matches;
+    if (indexFits) {
+      var contentLeft = Math.min.apply(null, sections.map(function(section) {
+        var wrap = section.querySelector('.wrap');
+        return wrap.getBoundingClientRect().left + parseFloat(getComputedStyle(wrap).paddingLeft);
+      }));
+      if (index.getBoundingClientRect().right + 20 > contentLeft) index.classList.add('is-compact');
+      indexFits = index.getBoundingClientRect().right + 16 <= contentLeft;
+    }
+    updateIndex();
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!scrollFrame) scrollFrame = requestAnimationFrame(updateIndex);
+  }, { passive:true });
+  window.addEventListener('resize', fitIndex);
+  window.addEventListener('pageshow', fitIndex);
+  fitIndex();
+  if (document.fonts) document.fonts.ready.then(fitIndex);
+
+  // Reveal only section introductions, once; body cards remain steady.
+  var motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if ('IntersectionObserver' in window && !motionPreference.matches) {
+    var introductions = [];
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-revealed');
+        revealObserver.unobserve(entry.target);
       });
-    }, { rootMargin: '-30% 0px -60% 0px' });
-    ['archive', 'method', 'press', 'tools', 'now', 'coffee'].forEach(function (id) {
-      var s = document.getElementById(id);
-      if (s) io.observe(s);
+    }, { threshold:.1, rootMargin:'0px 0px -24px 0px' });
+    sections.forEach(function(section) {
+      var wrap = section.querySelector('.wrap');
+      var elements = wrap.querySelectorAll(':scope > .cap, :scope > h2, :scope > .dek, :scope > .coffee-grid > .coffee-copy > .coffee-en, :scope > .coffee-grid > .coffee-copy > h2, :scope > .coffee-grid > .coffee-copy > p');
+      elements.forEach(function(element, i) {
+        element.style.setProperty('--reveal-delay', Math.min(i, 2) * 80 + 'ms');
+        element.classList.add('section-reveal');
+        introductions.push(element);
+        revealObserver.observe(element);
+      });
+    });
+    motionPreference.addEventListener('change', function(event) {
+      if (!event.matches) return;
+      revealObserver.disconnect();
+      introductions.forEach(function(element) { element.classList.add('is-revealed'); });
     });
   }
 })();
