@@ -267,15 +267,15 @@
   .chat-fab { position: fixed; right: 20px; bottom: 20px; z-index: 60; display: flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; padding: 14px 22px; cursor: pointer; color: #F2FBF6; background: linear-gradient(115deg, #0F4C55, #143C5E 70%); box-shadow: 0 8px 28px rgba(15,60,75,.35); transition: transform .18s ease, box-shadow .18s ease; }
   .chat-fab:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 12px 36px rgba(15,60,75,.45); }
   .chat-fab:active { transform: translateY(0) scale(.98); }
-  .chat-fab .dot { width: 8px; height: 8px; border-radius: 50%; background: #7FE3B8; animation: fabPulse 2s ease-in-out infinite; }
+  .chat-fab-icon { width: 26px; height: 26px; flex: 0 0 26px; color: #9DE2D5; }
   .chat-fab-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; text-align: left; }
   .chat-fab-label { font-family: var(--kr); font-size: 11px; font-weight: 400; line-height: 1.4; color: rgba(255,255,255,.78); white-space: nowrap; }
   .chat-fab .cta { font-family: var(--lat); font-size: 16.5px; font-weight: 400; letter-spacing: 0.01em; line-height: 1; }
   .chat-fab .cta em { font-style: italic; }
-  .chat-fab .arr { font-size: 13px; opacity: .7; transition: transform .18s ease; }
-  .chat-fab:hover .arr { transform: translateX(3px); }
-  @keyframes fabPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(127,227,184,.55); } 50% { box-shadow: 0 0 0 7px rgba(127,227,184,0); } }
-  .chat-fab[aria-expanded="true"] .dot { animation: none; }
+
+
+
+
   .chat { position: fixed; right: 20px; bottom: 98px; width: min(370px, calc(100vw - 40px)); height: min(500px, calc(100vh - 142px)); background: var(--card); border: 1px solid var(--rule); border-radius: 10px; display: flex; flex-direction: column; overflow: hidden; z-index: 60; box-shadow: 0 16px 48px rgba(0,0,0,.24); }
   .chat-hd { display: flex; justify-content: space-between; align-items: center; padding: 13px 16px; border-bottom: 1px solid var(--hair); }
   .chat-hd b { font-size: 13px; letter-spacing: -0.02em; }
@@ -372,7 +372,7 @@
   .tool-k { font-size:12px; }
   .cred-brand { height:62px; display:flex; align-items:center; margin-bottom:18px; }
   .cred-brand img { width:124px; height:54px; object-fit:contain; object-position:left center; background:#fff; border-radius:6px; padding:6px; }
-  #now .closer { max-width:100%; font-size:clamp(23px,3.3vw,36px); border-top-color:var(--teal); color:var(--teal); }
+  #now .closer { max-width:100%; font-size:clamp(19px,2.4vw,28px); font-weight:500; line-height:1.9; border-top-color:var(--teal); color:var(--teal); }
   @media(max-width:700px) { .client-logos { grid-template-columns:repeat(2,minmax(0,1fr)); } .tool-title { font-size:17px; } }
 .coffee { color:#0e2a3a; background:linear-gradient(110deg,rgba(232,246,235,.90),rgba(168,219,207,.75) 50%,rgba(96,155,178,.62)),url("https://d8j0ntlcm91z4.cloudfront.net/user_3J8DszeyNsjvFJ4gDWsgObcmpg9/hf_20260910_110655_49ec0a60-35c0-4d99-aab1-ed88fabcb0a8.png") center/cover; }
 .coffee .cap { border-color:rgba(14,42,58,.22); }
@@ -915,7 +915,7 @@
     <div class="cred"><div class="cred-brand"><img src="/assets/kyunghee-emblem.png" alt="경희대학교" loading="lazy" decoding="async"></div><div class="cred-t">경희대학교 생물학 (수료)</div><div class="cred-d">2013.03 — 2018.02 · 학위 미취득</div></div>
   </div>
 
-  <p class="closer">고객의 말을 매출로, 현장의 문제를 시스템으로.<br>제가 해온 일을 더 큰 무대에서 이어가고 싶습니다.</p>
+  <p class="closer">사람마다 다른 사정을 이해하고, 모르는 것은 배워가며,<br>함께 더 나은 방법을 찾는 사람이고 싶습니다.<br>그 과정이 서로에게 의미 있는 경험으로 남기를 바랍니다.</p>
 </div></section>
 
 <section id="coffee" class="coffee"><div class="wrap">
@@ -1008,7 +1008,7 @@
 })();
 </script>
 
-<button class="chat-fab" id="chatFab" aria-expanded="false" aria-controls="chat"><span class="dot" aria-hidden="true"></span><span class="chat-fab-copy"><span class="chat-fab-label">유신의 커리어 에이전트</span><span class="cta">Ask <em>me</em> anything</span></span><span class="arr" aria-hidden="true">→</span></button>
+<button class="chat-fab" id="chatFab" aria-expanded="false" aria-controls="chat"><svg class="chat-fab-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M20 11.5a8 8 0 0 1-8 8c-1.3 0-2.5-.3-3.6-.8L4 20l1.3-4.4A8 8 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="11.5" r=".85" fill="currentColor"/><circle cx="12" cy="11.5" r=".85" fill="currentColor"/><circle cx="15" cy="11.5" r=".85" fill="currentColor"/></svg><span class="chat-fab-copy"><span class="chat-fab-label">유신의 커리어 에이전트</span><span class="cta">Ask <em>me</em> anything</span></span></button>
 <div class="chat" id="chat" hidden>
   <div class="chat-hd">
     <div><b>Ask me anything</b><small>유신의 커리어 자료를 기반으로 답변드립니다</small></div>
