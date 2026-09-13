@@ -392,6 +392,10 @@
 .coffee-fields { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
 .coffee-form input,.coffee-form textarea { display:block; width:100%; min-width:0; margin-top:7px; font:400 14px/1.65 var(--kr); color:#0e2a3a; background:rgba(255,255,255,.8); border:1px solid #c7d8d8; border-radius:7px; padding:11px 12px; }
 .coffee-form textarea { resize:vertical; min-height:120px; }
+.social-links { display:flex; flex-wrap:wrap; justify-content:center; gap:12px 26px; margin-top:32px; padding-top:22px; border-top:1px solid var(--hair); }
+.social-links a { color:var(--ink); font-size:13px; text-decoration:none; padding:10px 2px; border-bottom:1px solid transparent; }
+.social-links a:hover { color:var(--teal); border-bottom-color:currentColor; }
+.social-links a:focus-visible { outline:2px solid var(--teal); outline-offset:4px; }
 .coffee-form input::placeholder,.coffee-form textarea::placeholder { color:#687b82; font-size:12px; }
 .coffee-submit,.coffee-cta { display:inline-flex; align-items:center; justify-content:center; gap:18px; font:600 13px/1.5 var(--kr); background:#125a63; color:#fff; border:0; border-radius:8px; padding:14px 20px; cursor:pointer; text-decoration:none; }
 .coffee-submit { width:100%; }
@@ -982,6 +986,12 @@
       <a class="coffee-direct" href="mailto:yusin846@gmail.com">메일로 직접 이야기하기</a>
     </form>
   </div>
+  <nav class="social-links" aria-label="유신의 소셜 채널">
+    <a href="https://www.linkedin.com/in/%EC%9C%A0%EC%8B%A0-%EA%B9%80-289428415/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필 (새 탭)">LinkedIn <span aria-hidden="true">↗</span></a>
+    <a href="https://brunch.co.kr/@rladbtls003" target="_blank" rel="noopener noreferrer" aria-label="Brunch 프로필 (새 탭)">Brunch <span aria-hidden="true">↗</span></a>
+    <a href="https://hhwl.tistory.com/" target="_blank" rel="noopener noreferrer" aria-label="Tistory 프로필 (새 탭)">Tistory <span aria-hidden="true">↗</span></a>
+    <a href="https://www.instagram.com/ryu_k1m/" target="_blank" rel="noopener noreferrer" aria-label="Instagram 프로필 (새 탭)">Instagram <span aria-hidden="true">↗</span></a>
+  </nav>
 </div></section>
 
 <div class="wrap"><footer>
