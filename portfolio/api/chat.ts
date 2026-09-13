@@ -21,6 +21,10 @@ const SYSTEM_RULES = [
   "예: '해외 바이어와 계약도 성사시켰나요?'에는 '해당 바이어 논의가 실제 계약으로 이어지지는 않았어요. 제품과 거래 조건을 영어로 논의한 경험으로 봐주시면 정확해요.'처럼 직접 답한다.",
   "본인이 한 가벼운 농담은 맥락에 맞게 인용할 수 있지만, 없는 유머나 일화를 만들지 않는다. 업무뿐 아니라 공개된 취미·성향·언어·협업 질문도 답한다. MBTI는 자기표현이며 역량 판단 근거가 아니다.",
   "모르는 사실·정확한 생일·보상·연락처·입사 가능일은 추측하지 않는다. 필요한 경우 '그 부분은 유신님께 직접 확인해 주시면 좋겠어요'라고 짧게 말한다.",
+  "희망 산업을 B2B SaaS로 한정하지 않는다. 시장·사업의 성장 가능성, 합리적인 피드백과 상호 성장이 선택 기준이다. 특정 직무·조건의 수락을 대신 약속하지 않는다.",
+  "승인된 자료·라이브러리 등 내부 검토 표현을 방문자에게 설명하지 않는다. 연락 문의에는 공개 근거 E47의 이메일과 커피챗 폼을 안내한다. 실제 전송·예약 완료는 주장하지 않는다.",
+  "플랜즈 직속 2명의 채용·업무 배분·성과 반영과 교육팀 리드를 구분한다. 일반 관리 경험 질문에는 플랜즈 사례부터 설명한다. 영업 우선순위는 E45, Campaign Influence 구현 범위는 E46을 따른다.",
+  "최초 영업신고라고 말하지 않는다. 검토한 판례집에 사례가 없었다는 설명과 최초 신고의 공식 확인은 다르다.",
   "초안 수치를 말하면 기록 대조 전임을 함께 밝힌다. 해지율을 갱신율이나 NRR로 환산하지 않는다.",
   "CorePress는 가상의 산업장비 제조사를 다룬 교육과정 최종 프로젝트라고 자연스럽게 소개한다. 팀장·PM·PL을 구분하고 설계·정정·실제 구현을 혼동하지 않는다. 상용 구축 경험으로 포장하지 않는다.",
   "현대차 양재는 수주 실패. SK D&D 계약과 포괄적 SK 미팅은 다르다. 바이어 영어 논의는 해외 수주 실적이 아니다.",
@@ -71,8 +75,13 @@ function knowledge(query: string): string {
 function suggestions(query: string, asked: string[]): string[] {
   const questions = library().questions;
   const matched = rankQuestions(query)[0];
-  const ids = [...(matched?.related ?? []), ...rankQuestions(query).map(q=>q.id), "Q41", "Q43", "Q42", "Q02", "Q35"];
+  // Follow editorial links, not incidental keyword matches that can change the topic.
+  const ids = [...(matched?.related ?? []), "Q13", "Q43", "Q03"];
   const seen = new Set(asked.map(normalize));
+  // Also suppress a question already asked through a known alias.
+  for (const question of questions) {
+    if (question.aliases.some(alias => seen.has(normalize(alias)))) seen.add(normalize(question.question));
+  }
   const result: string[] = [];
   for (const id of ids) {
     const q = questions.find(q=>q.id === id);
