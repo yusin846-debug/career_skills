@@ -545,6 +545,26 @@
 .tool-icon img[src$="/operations.webp"] {width:108.16px;height:108.16px;left:-4.68px;top:-10.94px;}
 .hero-name .hero-channels {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
 .hero-name .hero-channels a {font-size:12px;padding:9px 10px;gap:6px;}
+
+/* Editorial hierarchy: capability first, supporting object second. */
+#tools h2 {margin-bottom:32px;}
+.tool {padding:26px 28px 28px;}
+.tool-head {display:flex;align-items:center;justify-content:space-between;gap:12px;height:72px;margin-bottom:20px;}
+.tool-head .tool-k {margin:0;font-family:var(--kr);font-size:12px;font-weight:500;letter-spacing:.035em;color:#45656a;line-height:1.6;}
+.tool-head .tool-icon {flex:0 0 100px;margin:0;transform:scale(.78);transform-origin:right center;}
+.tool-title {margin:0 0 16px;font-size:18px;line-height:1.55;}
+.tool-v {font-size:13px;line-height:1.9;}
+.tool-learning {margin-top:20px;color:#536970;font-size:12px;}
+.tool-learning summary {cursor:pointer;min-height:44px;display:list-item;padding:11px 0;width:fit-content;}
+.tool-learning p {padding:4px 0 12px;}
+.tool-learning summary:focus-visible {outline:2px solid #125a63;outline-offset:4px;}
+.hero-name .hero-channels {display:flex;flex-wrap:wrap;gap:4px 20px;margin-top:20px;}
+.hero-name .hero-channels a,.writing-links a {justify-content:flex-start;gap:7px;min-height:44px;padding:9px 0;border:0;border-radius:0;background:transparent;color:#173f47;font-size:13px;text-decoration:none;}
+.hero-name .hero-channels a:hover,.writing-links a:hover {background:transparent;text-decoration:underline;text-underline-offset:5px;}
+.coffee .social-links {display:flex;flex-wrap:wrap;justify-content:center;gap:4px 28px;border-top-color:rgba(255,255,255,.16);}
+.coffee .social-links a {padding:10px 0;min-height:44px;border:0;border-radius:0;background:transparent;color:#f6eee5;}
+.coffee .social-links a:hover {background:transparent;color:#fff;text-decoration:underline;text-underline-offset:5px;}
+@media(max-width:520px) {.tool {padding:24px;} .tool-head {margin-bottom:16px;} .coffee .social-links {column-gap:24px;} }
 </style>
 
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
@@ -567,7 +587,7 @@
     <div class="hero-name">
       <div class="kr">김유신</div>
       <div class="en">KIM YUSHIN</div>
-      <nav class="hero-channels" aria-label="블로그와 소셜 채널"><a href="https://www.linkedin.com/in/%EC%9C%A0%EC%8B%A0-%EA%B9%80-289428415/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (새 탭)">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://brunch.co.kr/@rladbtls003" target="_blank" rel="noopener noreferrer" aria-label="Brunch 블로그 (새 탭)">Brunch <span aria-hidden="true">↗</span></a><a href="https://hhwl.tistory.com/" target="_blank" rel="noopener noreferrer" aria-label="Tistory 블로그 (새 탭)">Tistory <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/ryu_k1m/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (새 탭)">Instagram <span aria-hidden="true">↗</span></a></nav>
+      <nav class="hero-channels" aria-label="업무 이력과 글"><a href="https://www.linkedin.com/in/%EC%9C%A0%EC%8B%A0-%EA%B9%80-289428415/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (새 탭)">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://brunch.co.kr/@rladbtls003" target="_blank" rel="noopener noreferrer" aria-label="Brunch 블로그 (새 탭)">Brunch <span aria-hidden="true">↗</span></a></nav>
     </div>
     <div>
       <div class="creed">
@@ -583,7 +603,7 @@
         <span>CRM, Data &amp; AI</span>
         <span>Full-Funnel GTM</span>
       </div>
-      
+
 
     </div>
   </div>
@@ -850,7 +870,7 @@
             <div class="en-meta"><span class="en-cat">Fun &amp; Creativity</span><span class="en-org">글쓰기</span></div>
             <div class="en-t">브런치에 일 이야기를 씁니다</div>
             <div class="en-s">무인카페를 운영하면서 알게 된 것들을 정리해 올렸습니다. 영업하려고 쓴 게 아니었는데 계약이 나오기도 했습니다. <b>정리해두는 습관이 일이 되기도 합니다.</b></div>
-            <div class="writing-links"><a href="https://brunch.co.kr/@rladbtls003" target="_blank" rel="noopener noreferrer" aria-label="Brunch 블로그 (새 탭)">Brunch 블로그 <span aria-hidden="true">↗</span></a><a href="https://hhwl.tistory.com/" target="_blank" rel="noopener noreferrer" aria-label="Tistory 블로그 (새 탭)">Tistory 블로그 <span aria-hidden="true">↗</span></a></div>
+            <div class="writing-links"><a href="https://brunch.co.kr/@rladbtls003" target="_blank" rel="noopener noreferrer" aria-label="Brunch 블로그 (새 탭)">Brunch <span aria-hidden="true">↗</span></a><a href="https://hhwl.tistory.com/" target="_blank" rel="noopener noreferrer" aria-label="Tistory 블로그 (새 탭)">Tistory <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
 
@@ -946,15 +966,16 @@
 <!-- ══ 04 TOOLS ══ -->
 <section id="tools"><div class="wrap">
   <div class="cap"><span class="no">04</span><span class="en">Tools</span></div>
-  <h2>제가 일을 풀어내는 도구와 역량</h2>
+  <h2>마케팅과 세일즈를 연결하는 도구와 역량</h2>
   <div class="tools">
-    <div class="tool"><div class="tool-icon" aria-hidden="true"><img src="assets/tools/sales.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div><div class="tool-k">Sales &amp; Ops</div><div class="tool-title">고객을 만나 계약으로 잇습니다</div><div class="tool-v">Trello · Asana · Relate<br>파이프라인 설계 · 채널 운영</div></div>
-    <div class="tool"><div class="tool-icon" aria-hidden="true"><img src="assets/tools/crm.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div><div class="tool-k">CRM &amp; Data</div><div class="tool-title">현장의 요구를 CRM으로 옮깁니다</div><div class="tool-v">Salesforce <span style="color:var(--teal)">Certified Platform Admin</span><br>Agentforce · SQL · JavaScript<br>캠페인 계층 · Campaign Influence의 개념과 활용 구조 이해</div></div>
-    <div class="tool"><div class="tool-icon" aria-hidden="true"><img src="assets/tools/design.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div><div class="tool-k">Design</div><div class="tool-title">생각을 눈에 보이게 만듭니다</div><div class="tool-v">Figma · Sketch · Adobe CC<br>AI 프로토타이핑 — Claude · Higgsfield</div></div>
-    <div class="tool"><div class="tool-icon" aria-hidden="true"><img src="assets/tools/business.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div><div class="tool-k">Business</div><div class="tool-title">사업의 숫자와 구조를 정리합니다</div><div class="tool-v">원가 · 물류 협상<br>ERP 도입 · 세무 구조</div></div>
-    <div class="tool"><div class="tool-icon" aria-hidden="true"><img src="assets/tools/product.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div><div class="tool-k">Product</div><div class="tool-title">고객의 요구를 제품에 담습니다</div><div class="tool-v">요구사항 정의<br>OEM 공동 개발</div></div>
-    <div class="tool"><div class="tool-icon" aria-hidden="true"><img src="assets/tools/operations.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div><div class="tool-k">Operations</div><div class="tool-title">잘된 방식을 팀의 기준으로 만듭니다</div><div class="tool-v">업무 표준화 · SOP 설계<br>밸리데이션</div></div>
+    <div class="tool"><div class="tool-head"><div class="tool-k">Sales &amp; Marketing</div><div class="tool-icon" aria-hidden="true"><img src="assets/tools/sales.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div></div><div class="tool-title">고객을 만나 계약으로 잇습니다</div><div class="tool-v">Trello · Asana · Relate<br>파이프라인 설계 · 채널 운영</div></div>
+    <div class="tool"><div class="tool-head"><div class="tool-k">CRM &amp; Data</div><div class="tool-icon" aria-hidden="true"><img src="assets/tools/crm.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div></div><div class="tool-title">현장의 요구를 CRM으로 옮깁니다</div><div class="tool-v">Salesforce <span style="color:var(--teal)">Certified Platform Admin</span><br>Agentforce · SQL · JavaScript</div></div>
+    <div class="tool"><div class="tool-head"><div class="tool-k">Design &amp; AI</div><div class="tool-icon" aria-hidden="true"><img src="assets/tools/design.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div></div><div class="tool-title">생각을 눈에 보이게 만듭니다</div><div class="tool-v">Figma · Sketch · Adobe CC<br>AI 프로토타이핑 — Claude · Higgsfield</div></div>
+    <div class="tool"><div class="tool-head"><div class="tool-k">Business</div><div class="tool-icon" aria-hidden="true"><img src="assets/tools/business.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div></div><div class="tool-title">사업의 숫자와 구조를 정리합니다</div><div class="tool-v">원가 · 물류 협상<br>ERP 도입 · 세무 구조</div></div>
+    <div class="tool"><div class="tool-head"><div class="tool-k">Product</div><div class="tool-icon" aria-hidden="true"><img src="assets/tools/product.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div></div><div class="tool-title">고객의 요구를 제품에 담습니다</div><div class="tool-v">요구사항 정의<br>OEM 공동 개발</div></div>
+    <div class="tool"><div class="tool-head"><div class="tool-k">Operations</div><div class="tool-icon" aria-hidden="true"><img src="assets/tools/operations.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div></div><div class="tool-title">잘된 방식을 팀의 기준으로 만듭니다</div><div class="tool-v">업무 표준화 · SOP 설계<br>밸리데이션</div></div>
   </div>
+  <details class="tool-learning"><summary>CRM 학습 범위</summary><p>캠페인 계층 · Campaign Influence의 개념과 활용 구조 이해</p></details>
 </div></section>
 
 <!-- ══ 05 NOW ══ -->
@@ -1018,8 +1039,8 @@
   </div>
   <nav class="social-links" aria-label="유신의 소셜 채널">
     <a href="https://www.linkedin.com/in/%EC%9C%A0%EC%8B%A0-%EA%B9%80-289428415/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필 (새 탭)">LinkedIn <span aria-hidden="true">↗</span></a>
-    <a href="https://brunch.co.kr/@rladbtls003" target="_blank" rel="noopener noreferrer" aria-label="Brunch 프로필 (새 탭)">Brunch 블로그 <span aria-hidden="true">↗</span></a>
-    <a href="https://hhwl.tistory.com/" target="_blank" rel="noopener noreferrer" aria-label="Tistory 프로필 (새 탭)">Tistory 블로그 <span aria-hidden="true">↗</span></a>
+    <a href="https://brunch.co.kr/@rladbtls003" target="_blank" rel="noopener noreferrer" aria-label="Brunch 프로필 (새 탭)">Brunch <span aria-hidden="true">↗</span></a>
+    <a href="https://hhwl.tistory.com/" target="_blank" rel="noopener noreferrer" aria-label="Tistory 프로필 (새 탭)">Tistory <span aria-hidden="true">↗</span></a>
     <a href="https://www.instagram.com/ryu_k1m/" target="_blank" rel="noopener noreferrer" aria-label="Instagram 프로필 (새 탭)">Instagram <span aria-hidden="true">↗</span></a>
   </nav>
 </div></section>
