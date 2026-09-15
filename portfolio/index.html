@@ -623,6 +623,18 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 .demand-mail {margin:0 0 32px;padding:20px;background:var(--sunk);border-radius:10px;}
 .demand-mail img {width:auto;max-width:100%;border-radius:4px;}
 @media(max-width:650px){.demand-grid {grid-template-columns:1fr;gap:32px;}}
+
+.corepress-resources {margin-top:32px;padding-top:28px;border-top:1px solid var(--rule);max-width:640px;}
+.corepress-resources h3 {font-size:17px;font-weight:600;line-height:1.6;margin:0 0 18px;letter-spacing:-.02em;}
+.corepress-links {display:flex;align-items:stretch;flex-wrap:wrap;gap:12px;}
+.corepress-links a {display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 16px;border:1px solid var(--rule);border-radius:8px;text-decoration:none;font-size:13px;line-height:1.7;}
+.corepress-links .primary {background:var(--teal);color:var(--paper);border-color:var(--teal);}
+.corepress-links a:focus-visible {outline:2px solid var(--teal);outline-offset:4px;}
+.corepress-access {font-size:12px;line-height:1.8;color:var(--ink-2);margin:14px 0 24px;}
+.corepress-resources figure {margin:0;}
+.corepress-resources img {display:block;width:100%;height:auto;border-radius:10px;}
+.corepress-resources figcaption {font-size:12px;line-height:1.7;color:var(--ink-2);margin-top:12px;}
+@media(max-width:520px){.corepress-links {display:grid;grid-template-columns:1fr;gap:10px;}.corepress-resources {padding-top:24px;}.corepress-links a {width:100%;}}
 </style>
 
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
@@ -902,8 +914,15 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 <p>저는 <b>팀리더로서 PM·PL과 조율하며 CorePress의 요구사항을 조정</b>했습니다. 프로젝트의 범위와 구현 방향에 고객의 요구가 반영되도록 논의를 이끌고, 비즈니스 시나리오를 Salesforce의 업무 흐름으로 연결했습니다. Experience Cloud 고객사 포털도 직접 제작했습니다.</p>
 <p>팀은 <b>Experience Cloud → Opportunity → Asset → Case → Field Service → 리포팅</b>으로 이어지는 흐름과 제한된 범위의 Agentforce 활용 시나리오를 다뤘습니다. 저는 최종 발표의 구성과 발표도 맡았습니다.</p>
 <p>포털 접점에서 리드 수집과 영업기회 전환, RFP·RFQ·견적·계약, 설치 이후 Field Service와 Agentforce까지 이어지는 고객 여정을 다뤘습니다. 구현 범위와 설계 의도는 별도 아티클에 정리했습니다.</p><div class="pull">최종 평가에서 <b>4개 프로젝트 중 1위로 최우수상(Grand Prize)</b>을 수상했습니다.</div>
-</div></div>
-<div class="corepress-resources" style="margin-top:28px"><div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px"><a href="/corepress.html" style="padding:10px 16px;background:var(--teal);color:white;border-radius:8px;text-decoration:none">CorePress 프로젝트 아티클</a><a href="/assets/corepress/CorePress_ValueEngineering_v3.12.pdf" target="_blank" rel="noopener" style="padding:10px 16px;border:1px solid var(--hair);border-radius:8px">발표자료 PDF</a><span style="padding:10px 0;font-size:12px;color:var(--ink-2)">고객 포털 직접 제작 · 현재 계정 접근 제한</span></div><figure style="margin:0;max-width:640px"><img src="/assets/corepress/award-team.webp" width="480" height="360" loading="lazy" alt="CorePress 팀 최우수 프로젝트 Grand Prize 수상 사진" style="display:block;width:100%;height:auto;border-radius:10px"><figcaption style="font-size:12px;color:var(--ink-2);margin-top:10px">4개 프로젝트 중 1위 · 최우수 프로젝트 팀(Grand Prize)</figcaption></figure></div></article>
+</div>
+<section class="corepress-resources" aria-label="CorePress 프로젝트 자료">
+<h3>프로젝트 자료와 수상 기록</h3>
+<nav class="corepress-links" aria-label="CorePress 자료 링크"><a class="primary" href="/corepress.html">프로젝트 아티클 읽기</a><a href="/assets/corepress/CorePress_ValueEngineering_v3.12.pdf" target="_blank" rel="noopener">발표자료 PDF</a></nav>
+<p class="corepress-access">Experience Cloud 고객 포털 직접 제작 · 현재 교육용 계정 접근 제한</p>
+<figure><img src="/assets/corepress/award-team.webp" width="480" height="360" loading="lazy" alt="CorePress 팀 최우수 프로젝트 Grand Prize 수상 사진"><figcaption>4개 프로젝트 중 1위 · 최우수 프로젝트 팀(Grand Prize)</figcaption></figure>
+</section>
+</div>
+</article>
 
         <!-- BM -->
         <article class="en" data-cat="bm" data-fit="13" data-time="3">
