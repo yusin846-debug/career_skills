@@ -648,6 +648,14 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 .gohaet-team-photo img {display:block;width:100%;height:auto;}
 .gohaet-team-photo figcaption {margin-top:12px;font-size:14px;line-height:1.7;color:var(--ink);}
 .gohaet-team-photo figcaption span {display:block;margin-top:4px;font-size:11px;color:var(--ink-2);}
+.ax-photo {margin:28px 0;}
+.ax-photo a {display:block;border-radius:10px;overflow:hidden;}
+.ax-photo a:focus-visible {outline:2px solid var(--teal);outline-offset:4px;}
+.ax-photo img {display:block;width:100%;height:auto;}
+.ax-photo figcaption {margin-top:10px;font-size:12px;line-height:1.7;color:var(--ink-2);}
+.ax-photo-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 28px;}
+.ax-photo-grid .ax-photo {margin:0;}
+@media(max-width:420px){.ax-photo-grid {grid-template-columns:1fr;}}
 </style>
 
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
@@ -702,12 +710,12 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
     <!-- board nav -->
     <nav class="bnav">
       <div class="ghd">업무</div>
-      <button class="bt" data-cat="all" aria-pressed="true">전체 <span class="ct">17</span></button>
+      <button class="bt" data-cat="all" aria-pressed="true">전체 <span class="ct">18</span></button>
       <button class="bt" data-cat="sales" aria-pressed="false">Sales <span class="ct">5</span></button>
       <button class="bt" data-cat="gtm" aria-pressed="false">GTM <span class="ct">2</span></button>
       <button class="bt" data-cat="product" aria-pressed="false">Product <span class="ct">4</span></button>
       <button class="bt" data-cat="bm" aria-pressed="false">BM <span class="ct">3</span></button>
-      <button class="bt" data-cat="ax" aria-pressed="false">AX <span class="ct">0</span></button>
+      <button class="bt" data-cat="ax" aria-pressed="false">AX <span class="ct">1</span></button>
       <div class="sep"></div>
       <div class="ghd">그 밖에</div>
       <button class="bt" data-cat="fun" aria-pressed="false">Fun &amp; Creativity <span class="ct">2</span></button>
@@ -718,7 +726,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
     <div>
       <div class="btools">
         <span></span>
-        <div class="bcount" id="bcount">17개</div>
+        <div class="bcount" id="bcount">18개</div>
       </div>
 
       <div class="entries" id="entries">
@@ -978,6 +986,29 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
                 <figcaption>함께 일하던 이모님들을 모두 지켰습니다.<span>고른햇살 직원들과 함께한 사진</span></figcaption>
               </figure>
               <div class="pull">이 일에서 크게 배운 건 원가 협상이 다른 업종에서도 통한다는 사실이 아니었습니다. 지켜야 할 것을 먼저 정해놓고 시작하면, 나머지를 푸는 방법은 대체로 있다는 쪽이었습니다.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- AX -->
+        <article class="en" data-cat="ax" data-fit="15.5" data-time="2">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">AX</span><span class="en-org">SKT 협업 · AI 커머스 전시</span><span class="en-yr">2025</span></div>
+            <div class="en-t">자동판매기와 키오스크를, 에이전트가 고객을 만나는 접점으로</div>
+            <div class="en-s">SKT와 협업 개발한 전시 사례를 통해, <b>자동판매기·키오스크 등 커머스 접점에서 에이전트를 활용하는 비전</b>을 제시했습니다. 현장에서 최태원 회장에게 직접 소개하는 기회도 가졌습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p>2025년 SKT와 협업해 개발을 진행하고 전시에 참여했습니다. 주제는 자동판매기와 키오스크처럼 고객이 제품을 선택하고 구매하는 <b>커머스 엔드포인트에서 에이전트를 어떻게 활용할 것인가</b>였습니다.</p>
+              <div class="beat">고객과 맞닿은 기기에서, 에이전트의 활용 가능성을 제시했습니다.</div>
+              <p>전시 현장에서 협업 개발 결과와 활용 비전을 소개했습니다. 최태원 회장에게 직접 소개하는 자리도 있었습니다. 현장 사업 경험을 바탕으로 AI가 고객을 만나는 접점에서 어떤 역할을 할 수 있을지 설명하는 기회였습니다.</p>
+              <figure class="ax-photo"><a href="/assets/cases/skt-vending-demo.webp" target="_blank" rel="noopener" aria-label="AI Vending Machine 전시 현장 사진 크게 보기"><img src="/assets/cases/skt-vending-demo.webp" alt="AI Vending Machine 전시 기기 앞에 모인 관람객들" loading="lazy" decoding="async"></a><figcaption>AI Vending Machine 전시 현장 · 기기 앞에서 설명을 듣는 관람객들</figcaption></figure>
+              <div class="ax-photo-grid">
+                <figure class="ax-photo"><a href="/assets/cases/skt-ai-commerce.webp" target="_blank" rel="noopener" aria-label="AI X Commerce 부스 사진 크게 보기"><img src="/assets/cases/skt-ai-commerce.webp" alt="AI X Commerce 구역의 AI Vending Machine 전시 부스" loading="lazy" decoding="async"></a><figcaption>AI X Commerce · 자동판매기 전시 부스</figcaption></figure>
+                <figure class="ax-photo"><a href="/assets/cases/skt-exhibition.webp" target="_blank" rel="noopener" aria-label="SK 전시 공간 사진 크게 보기"><img src="/assets/cases/skt-exhibition.webp" alt="SK 로고와 AI Infra 구역이 보이는 전시장" loading="lazy" decoding="async"></a><figcaption>SK 전시 공간</figcaption></figure>
+              </div>
+              <div class="pull">자동판매기·키오스크를 운영하며 쌓은 현장 경험을, 커머스 접점의 에이전트 활용 비전으로 확장했습니다.</div>
             </div>
           </div>
         </article>
