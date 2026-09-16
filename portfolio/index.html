@@ -656,6 +656,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 .ax-photo-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 28px;}
 .ax-photo-grid .ax-photo {margin:0;}
 @media(max-width:420px){.ax-photo-grid {grid-template-columns:1fr;}}
+.board {overflow-anchor:none;}
 </style>
 
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
@@ -1278,7 +1279,10 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
   var count = document.getElementById('bcount');
   var cat = 'all', mode = 'fit';
 
-  function apply() {
+  var appliedSort = null;
+  var resultScrollFrame = 0;
+
+  function apply(alignResults) {
     var n = 0;
     items.forEach(function (el) {
       var show = cat === 'all' || el.dataset.cat === cat;
@@ -1287,15 +1291,29 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
     });
     count.textContent = n + '개';
     var vis = [];
-    items.slice().sort(function (a, b) {
+    var ordered = items.slice().sort(function (a, b) {
       return (+a.dataset[mode]) - (+b.dataset[mode]);
-    }).forEach(function (el) { list.appendChild(el); if (!el.hidden) vis.push(el); });
+    });
+    ordered.forEach(function (el) {
+      if (appliedSort !== mode) list.appendChild(el);
+      if (!el.hidden) vis.push(el);
+    });
+    appliedSort = mode;
     vis.forEach(function (el, i) {
       el.classList.remove('anim-in');
       void el.offsetWidth;
       el.style.animationDelay = Math.min(i * 45, 400) + 'ms';
       el.classList.add('anim-in');
     });
+    if (alignResults) {
+      cancelAnimationFrame(resultScrollFrame);
+      resultScrollFrame = requestAnimationFrame(function () {
+        // Use the stable board, not animated cards or the sticky filter position.
+        var board = list.closest('.board');
+        var top = window.scrollY + board.getBoundingClientRect().top - 24;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'instant' });
+      });
+    }
   }
 
   cats.forEach(function (b) {
@@ -1303,7 +1321,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
       cats.forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
       b.setAttribute('aria-pressed', 'true');
       cat = b.dataset.cat;
-      apply();
+      apply(true);
     });
   });
 
@@ -1312,7 +1330,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
       sorts.forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
       b.setAttribute('aria-pressed', 'true');
       mode = b.dataset.sort;
-      apply();
+      apply(true);
     });
   });
 
