@@ -710,12 +710,12 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
     <!-- board nav -->
     <nav class="bnav">
       <div class="ghd">업무</div>
-      <button class="bt" data-cat="all" aria-pressed="true">전체 <span class="ct">18</span></button>
+      <button class="bt" data-cat="all" aria-pressed="true">전체 <span class="ct">19</span></button>
       <button class="bt" data-cat="sales" aria-pressed="false">Sales <span class="ct">5</span></button>
       <button class="bt" data-cat="gtm" aria-pressed="false">GTM <span class="ct">2</span></button>
       <button class="bt" data-cat="product" aria-pressed="false">Product <span class="ct">4</span></button>
       <button class="bt" data-cat="bm" aria-pressed="false">BM <span class="ct">3</span></button>
-      <button class="bt" data-cat="ax" aria-pressed="false">AX <span class="ct">1</span></button>
+      <button class="bt" data-cat="ax" aria-pressed="false">AX <span class="ct">2</span></button>
       <div class="sep"></div>
       <div class="ghd">그 밖에</div>
       <button class="bt" data-cat="fun" aria-pressed="false">Fun &amp; Creativity <span class="ct">2</span></button>
@@ -726,7 +726,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
     <div>
       <div class="btools">
         <span></span>
-        <div class="bcount" id="bcount">18개</div>
+        <div class="bcount" id="bcount">19개</div>
       </div>
 
       <div class="entries" id="entries">
@@ -1013,6 +1013,29 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
           </div>
         </article>
 
+        <article class="en" data-cat="ax" data-fit="15.6" data-time="1.5">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">AX</span><span class="en-org">CorePress · Agentforce · 교육용 팀 POC</span><span class="en-yr">2026</span></div>
+            <div class="en-t">문서와 고객 레코드를 연결해, 답변에서 업무 작성까지 확장했습니다</div>
+            <div class="en-s">PDF 지식과 고객 레코드를 답변 근거로 활용하는 Agentforce 에이전트를 Experience Cloud에 구현했습니다. <b>견적·계약서 자동 입력 구조를 구현하고, Field Service 배정 스코어링에 에이전트를 활용할 기반</b>도 마련했습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p>가상 산업장비 제조사 CorePress의 <b>교육용 팀 POC</b>에서 Agentforce를 활용한 AX를 구현했습니다. 고객 문의에 답하는 것에서 출발해, 영업 문서 작성과 현장 서비스의 배정 판단을 지원하는 방향으로 확장했습니다.</p>
+              <div class="beat">PDF의 지식과 레코드의 맥락을, 답변의 근거로 연결했습니다.</div>
+              <p><b>데이터 라이브러리와 레코드 그라운딩</b> — PDF 기반 자료를 Data 360의 데이터 라이브러리에 구성하고, 각 레코드도 답변 근거로 활용할 수 있도록 데이터 구조를 잡았습니다. 문서에 담긴 설명과 레코드에 담긴 고객·업무 맥락을 함께 활용하는 구조였습니다.</p>
+              <p><b>Experience Cloud 고객 포털 에이전트</b> — 도입 상담과 CS뿐 아니라 더 넓은 범위의 문의에 답할 수 있는 에이전트를 개발해 고객 포털에 구현했습니다.</p>
+              <p><b>견적·계약서 작성 지원</b> — 과거 레코드를 기반으로 문서의 머지 필드를 자동 입력해, 견적과 계약서를 빠르게 작성할 수 있도록 돕는 에이전트 구조를 구현했습니다.</p>
+              <p><b>Field Service 배정 지원 기반</b> — 디스패처의 배정 판단에 사용하는 스코어링의 정확성을 높이기 위해 에이전트를 활용할 수 있는 기반을 마련했습니다. 배정 정확도 향상은 이후 검증할 과제입니다.</p>
+              <div class="beat">답변을 잘 만드는 것만큼, 답하지 못하는 상황을 설계하는 일이 중요했습니다.</div>
+              <p>구현 과정에서 <b>폴백 구조와 라우팅 설계의 중요성</b>을 배웠습니다. 근거가 부족하거나 처리 범위를 벗어난 문의를 어떻게 다룰지, 어떤 조건에서 다른 처리 경로로 연결할지를 함께 고민해야 했습니다. 에이전트가 처리할 수 있는 범위와 다음 단계로 넘길 기준을 명확히 하는 것이 중요한 설계 과제였습니다.</p>
+              <p>현재는 <b>Salesforce Agentforce Specialist 자격증을 준비</b>하며, 프로젝트에서 경험한 에이전트 설계와 데이터 활용을 더 체계적으로 학습하고 있습니다.</p>
+              <nav class="corepress-links" aria-label="CorePress Agentforce 관련 자료"><a href="/corepress.html">CorePress 전체 프로젝트 아티클 읽기 ↗</a></nav>
+            </div>
+          </div>
+        </article>
+
         <!-- FOR FUN -->
         <article class="en" data-cat="fun" data-fit="16" data-time="16">
           <div class="en-hd">
@@ -1161,7 +1184,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
     <div class="tool"><div class="tool-head"><div class="tool-k">Product</div><div class="tool-icon" aria-hidden="true"><img src="assets/tools/product.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div></div><div class="tool-title">고객의 요구를 제품에 담습니다</div><div class="tool-v">요구사항 정의<br>OEM 공동 개발</div></div>
     <div class="tool"><div class="tool-head"><div class="tool-k">Operations</div><div class="tool-icon" aria-hidden="true"><img src="assets/tools/operations.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div></div><div class="tool-title">잘된 방식을 팀의 기준으로 만듭니다</div><div class="tool-v">업무 표준화 · SOP 설계<br>밸리데이션</div></div>
   </div>
-  <details class="tool-learning"><summary>디자인·개발·데이터 역량과 학습 범위</summary><p>디자인: Figma · Zeplin · Illustrator · Photoshop · Sketch 능숙한 활용<br>직접 수행: 플랜즈커피 키오스크 UI · 제품 디자인 · 고객사 도입 공간 설계<br>프론트엔드: HTML · CSS · JavaScript · React · LWC 기반 Experience Cloud 개발 경험<br>백엔드: AI를 활용한 기능 구현 · Java/Apex 코드 해석 및 전반적인 아키텍처 이해<br>데이터: 객체·필드·관계 설계 및 해석 기초<br>CRM: 캠페인 계층 · Campaign Influence의 개념과 활용 구조 이해</p></details>
+  <details class="tool-learning"><summary>디자인·개발·데이터 역량과 학습 범위</summary><p>디자인: Figma · Zeplin · Illustrator · Photoshop · Sketch 능숙한 활용<br>직접 수행: 플랜즈커피 키오스크 UI · 제품 디자인 · 고객사 도입 공간 설계<br>프론트엔드: HTML · CSS · JavaScript · React · LWC 기반 Experience Cloud 개발 경험<br>백엔드: AI를 활용한 기능 구현 · Java/Apex 코드 해석 및 전반적인 아키텍처 이해<br>데이터: 객체·필드·관계 설계 및 해석 기초<br>CRM: 캠페인 계층 · Campaign Influence의 개념과 활용 구조 이해<br>현재 학습: Salesforce Agentforce Specialist 자격증 준비 중</p></details>
 </div></section>
 
 <!-- ══ 05 NOW ══ -->
