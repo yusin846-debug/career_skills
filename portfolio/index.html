@@ -687,30 +687,26 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 @media(max-width:850px){.peer-album{columns:2}}
 @media(max-width:520px){.peer-album{column-gap:12px}.peer-album figure{padding:6px 6px 10px;margin-bottom:14px}.peer-album figcaption{font-size:11px;padding:9px 3px 0}.peer-quotes{grid-template-columns:1fr;gap:14px}#peers .peer-intro{font-size:15px}.peer-dialog{padding:12px}.peer-dialog img{max-height:68vh}}
 
-/* Photo collage: warm paper, oversized type, blue sticker accents. */
-#peers{overflow:hidden}
-#peers .wrap{position:relative}
+/* Two open photos, followed by a compact stack of seven. */
+#peers{overflow:hidden}#peers .wrap{position:relative}
 #peers h2{font-size:clamp(34px,5.4vw,66px);font-weight:700;line-height:1.25;max-width:12em}
-.peer-album{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:48px 24px;columns:auto;align-items:center;padding:40px 12px 65px}
-.peer-album figure{position:relative;margin:0;padding:9px;background:#fffdfa;box-shadow:0 12px 28px #58432b1c;transition:transform .25s ease,box-shadow .25s ease;z-index:1}
-.peer-album figure:nth-of-type(1){grid-column:1/8;transform:rotate(-3deg)}
-.peer-album figure:nth-of-type(2){grid-column:8/13;transform:rotate(5deg);margin-top:100px}
-.peer-album figure:nth-of-type(3){grid-column:1/5;transform:rotate(-5deg)}
-.peer-album figure:nth-of-type(4){grid-column:5/13;transform:rotate(2deg)}
-.peer-album figure:nth-of-type(5){grid-column:2/7;transform:rotate(3deg)}
-.peer-album figure:nth-of-type(6){grid-column:7/13;transform:rotate(-4deg)}
-.peer-album figure:nth-of-type(7){grid-column:1/5;transform:rotate(-3deg)}
-.peer-album figure:nth-of-type(8){grid-column:5/10;transform:rotate(4deg)}
-.peer-album figure:nth-of-type(9){grid-column:10/13;transform:rotate(-4deg)}
-.peer-album figure:hover,.peer-album figure:focus-within{transform:rotate(0) translateY(-6px);z-index:3;box-shadow:0 18px 36px #58432b2a}
-.peer-sticker{position:absolute;z-index:4;pointer-events:none;user-select:none;filter:drop-shadow(0 5px 2px #493d3520)}
-.peer-sticker.sf{width:clamp(95px,14vw,165px);right:3%;top:-12px;transform:rotate(12deg);background:white;padding:12px;border-radius:48%}
-.peer-sticker.sf img{display:block;width:100%}
-.peer-sticker.trail{left:34%;top:29%;background:#0176d3;color:white;font:700 clamp(17px,2.5vw,28px)/1.1 Arial,sans-serif;padding:17px 25px;border:6px solid white;transform:rotate(-12deg);border-radius:50%}
-.peer-sticker.force{right:1%;top:62%;background:#dcedff;color:#064c87;font:700 clamp(20px,3vw,34px)/1.1 Arial,sans-serif;padding:20px;border:6px solid white;transform:rotate(10deg);border-radius:35% 55% 40% 50%}
-.peer-sticker.star{left:1%;top:63%;font-size:88px;color:#0176d3;transform:rotate(10deg);text-shadow:3px 3px white,-3px -3px white}
-@media(prefers-reduced-motion:reduce){.peer-album figure{transition:none}}
-@media(max-width:650px){.peer-album{gap:28px 15px;padding:35px 7px 40px}.peer-album figure{padding:5px}.peer-album figure:nth-of-type(1){grid-column:1/12}.peer-album figure:nth-of-type(2){grid-column:4/13;margin-top:0}.peer-album figure:nth-of-type(3){grid-column:1/6}.peer-album figure:nth-of-type(4){grid-column:6/13}.peer-album figure:nth-of-type(5){grid-column:1/7}.peer-album figure:nth-of-type(6){grid-column:7/13}.peer-album figure:nth-of-type(7){grid-column:1/6}.peer-album figure:nth-of-type(8){grid-column:6/13}.peer-album figure:nth-of-type(9){grid-column:3/11}.peer-sticker.sf{right:-5px;top:-15px;width:100px}.peer-sticker.trail{left:0;top:29%;padding:12px;border-width:4px;font-size:17px}.peer-sticker.force{right:-7px;top:59%;padding:13px;border-width:4px;font-size:20px}.peer-sticker.star{font-size:55px;top:57%}}
+.peer-album{display:grid;grid-template-columns:1.25fr 1fr;columns:auto;gap:30px;align-items:center;padding:16px 10px 45px}
+.peer-album figure{margin:0;padding:8px;background:#fffdfa;box-shadow:0 12px 28px #58432b1c;transform:rotate(-2deg)}
+.peer-album figure:nth-child(2){transform:rotate(3deg);margin-top:45px}
+.peer-stack-gallery{max-width:760px;margin:12px auto 42px;padding:30px 22px 0}
+.peer-stack{position:relative;isolation:isolate}
+.peer-stack::before,.peer-stack::after{content:"";position:absolute;inset:0;border:8px solid #fffdfa;background:#e4c7aa;box-shadow:0 8px 20px #58432b14;z-index:-1;transform:translateY(-12px) rotate(-3deg)}
+.peer-stack::after{background:#d1dce1;transform:translateY(-21px) rotate(2deg);z-index:-2}
+.peer-stack-card{margin:0;background:#fffdfa;padding:10px;box-shadow:0 12px 28px #58432b1c}
+.peer-stack-card[hidden]{display:none}
+.peer-stack-card .peer-photo img{height:clamp(260px,36vw,430px);width:100%;object-fit:contain;background:#f6f0e7}
+.peer-stack-controls{display:flex;justify-content:center;align-items:center;gap:24px;margin-top:24px}
+.peer-stack-controls button{width:44px;height:44px;border:1px solid #ccb49d;border-radius:50%;background:transparent;color:#493d35;font-size:21px;cursor:pointer}
+.peer-stack-controls button:hover{background:#493d35;color:#fffaf3}
+.peer-stack-controls button:focus-visible{outline:3px solid #986c4b;outline-offset:3px}
+.peer-stack-count{font-size:13px;font-variant-numeric:tabular-nums}
+@media(max-width:650px){.peer-album{gap:16px;padding:12px 4px 32px}.peer-album figure{padding:5px}.peer-album figure:nth-child(2){margin-top:24px}.peer-stack-gallery{padding:25px 12px 0;margin-bottom:30px}.peer-stack-card{padding:6px}.peer-album-label{align-items:start;font-size:11px}.peer-album-label span:last-child{text-align:right}}
+
 </style>
 
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
@@ -1198,9 +1194,13 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 <div class="cap"><span class="no">03</span><span class="en">Good times, together</span></div>
 <h2>함께해서 더 좋았던 시간</h2>
 <p class="peer-intro">저는 사람을 좋아합니다. 같이 밥을 먹고 이야기를 나누는 시간도, 막힌 문제를 함께 풀어가는 과정도 즐깁니다. 4개월의 Salesforce 과정에서도 그렇게 배우고 어울렸습니다. 돌아보니 함께 웃는 사진이 참 많이 남았습니다.</p>
-<div class="peer-album-label"><span>우리의 4개월 · 사진 9장</span><span>사진을 누르면 크게 볼 수 있어요</span></div>
-<div class="peer-album"><span class="peer-sticker sf" aria-hidden="true"><img src="assets/peers/salesforce.svg" alt=""></span><span class="peer-sticker trail" aria-hidden="true">Trailblazers</span><span class="peer-sticker force" aria-hidden="true">유신 force</span><span class="peer-sticker star" aria-hidden="true">✳</span><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/team-award.jpeg" alt="최우수 프로젝트 팀 수상 후, 동료들과 함께" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/lunch.jpeg" alt="동료들과 음식을 나누며 함께한 점심시간" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/photobooth.jpeg" alt="재미있는 안경을 쓰고 동료들과 찍은 포토이즘 사진" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/event.jpeg" alt="Salesforce 행사장에서 동료들과 찍은 사진" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/mvp-award.jpeg" alt="AI CRM track MVP 수상 현장" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/presentation.jpeg" alt="교육과정에서 마이크를 들고 발표하는 김유신" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/keepsake.jpeg" alt="동료들과 함께한 사진이 실린 인쇄물" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/letters.jpg" alt="수료 후 동료들이 보내준 편지와 유신 force 봉투" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/message.jpeg" alt="교육과정에서 받은 도움과 적응에 대한 감사 메시지" loading="lazy"></button></figure></div>
-<div class="peer-story"><h3>상도 감사했지만, 동료들의 말이 오래 남았습니다.</h3>
+<div class="peer-album-label"><span>과정 중 사진 · 9장</span><span>사진을 누르면 크게 볼 수 있어요</span></div>
+<div class="peer-album"><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/team-award.jpeg" alt="최우수 프로젝트 팀 수상 후, 동료들과 함께" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/lunch.jpeg" alt="동료들과 음식을 나누며 함께한 점심시간" loading="lazy"></button></figure></div>
+<div class="peer-stack-gallery" role="region" aria-label="과정 중 사진 모아보기">
+<div class="peer-stack"><figure class="peer-stack-card"><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/photobooth.jpeg" alt="재미있는 안경을 쓰고 동료들과 찍은 포토이즘 사진" loading="lazy"></button></figure><figure class="peer-stack-card" hidden><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/event.jpeg" alt="Salesforce 행사장에서 동료들과 찍은 사진" loading="lazy"></button></figure><figure class="peer-stack-card" hidden><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/mvp-award.jpeg" alt="AI CRM track MVP 수상 현장" loading="lazy"></button></figure><figure class="peer-stack-card" hidden><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/presentation.jpeg" alt="교육과정에서 마이크를 들고 발표하는 김유신" loading="lazy"></button></figure><figure class="peer-stack-card" hidden><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/keepsake.jpeg" alt="동료들과 함께한 사진이 실린 인쇄물" loading="lazy"></button></figure><figure class="peer-stack-card" hidden><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/letters.jpg" alt="수료 후 동료들이 보내준 편지와 유신 force 봉투" loading="lazy"></button></figure><figure class="peer-stack-card" hidden><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/message.jpeg" alt="교육과정에서 받은 도움과 적응에 대한 감사 메시지" loading="lazy"></button></figure></div>
+<div class="peer-stack-controls"><button type="button" class="peer-stack-prev" aria-label="사진 묶음 이전">←</button><span class="peer-stack-count" aria-live="polite">1 / 7</span><button type="button" class="peer-stack-next" aria-label="사진 묶음 다음">→</button></div>
+</div>
+<div class="peer-story"><h3>동료들이 전해준 말</h3>
 <p>CorePress에서는 테크니컬 PM이자 팀장으로 PL·팀원들과 요구사항과 구현 방향을 조율하고 최종 발표를 맡았습니다. 팀은 최우수 프로젝트상을 받았고, 저는 과정 내 기여를 동료들에게 인정받아 Program MVP로 선정됐습니다.</p>
 <p>수료 후 받은 편지와 메시지에는 어려운 순간에 함께 방향을 잡았던 일, 낯선 과정에 적응하는 데 도움이 됐다는 이야기가 담겨 있었습니다. 함께한 시간이 서로에게 좋은 기억으로 남았다는 것이 참 감사했습니다.</p></div>
 <div class="peer-quotes"><blockquote><p>“복잡한 기술적인 방향을 명확히 잡아주시고 묵묵히 팀을 리딩해 주신 덕분에 정말 큰 위기들을 무사히 넘길 수 있었습니다.”</p><cite>프로젝트 동료가 보내준 편지 중</cite></blockquote><blockquote><p>“유신님과 운영님 덕분에 다른 조들보다 빨리 가까워질 수 있었고 … 적응도 빨리 할 수 있었습니다.”</p><cite>교육과정 동료가 보내준 메시지 중</cite></blockquote></div>
@@ -1665,4 +1665,18 @@ dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()}
 let touchX=null;preview.addEventListener('touchstart',e=>{touchX=e.touches[0].clientX},{passive:true});preview.addEventListener('touchend',e=>{if(touchX!==null){const delta=e.changedTouches[0].clientX-touchX;if(Math.abs(delta)>60)show(current+(delta<0?1:-1));touchX=null}},{passive:true});
 })();
 
+</script>
+
+<script>
+(()=>{
+const cards=[...document.querySelectorAll('.peer-stack-card')];
+const count=document.querySelector('.peer-stack-count');
+let active=0;
+function turn(delta){active=(active+delta+cards.length)%cards.length;cards.forEach((card,i)=>card.hidden=i!==active);count.textContent=(active+1)+' / '+cards.length;}
+document.querySelector('.peer-stack-prev').addEventListener('click',()=>turn(-1));
+document.querySelector('.peer-stack-next').addEventListener('click',()=>turn(1));
+const stack=document.querySelector('.peer-stack');let startX=0;
+stack.addEventListener('touchstart',e=>{startX=e.changedTouches[0].clientX;},{passive:true});
+stack.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)>60)turn(dx<0?1:-1);},{passive:true});
+})();
 </script>
