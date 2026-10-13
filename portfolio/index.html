@@ -657,6 +657,8 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 .ax-photo-grid .ax-photo {margin:0;}
 @media(max-width:420px){.ax-photo-grid {grid-template-columns:1fr;}}
 .board {overflow-anchor:none;}
+
+.peer-photos{display:grid;grid-template-columns:1.65fr 1fr;gap:24px;margin:32px 0}.peer-photos figure{margin:0;min-width:0}.peer-photo{display:block;width:100%;padding:0;border:0;background:var(--sunk);cursor:zoom-in}.peer-photo img{display:block;width:100%;height:420px;object-fit:cover}.peer-photo.mvp img{object-position:center 75%}.peer-photos figcaption{font-size:12px;color:var(--ink-2);margin-top:10px}.peer-quotes{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin:40px 0}.peer-quotes blockquote{margin:0;padding-top:20px;border-top:1px solid var(--rule)}.peer-quotes blockquote p{font-size:18px;line-height:1.9}.peer-quotes cite,.peer-note{font-size:12px;font-style:normal;color:var(--ink-3)}.peer-dialog{border:0;padding:20px;background:var(--paper);max-width:94vw;max-height:94vh}.peer-dialog::backdrop{background:rgba(0,0,0,.8)}.peer-dialog img{display:block;max-width:85vw;max-height:78vh;object-fit:contain}.peer-close{display:block;margin:0 0 12px auto;background:var(--ink);color:var(--paper);border:0;padding:10px 20px;cursor:pointer}@media(max-width:650px){.peer-photos,.peer-quotes{grid-template-columns:1fr;gap:24px}.peer-photo img{height:auto;max-height:480px;object-fit:contain}.peer-quotes blockquote p{font-size:17px}}
 </style>
 
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
@@ -665,10 +667,11 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 <nav class="idx" aria-label="섹션 인덱스" inert>
   <a href="#archive"><span class="n">01</span><span class="l">Archive</span></a>
   <a href="#method"><span class="n">02</span><span class="l">Method</span></a>
-  <a href="#press"><span class="n">03</span><span class="l">Press</span></a>
-  <a href="#tools"><span class="n">04</span><span class="l">Tools</span></a>
-  <a href="#now"><span class="n">05</span><span class="l">Now</span></a>
-  <a href="#coffee"><span class="n">06</span><span class="l">Coffee chat</span></a>
+  <a href="#peers"><span class="n">03</span><span class="l">People</span></a>
+  <a href="#press"><span class="n">04</span><span class="l">Press</span></a>
+  <a href="#tools"><span class="n">05</span><span class="l">Tools</span></a>
+  <a href="#now"><span class="n">06</span><span class="l">Now</span></a>
+  <a href="#coffee"><span class="n">07</span><span class="l">Coffee chat</span></a>
 </nav>
 
 <!-- ══ HERO ══ -->
@@ -1137,8 +1140,29 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 </div></section>
 
 <!-- ══ 03 PRESS ══ -->
+
+<section id="peers"><div class="wrap">
+<div class="cap"><span class="no">03</span><span class="en">People &amp; Teamwork</span></div>
+<h2>함께한 동료들이 남겨준 이야기</h2>
+<p class="dek">서로 다른 경험을 가진 동료들과 4개월을 함께 배웠습니다. 프로젝트의 성과와 함께, 동료들이 보내준 편지와 메시지도 남았습니다.</p>
+<div class="peer-photos">
+<figure><button class="peer-photo" type="button" aria-label="최우수 프로젝트 팀 사진 확대"><img src="assets/peers/team-award.jpeg" alt="최우수 프로젝트 팀 팻말을 들고 함께한 교육과정 동료들" loading="lazy" width="1824" height="1368"></button><figcaption>CorePress · 최우수 프로젝트 팀 · 교육용 팀 POC</figcaption></figure>
+<figure><button class="peer-photo mvp" type="button" aria-label="Program MVP 수상 사진 확대"><img src="assets/peers/mvp-award.jpeg" alt="AI CRM track MVP 화면 앞에서 상장을 들고 있는 김유신" loading="lazy" width="768" height="1024"></button><figcaption>Salesforce AI CRM 과정 · Program MVP</figcaption></figure>
+</div>
+<h3 class="subhd">프로젝트를 함께 완성하고, 과정에 기여했습니다</h3>
+<p>CorePress에서는 테크니컬 PM이자 팀장으로 PL·팀원들과 요구사항과 구현 방향을 조율하고 최종 발표를 맡았습니다. 팀은 최우수 프로젝트상을 받았고, 저는 과정 내 기여를 동료들에게 인정받아 Program MVP로 선정됐습니다.</p>
+<p>수료 후 받은 편지와 메시지에는 프로젝트가 막혔을 때 함께 방향을 잡았던 일, 낯선 교육과정에 적응하고 학습을 이어가는 데 도움이 됐다는 이야기가 담겨 있었습니다.</p>
+<div class="peer-quotes">
+<blockquote><p>“복잡한 기술적인 방향을 명확히 잡아주시고 묵묵히 팀을 리딩해 주신 덕분에 정말 큰 위기들을 무사히 넘길 수 있었습니다.”</p><cite>프로젝트 동료가 수료 후 보내준 편지 중</cite></blockquote>
+<blockquote><p>“유신님과 운영님 덕분에 다른 조들보다 빨리 가까워질 수 있었고 … 적응도 빨리 할 수 있었습니다.”</p><cite>교육과정 동료가 수료 후 보내준 메시지 중</cite></blockquote>
+</div>
+<p class="peer-note">수료 후 받은 개인 편지·메시지의 일부를 발췌했습니다.</p>
+<p><a href="corepress.html">CorePress 프로젝트와 담당 역할 살펴보기</a></p>
+</div></section>
+<dialog class="peer-dialog" aria-label="수상 사진 확대 보기"><button type="button" class="peer-close">닫기</button><img alt=""></dialog>
+
 <section id="press"><div class="wrap">
-  <div class="cap"><span class="no">03</span><span class="en">Press</span></div>
+  <div class="cap"><span class="no">04</span><span class="en">Press</span></div>
   <h2>제가 만든 변화, 언론에 남은 이야기</h2>
   <p class="dek">플랜즈커피의 사업과 고객사 도입 사례를 다룬 보도입니다. 제가 직접 추진한 PR과 인터뷰도 함께 모았습니다.</p>
   <h3 class="subhd">제가 함께한 이야기</h3>
@@ -1175,7 +1199,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 
 <!-- ══ 04 TOOLS ══ -->
 <section id="tools"><div class="wrap">
-  <div class="cap"><span class="no">04</span><span class="en">Tools</span></div>
+  <div class="cap"><span class="no">05</span><span class="en">Tools</span></div>
   <h2>마케팅과 세일즈를 연결하는 도구와 역량</h2>
   <div class="tools">
     <div class="tool"><div class="tool-head"><div class="tool-k">Sales &amp; Marketing</div><div class="tool-icon" aria-hidden="true"><img src="assets/tools/sales.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div></div><div class="tool-title">고객을 만나 계약으로 잇습니다</div><div class="tool-v">Trello · Asana · Relate<br>파이프라인 설계 · 채널 운영</div></div>
@@ -1190,7 +1214,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 
 <!-- ══ 05 NOW ══ -->
 <section id="now"><div class="wrap">
-  <div class="cap"><span class="no">05</span><span class="en">Now</span></div>
+  <div class="cap"><span class="no">06</span><span class="en">Now</span></div>
   <h2>유신의 비전, 그리고 쓸모</h2>
   <p class="dek">2017년부터 약 9년간 플랜즈와 함께했습니다. 다루는 문제의 크기를 키우고 싶어서 지분을 정리하고 나왔습니다.</p>
 
@@ -1215,7 +1239,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
   <div class="subhd">자격 · 수상</div>
   <div class="creds">
     <div class="cred"><div class="cred-brand"><img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" alt="Salesforce" loading="lazy" decoding="async"></div><div class="cred-t">Salesforce Certified Platform Administrator</div><div class="cred-d">Salesforce · 2026.08 · 식별번호 8066536</div></div>
-    <div class="cred"><div class="cred-brand"><img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" alt="Salesforce" loading="lazy" decoding="async"></div><div class="cred-t">Program MVP — Salesforce AI CRM Engineer Program</div><div class="cred-d">Salesforce · 2026.09 · 616시간 과정 수료자 중 선정</div></div>
+    <div class="cred"><div class="cred-brand"><img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" alt="Salesforce" loading="lazy" decoding="async"></div><div class="cred-t">Program MVP — Salesforce AI CRM Engineer Program</div><div class="cred-d">Salesforce · 2026.09 · 동료들로부터 과정 내 기여를 인정받아 선정 · <a href="#peers">동료들의 이야기</a></div></div>
     <div class="cred"><div class="cred-brand"><img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" alt="Salesforce" loading="lazy" decoding="async"></div><div class="cred-t">최우수상(Grand Prize) — CorePress Salesforce POC</div><div class="cred-d">Salesforce · 2026.09 · 4개 프로젝트 중 1위 · 팀리더</div></div>
     <div class="cred"><div class="cred-brand"><img src="https://www.sktelecom.com/images/common/footer-logo.svg" alt="SK Telecom" loading="lazy" decoding="async"></div><div class="cred-t">전국 TOP 7 — SKT 청년 창업 프로그램</div><div class="cred-d">SK Telecom · 2017.09 · 교내 대상 후 전국 선발</div></div>
     <div class="cred"><div class="cred-brand"><img src="/assets/kyunghee-emblem.png" alt="경희대학교" loading="lazy" decoding="async"></div><div class="cred-t">대상 — 경희대 창업 공모전</div><div class="cred-d">경희대학교 · 2017</div></div>
@@ -1226,7 +1250,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 </div></section>
 
 <section id="coffee" class="coffee"><div class="wrap">
-  <div class="cap"><span class="no">06</span><span class="en">Coffee &amp; Conversation</span></div>
+  <div class="cap"><span class="no">07</span><span class="en">Coffee &amp; Conversation</span></div>
   <div class="coffee-grid">
     <div class="coffee-copy">
       <div class="coffee-en">Good work starts<br>with a <em>conversation.</em></div>
@@ -1472,7 +1496,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 
   // Keep the navigation in the real gutter, including after font loading.
   var index = document.querySelector('.idx');
-  var sections = ['archive', 'method', 'press', 'tools', 'now', 'coffee'].map(function(id) {
+  var sections = ['archive', 'method', 'peers', 'press', 'tools', 'now', 'coffee'].map(function(id) {
     return document.getElementById(id);
   }).filter(Boolean);
   var links = Array.prototype.slice.call(index.querySelectorAll('a'));
