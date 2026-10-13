@@ -694,32 +694,21 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 .peer-sticker.trail{background:#0176d3;color:white;font:700 20px/1.1 Arial,sans-serif;padding:13px 18px;border:5px solid white;transform:rotate(7deg);border-radius:50%}
 .peer-sticker.star{color:#0176d3;font-size:52px;line-height:1;transform:rotate(12deg);text-shadow:2px 2px white,-2px -2px white}
 @media(max-width:650px){.peer-stickers{justify-content:center;gap:14px;padding:2px 0 24px}.peer-sticker.sf{width:72px;padding:7px}.peer-sticker.trail{font-size:16px;padding:10px 12px;border-width:4px}.peer-sticker.star{font-size:36px}}
-/* Four open photos and a scroll-driven stack of five. */
-#peers{overflow:clip}#peers .wrap{position:relative}
+/* Open photo collage. */
+#peers{overflow:clip}
 #peers h2{font-size:clamp(34px,5.4vw,66px);font-weight:700;line-height:1.25;max-width:12em}
-.peer-album{display:grid;grid-template-columns:1.25fr 1fr;columns:auto;gap:30px;align-items:center;padding:16px 10px 45px}
-.peer-album figure{margin:0;padding:8px;background:#fffdfa;box-shadow:0 12px 28px #58432b1c;transform:rotate(-2deg)}
-.peer-album figure:nth-child(even){transform:rotate(3deg);margin-top:30px}
-.peer-album figure:nth-child(3) img{max-height:390px;object-fit:contain}
-.peer-stack-gallery{max-width:760px;margin:12px auto 42px;padding:0 22px;height:190vh;height:190svh}
-.peer-stack-sticky{position:sticky;top:8vh;top:8svh;padding-top:30px}
-.peer-scroll-hint{text-align:center;font-size:12px;color:#8e705a;margin:12px 0 0}
-.peer-stack-card.is-entering{animation:peer-card-in .3s ease-out}
-@keyframes peer-card-in{from{opacity:.5;transform:translateY(14px) rotate(1deg)}to{opacity:1;transform:none}}
-.peer-stack{position:relative;isolation:isolate}
-.peer-stack::before,.peer-stack::after{content:"";position:absolute;inset:0;border:8px solid #fffdfa;background:#e4c7aa;box-shadow:0 8px 20px #58432b14;z-index:-1;transform:translateY(-12px) rotate(-3deg)}
-.peer-stack::after{background:#d1dce1;transform:translateY(-21px) rotate(2deg);z-index:-2}
-.peer-stack-card{margin:0;background:#fffdfa;padding:10px;box-shadow:0 12px 28px #58432b1c}
-.peer-stack-card[hidden]{display:none}
-.peer-stack-card .peer-photo img{height:min(52svh,430px);width:100%;object-fit:contain;background:#f6f0e7}
-.peer-stack-controls{display:flex;justify-content:center;align-items:center;gap:24px;margin-top:24px}
-.peer-stack-controls button{width:44px;height:44px;border:1px solid #ccb49d;border-radius:50%;background:transparent;color:#493d35;font-size:21px;cursor:pointer}
-.peer-stack-controls button:hover{background:#493d35;color:#fffaf3}
-.peer-stack-controls button:focus-visible{outline:3px solid #986c4b;outline-offset:3px}
-.peer-stack-count{font-size:13px;font-variant-numeric:tabular-nums}
-@media(max-width:650px){.peer-album{gap:16px;padding:12px 4px 32px}.peer-album figure{padding:5px}.peer-album figure:nth-child(2){margin-top:24px}.peer-stack-gallery{padding:0 12px;margin-bottom:30px;height:180svh}.peer-stack-sticky{top:10svh}.peer-album figure:nth-child(3) img{max-height:240px}.peer-stack-card .peer-photo img{height:min(48svh,400px)}.peer-stack-card{padding:6px}.peer-album-label{align-items:start;font-size:11px}.peer-album-label span:last-child{text-align:right}}
-
-@media(prefers-reduced-motion:reduce){.peer-stack-gallery{height:auto}.peer-stack-sticky{position:relative;top:auto}.peer-stack-card.is-entering{animation:none}.peer-scroll-hint{display:none}}
+.peer-album{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));columns:auto;gap:40px 24px;align-items:center;padding:16px 12px 45px}
+.peer-album figure{position:relative;margin:0;padding:9px;background:#fffdfa;box-shadow:0 12px 28px #58432b1c}
+.peer-album figure:nth-child(1){grid-column:1/8;transform:rotate(-3deg)}
+.peer-album figure:nth-child(2){grid-column:8/13;transform:rotate(5deg);margin-top:70px}
+.peer-album figure:nth-child(3){grid-column:1/5;transform:rotate(-5deg)}
+.peer-album figure:nth-child(4){grid-column:5/13;transform:rotate(2deg)}
+.peer-album figure:nth-child(5){grid-column:2/7;transform:rotate(3deg)}
+.peer-album figure:nth-child(6){grid-column:7/13;transform:rotate(-4deg)}
+.peer-album figure:nth-child(7){grid-column:1/5;transform:rotate(-3deg)}
+.peer-album figure:nth-child(8){grid-column:5/10;transform:rotate(4deg)}
+.peer-album figure:nth-child(9){grid-column:10/13;transform:rotate(-4deg)}
+@media(max-width:650px){.peer-album{gap:24px 14px;padding:12px 7px 35px}.peer-album figure{padding:5px}.peer-album figure:nth-child(1){grid-column:1/12}.peer-album figure:nth-child(2){grid-column:4/13;margin-top:0}.peer-album figure:nth-child(3){grid-column:1/6}.peer-album figure:nth-child(4){grid-column:6/13}.peer-album figure:nth-child(5){grid-column:1/7}.peer-album figure:nth-child(6){grid-column:7/13}.peer-album figure:nth-child(7){grid-column:1/6}.peer-album figure:nth-child(8){grid-column:6/13}.peer-album figure:nth-child(9){grid-column:3/11}.peer-album-label{align-items:start;font-size:11px}.peer-album-label span:last-child{text-align:right}}
 </style>
 
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
@@ -1209,11 +1198,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 <p class="peer-intro">저는 사람을 좋아합니다. 같이 밥을 먹고 이야기를 나누는 시간도, 막힌 문제를 함께 풀어가는 과정도 즐깁니다. 4개월의 Salesforce 과정에서도 그렇게 배우고 어울렸습니다. 돌아보니 함께 웃는 사진이 참 많이 남았습니다.</p>
 <div class="peer-album-label"><span>과정 중 사진 · 9장</span><span>사진을 누르면 크게 볼 수 있어요</span></div>
 <div class="peer-stickers" aria-hidden="true"><span class="peer-sticker sf"><img src="assets/peers/salesforce.svg" alt=""></span><span class="peer-sticker trail">Trailblazers</span><span class="peer-sticker star">✳</span></div>
-<div class="peer-album"><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/team-award.jpeg" alt="최우수 프로젝트 팀 수상 후, 동료들과 함께" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/lunch.jpeg" alt="동료들과 음식을 나누며 함께한 점심시간" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/photobooth.jpeg" alt="재미있는 안경을 쓰고 동료들과 찍은 포토이즘 사진" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/event.jpeg" alt="Salesforce 행사장에서 동료들과 찍은 사진" loading="lazy"></button></figure></div>
-<div class="peer-stack-gallery" role="region" aria-label="스크롤로 넘겨보는 과정 사진">
-<div class="peer-stack-sticky"><div class="peer-stack"><figure class="peer-stack-card"><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/mvp-award.jpeg" alt="AI CRM track MVP 수상 현장" loading="lazy"></button></figure><figure class="peer-stack-card" hidden><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/presentation.jpeg" alt="교육과정에서 마이크를 들고 발표하는 김유신" loading="lazy"></button></figure><figure class="peer-stack-card" hidden><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/keepsake.jpeg" alt="동료들과 함께한 사진이 실린 인쇄물" loading="lazy"></button></figure><figure class="peer-stack-card" hidden><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/letters.jpg" alt="수료 후 동료들이 보내준 편지와 유신 force 봉투" loading="lazy"></button></figure><figure class="peer-stack-card" hidden><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/message.jpeg" alt="교육과정에서 받은 도움과 적응에 대한 감사 메시지" loading="lazy"></button></figure></div>
-<div class="peer-stack-controls"><button type="button" class="peer-stack-prev" aria-label="사진 묶음 이전">←</button><span class="peer-stack-count" aria-live="polite">1 / 5</span><button type="button" class="peer-stack-next" aria-label="사진 묶음 다음">→</button></div><p class="peer-scroll-hint">스크롤해서 넘겨보세요</p></div>
-</div>
+<div class="peer-album"><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/team-award.jpeg" alt="최우수 프로젝트 팀 수상 후, 동료들과 함께" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/lunch.jpeg" alt="동료들과 음식을 나누며 함께한 점심시간" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/photobooth.jpeg" alt="재미있는 안경을 쓰고 동료들과 찍은 포토이즘 사진" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/event.jpeg" alt="Salesforce 행사장에서 동료들과 찍은 사진" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/mvp-award.jpeg" alt="AI CRM track MVP 수상 현장" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/presentation.jpeg" alt="교육과정에서 마이크를 들고 발표하는 김유신" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/keepsake.jpeg" alt="동료들과 함께한 사진이 실린 인쇄물" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/letters.jpg" alt="수료 후 동료들이 보내준 편지와 유신 force 봉투" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/message.jpeg" alt="교육과정에서 받은 도움과 적응에 대한 감사 메시지" loading="lazy"></button></figure></div>
 <div class="peer-story"><h3>동료들이 전해준 말</h3>
 <p>CorePress에서는 테크니컬 PM이자 팀장으로 PL·팀원들과 요구사항과 구현 방향을 조율하고 최종 발표를 맡았습니다. 팀은 최우수 프로젝트상을 받았고, 저는 과정 내 기여를 동료들에게 인정받아 Program MVP로 선정됐습니다.</p>
 <p>수료 후 받은 편지와 메시지에는 어려운 순간에 함께 방향을 잡았던 일, 낯선 과정에 적응하는 데 도움이 됐다는 이야기가 담겨 있었습니다. 함께한 시간이 서로에게 좋은 기억으로 남았다는 것이 참 감사했습니다.</p></div>
@@ -1681,28 +1666,3 @@ let touchX=null;preview.addEventListener('touchstart',e=>{touchX=e.touches[0].cl
 
 </script>
 
-<script>
-(()=>{
-const gallery=document.querySelector('.peer-stack-gallery');
-const cards=[...gallery.querySelectorAll('.peer-stack-card')];
-const count=gallery.querySelector('.peer-stack-count');
-const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-let active=0,scheduled=false;
-function show(index){
- index=Math.max(0,Math.min(cards.length-1,index));
- if(index===active)return;
- active=index;
- cards.forEach((card,i)=>{card.hidden=i!==active;card.classList.toggle('is-entering',i===active)});
- count.textContent=(active+1)+' / '+cards.length;
-}
-function bounds(){const r=gallery.getBoundingClientRect();return {start:scrollY+r.top-innerHeight*.1,travel:Math.max(1,gallery.offsetHeight-innerHeight*.75)}}
-function update(){scheduled=false;if(reduced.matches)return;const b=bounds();show(Math.floor(Math.max(0,Math.min(.9999,(scrollY-b.start)/b.travel))*cards.length))}
-function requestUpdate(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}}
-function turn(delta){const next=Math.max(0,Math.min(cards.length-1,active+delta));if(reduced.matches){show(next);return}const b=bounds();window.scrollTo({top:b.start+(next+.35)*b.travel/cards.length,behavior:'auto'});show(next)}
-gallery.querySelector('.peer-stack-prev').addEventListener('click',()=>turn(-1));
-gallery.querySelector('.peer-stack-next').addEventListener('click',()=>turn(1));
-window.addEventListener('scroll',requestUpdate,{passive:true});window.addEventListener('resize',requestUpdate,{passive:true});
-reduced.addEventListener('change',requestUpdate);
-window.addEventListener('load',requestUpdate);requestUpdate();
-})();
-</script>
