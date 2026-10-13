@@ -657,6 +657,64 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 .ax-photo-grid .ax-photo {margin:0;}
 @media(max-width:420px){.ax-photo-grid {grid-template-columns:1fr;}}
 .board {overflow-anchor:none;}
+
+
+#peers{background:linear-gradient(150deg,#fbf3e9 0%,#f7e7dc 50%,#faf5ed 100%);color:#493d35}
+#peers .cap{border-color:#dccbbb}#peers .cap .en,#peers .cap .no{color:#99745c}
+#peers h2{font-weight:500;font-size:clamp(28px,4vw,42px);letter-spacing:-.045em}
+#peers .peer-intro{max-width:680px;font-size:16px;line-height:2;color:#6d594b}
+.peer-album-label{display:flex;justify-content:flex-end;align-items:center;gap:16px;margin:40px 0 20px;color:#8e705a;font-size:12px}
+.peer-album{columns:3;column-gap:22px}
+.peer-album figure{break-inside:avoid;margin:0 0 24px;padding:10px 10px 15px;background:#fffdf8;box-shadow:0 3px 14px #7051390d}
+.peer-photo{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in}
+.peer-photo img{display:block;width:100%;height:auto}
+.peer-album figcaption{padding:13px 6px 0;font-size:13px;color:#79604e;line-height:1.6}
+.peer-story{max-width:760px;margin:48px 0 0}.peer-story h3{font-size:21px;font-weight:500;margin:0 0 16px}
+.peer-story p{color:#6d594b;line-height:1.95}
+.peer-quotes{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:28px 0}
+.peer-quotes blockquote{margin:0;padding:25px;background:#fffaf0;border-top:1px solid #dcc8ac}
+.peer-quotes blockquote p{font-size:16px;line-height:1.95}.peer-quotes cite{font-size:11px;font-style:normal;color:#8e705a}
+.peer-note{font-size:12px;color:#8e705a}
+.peer-dialog{border:0;padding:20px;background:#fffaf3;color:#493d35;width:min(1100px,95vw);max-width:95vw;max-height:95vh}
+.peer-dialog::backdrop{background:rgba(36,27,22,.88)}
+.peer-dialog img{display:block;max-width:100%;max-height:72vh;width:auto;height:auto;object-fit:contain;margin:auto}
+.peer-dialog-top,.peer-dialog-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.peer-dialog-top{margin-bottom:14px}.peer-dialog-bottom{margin-top:14px}
+.peer-dialog button{background:#f2e4d6;border:0;color:#493d35;padding:12px 16px;cursor:pointer;font:inherit}
+.peer-dialog button:focus-visible,.peer-photo:focus-visible{outline:3px solid #986c4b;outline-offset:4px}
+.peer-dialog-caption{font-size:13px;text-align:center;margin:12px 0 0}
+.peer-dialog-counter{font-size:12px;color:#82654f}
+@media(max-width:850px){.peer-album{columns:2}}
+@media(max-width:520px){.peer-album{column-gap:12px}.peer-album figure{padding:6px 6px 10px;margin-bottom:14px}.peer-album figcaption{font-size:11px;padding:9px 3px 0}.peer-quotes{grid-template-columns:1fr;gap:14px}#peers .peer-intro{font-size:15px}.peer-dialog{padding:12px}.peer-dialog img{max-height:68vh}}
+
+/* Stickers scattered through the photo collage. */
+.peer-album{position:relative}
+.peer-sticker{position:absolute;z-index:4;pointer-events:none;user-select:none;filter:drop-shadow(0 5px 2px #493d3520)}
+.peer-sticker.sf{width:clamp(95px,14vw,165px);right:3%;top:-12px;transform:rotate(12deg);background:white;padding:12px;border-radius:48%}
+.peer-sticker.sf img{display:block;width:100%}
+.peer-sticker.trail{left:34%;top:29%;background:#0176d3;color:white;font:700 clamp(17px,2.5vw,28px)/1.1 Arial,sans-serif;padding:17px 25px;border:6px solid white;transform:rotate(-12deg);border-radius:50%}
+.peer-sticker.star{left:1%;top:63%;font-size:88px;color:#0176d3;transform:rotate(10deg);text-shadow:3px 3px white,-3px -3px white}
+@media(max-width:650px){.peer-sticker.sf{right:-5px;top:-15px;width:100px}.peer-sticker.trail{left:0;top:29%;padding:12px;border-width:4px;font-size:17px}.peer-sticker.star{font-size:55px;top:57%}}
+/* Open photo collage. */
+#peers{overflow:clip}
+#peers h2{font-size:clamp(34px,5.4vw,66px);font-weight:700;line-height:1.25;max-width:12em}
+.peer-album{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));columns:auto;gap:40px 24px;align-items:center;padding:16px 12px 45px}
+.peer-album figure{position:relative;margin:0;padding:9px;background:#fffdfa;box-shadow:0 12px 28px #58432b1c}
+.peer-album figure:nth-of-type(1){grid-column:1/8;transform:rotate(-3deg)}
+.peer-album figure:nth-of-type(2){grid-column:8/13;transform:rotate(5deg);margin-top:70px}
+.peer-album figure:nth-of-type(3){grid-column:1/5;transform:rotate(-5deg)}
+.peer-album figure:nth-of-type(4){grid-column:5/13;transform:rotate(2deg)}
+.peer-album figure:nth-of-type(5){grid-column:2/7;transform:rotate(3deg)}
+.peer-album figure:nth-of-type(6){grid-column:7/13;transform:rotate(-4deg)}
+.peer-album figure:nth-of-type(7){grid-column:1/5;transform:rotate(-3deg)}
+.peer-album figure:nth-of-type(8){grid-column:5/10;transform:rotate(4deg)}
+.peer-album figure:nth-of-type(9){grid-column:10/13;transform:rotate(-4deg)}
+@media(max-width:650px){.peer-album{gap:24px 14px;padding:12px 7px 35px}.peer-album figure{padding:5px}.peer-album figure:nth-of-type(1){grid-column:1/12}.peer-album figure:nth-of-type(2){grid-column:4/13;margin-top:0}.peer-album figure:nth-of-type(3){grid-column:1/6}.peer-album figure:nth-of-type(4){grid-column:6/13}.peer-album figure:nth-of-type(5){grid-column:1/7}.peer-album figure:nth-of-type(6){grid-column:7/13}.peer-album figure:nth-of-type(7){grid-column:1/6}.peer-album figure:nth-of-type(8){grid-column:6/13}.peer-album figure:nth-of-type(9){grid-column:3/11}.peer-album-label{align-items:start;font-size:11px}.peer-album-label span:last-child{text-align:right}}
+
+
+.en[data-topics="salesforce"] .en-cat{text-transform:none}
+
+.sf-inline-logo{display:inline-block;width:20px;height:14px;object-fit:contain;vertical-align:middle;margin-left:4px;flex-shrink:0}
 </style>
 
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
@@ -665,10 +723,11 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 <nav class="idx" aria-label="섹션 인덱스" inert>
   <a href="#archive"><span class="n">01</span><span class="l">Archive</span></a>
   <a href="#method"><span class="n">02</span><span class="l">Method</span></a>
-  <a href="#press"><span class="n">03</span><span class="l">Press</span></a>
-  <a href="#tools"><span class="n">04</span><span class="l">Tools</span></a>
-  <a href="#now"><span class="n">05</span><span class="l">Now</span></a>
-  <a href="#coffee"><span class="n">06</span><span class="l">Coffee chat</span></a>
+  <a href="#peers"><span class="n">03</span><span class="l">People</span></a>
+  <a href="#press"><span class="n">04</span><span class="l">Press</span></a>
+  <a href="#tools"><span class="n">05</span><span class="l">Tools</span></a>
+  <a href="#now"><span class="n">06</span><span class="l">Now</span></a>
+  <a href="#coffee"><span class="n">07</span><span class="l">Coffee chat</span></a>
 </nav>
 
 <!-- ══ HERO ══ -->
@@ -690,7 +749,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
       <div class="goal">고객의 문제를 이해하고 제안·계약·운영 개선으로 연결해 왔습니다. 앞으로는 시장과 사업의 성장 가능성이 크고, 합리적인 피드백을 주고받으며 함께 성장할 수 있는 조직에서 기여하고 싶습니다. CRM·데이터·AI로 관심을 넓히고 있으며, 기회를 특정 산업으로 한정하지 않습니다.</div>
       <div class="roles">
         <span>B2B Sales &amp; Pipeline Development</span>
-        <span class="on">Salesforce Certified Platform Administrator</span>
+        <span class="on">Salesforce Certified Platform Administrator <img class="sf-inline-logo" src="assets/peers/salesforce.svg" alt="" aria-hidden="true" width="20" height="14"></span>
         <span>CRM, Data &amp; AI</span>
         <span>Full-Funnel GTM</span>
       </div>
@@ -704,7 +763,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 <section id="archive"><div class="wrap">
   <div class="cap"><span class="no">01</span><span class="en">Archive</span></div>
   <h2>프로젝트 아카이브</h2>
-  <p class="dek">플랜즈에서 약 9년간 맡았던 일과 별도 프로젝트를 업무별로 모아뒀습니다. 왼쪽에서 분류를 고르면 해당하는 것만 보입니다.</p>
+  <p class="dek">경력 기간 동안 맡아온 일과 프로젝트를 업무별로 모아뒀습니다. 왼쪽에서 분류를 고르면 해당하는 것만 보입니다.</p>
 
   <div class="board">
 
@@ -712,6 +771,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
     <nav class="bnav">
       <div class="ghd">업무</div>
       <button class="bt" data-cat="all" aria-pressed="true">전체 <span class="ct">19</span></button>
+      <button class="bt" data-cat="salesforce" aria-pressed="false">Salesforce <img class="sf-inline-logo" src="assets/peers/salesforce.svg" alt="" aria-hidden="true" width="20" height="14"> <span class="ct">2</span></button>
       <button class="bt" data-cat="sales" aria-pressed="false">Sales <span class="ct">5</span></button>
       <button class="bt" data-cat="gtm" aria-pressed="false">GTM <span class="ct">2</span></button>
       <button class="bt" data-cat="product" aria-pressed="false">Product <span class="ct">4</span></button>
@@ -731,6 +791,50 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
       </div>
 
       <div class="entries" id="entries">
+<article class="en" data-topics="salesforce" data-cat="product" data-fit="-2" data-time="15">
+<div class="en-hd">
+<div class="en-meta"><span class="en-cat">Salesforce / Product</span><span class="en-org">CorePress · 교육용 POC</span><span class="en-yr">2026</span></div>
+<div class="en-t">고객의 요구와 개발의 관점을 조율하며 CRM 솔루션을 구축했습니다</div>
+<div class="en-s">가상 산업장비 제조사 CorePress의 <b>Salesforce CRM 구축 교육용 POC</b>입니다. <b>Experience Cloud 고객사 포털을 직접 제작</b>하고, 팀리더로서 <b>PM·PL과 요구사항을 조율</b>했습니다.  고객사·협력사·실무자의 상황을 구축 시나리오로 경험했습니다. <b>4개 프로젝트 중 1위, 최우수상(Grand Prize)</b>을 수상했습니다.</div>
+</div>
+<button class="more" aria-expanded="false">자세히 보기</button>
+<div class="body" hidden><div class="art">
+<p>Salesforce AI CRM 엔지니어 과정에서, 가상의 산업장비 제조사 <b>CorePress를 위한 CRM 솔루션을 구축한 교육용 POC</b>입니다. 실제 고객사에 상용 구축한 프로젝트는 아닙니다.</p>
+<p>이번에는 솔루션을 구축하는 개발팀의 입장에서, 고객사·협력사·실무자에게 어떤 상황이 생길 수 있는지 시나리오로 다뤘습니다. 서로 다른 위치의 요구를 시스템에 반영하는 과정을 경험하며, <b>고객의 업무를 이해하고 개발팀과 소통하는 역량</b>을 넓혔습니다.</p>
+<p>저는 <b>팀리더로서 PM·PL과 조율하며 CorePress의 요구사항을 조정</b>했습니다. 프로젝트의 범위와 구현 방향에 고객의 요구가 반영되도록 논의를 이끌고, 비즈니스 시나리오를 Salesforce의 업무 흐름으로 연결했습니다. Experience Cloud 고객사 포털도 직접 제작했습니다.</p>
+<p>팀은 <b>Experience Cloud → Opportunity → Asset → Case → Field Service → 리포팅</b>으로 이어지는 흐름과 제한된 범위의 Agentforce 활용 시나리오를 다뤘습니다. 저는 최종 발표의 구성과 발표도 맡았습니다.</p>
+<p>포털 접점에서 리드 수집과 영업기회 전환, RFP·RFQ·견적·계약, 설치 이후 Field Service와 Agentforce까지 이어지는 고객 여정을 다뤘습니다. 구현 범위와 설계 의도는 별도 아티클에 정리했습니다.</p><div class="pull">최종 평가에서 <b>4개 프로젝트 중 1위로 최우수상(Grand Prize)</b>을 수상했습니다.</div>
+</div>
+<section class="corepress-resources" aria-label="CorePress 프로젝트 자료">
+<h3>프로젝트 자료와 수상 기록</h3>
+<nav class="corepress-links" aria-label="CorePress 자료 링크"><a class="primary" href="/corepress.html"><span class="corepress-cta-copy"><span class="corepress-cta-title">고객 여정을 CRM으로 연결한 과정</span><span class="corepress-cta-label">CorePress · 프로젝트 아티클 읽기</span></span><span class="corepress-cta-arrow" aria-hidden="true">↗</span></a><a href="/assets/corepress/CorePress_ValueEngineering_v3.12.pdf" target="_blank" rel="noopener">발표자료 PDF</a></nav>
+
+<figure><img src="/assets/corepress/award-team.webp" width="480" height="360" loading="lazy" alt="CorePress 팀 최우수 프로젝트 Grand Prize 수상 사진"><figcaption>4개 프로젝트 중 1위 · 최우수 프로젝트 팀(Grand Prize)</figcaption></figure>
+</section>
+</div>
+</article>
+<article class="en" data-topics="salesforce" data-cat="ax" data-fit="-1" data-time="1.5">
+          <div class="en-hd">
+            <div class="en-meta"><span class="en-cat">Salesforce / Ax</span><span class="en-org">CorePress · Agentforce · 교육용 팀 POC</span><span class="en-yr">2026</span></div>
+            <div class="en-t">문서와 고객 레코드를 연결해, 답변에서 업무 작성까지 확장했습니다</div>
+            <div class="en-s">PDF 지식과 고객 레코드를 답변 근거로 활용하는 Agentforce 에이전트를 Experience Cloud에 구현했습니다. <b>견적·계약서 자동 입력 구조를 구현하고, Field Service 배정 스코어링에 에이전트를 활용할 기반</b>도 마련했습니다.</div>
+          </div>
+          <button class="more" aria-expanded="false">자세히 보기</button>
+          <div class="body" hidden>
+            <div class="art">
+              <p>가상 산업장비 제조사 CorePress의 <b>교육용 팀 POC</b>에서 Agentforce를 활용한 AX를 구현했습니다. 고객 문의에 답하는 것에서 출발해, 영업 문서 작성과 현장 서비스의 배정 판단을 지원하는 방향으로 확장했습니다.</p>
+              <div class="beat">PDF의 지식과 레코드의 맥락을, 답변의 근거로 연결했습니다.</div>
+              <p><b>데이터 라이브러리와 레코드 그라운딩</b> — PDF 기반 자료를 Data 360의 데이터 라이브러리에 구성하고, 각 레코드도 답변 근거로 활용할 수 있도록 데이터 구조를 잡았습니다. 문서에 담긴 설명과 레코드에 담긴 고객·업무 맥락을 함께 활용하는 구조였습니다.</p>
+              <p><b>Experience Cloud 고객 포털 에이전트</b> — 도입 상담과 CS뿐 아니라 더 넓은 범위의 문의에 답할 수 있는 에이전트를 개발해 고객 포털에 구현했습니다.</p>
+              <p><b>견적·계약서 작성 지원</b> — 과거 레코드를 기반으로 문서의 머지 필드를 자동 입력해, 견적과 계약서를 빠르게 작성할 수 있도록 돕는 에이전트 구조를 구현했습니다.</p>
+              <p><b>Field Service 배정 지원 기반</b> — 디스패처의 배정 판단에 사용하는 스코어링의 정확성을 높이기 위해 에이전트를 활용할 수 있는 기반을 마련했습니다. 배정 정확도 향상은 이후 검증할 과제입니다.</p>
+              <div class="beat">답변을 잘 만드는 것만큼, 답하지 못하는 상황을 설계하는 일이 중요했습니다.</div>
+              <p>구현 과정에서 <b>폴백 구조와 라우팅 설계의 중요성</b>을 배웠습니다. 근거가 부족하거나 처리 범위를 벗어난 문의를 어떻게 다룰지, 어떤 조건에서 다른 처리 경로로 연결할지를 함께 고민해야 했습니다. 에이전트가 처리할 수 있는 범위와 다음 단계로 넘길 기준을 명확히 하는 것이 중요한 설계 과제였습니다.</p>
+              <p>현재는 <b>Salesforce Agentforce Specialist 자격증을 준비</b>하며, 프로젝트에서 경험한 에이전트 설계와 데이터 활용을 더 체계적으로 학습하고 있습니다.</p>
+              <nav class="corepress-links" aria-label="CorePress Agentforce 관련 자료"><a href="/corepress.html">CorePress 전체 프로젝트 아티클 읽기 ↗</a></nav>
+            </div>
+          </div>
+        </article>
 
         <!-- SALES -->
         <article class="en" data-cat="sales" data-fit="1" data-time="12">
@@ -923,28 +1027,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 </div></div>
 </article>
 
-        <article class="en" data-cat="product" data-fit="12" data-time="15">
-<div class="en-hd">
-<div class="en-meta"><span class="en-cat">Product</span><span class="en-org">CorePress · 교육용 POC</span><span class="en-yr">2026</span></div>
-<div class="en-t">고객의 요구와 개발의 관점을 조율하며 CRM 솔루션을 구축했습니다</div>
-<div class="en-s">가상 산업장비 제조사 CorePress의 <b>Salesforce CRM 구축 교육용 POC</b>입니다. <b>Experience Cloud 고객사 포털을 직접 제작</b>하고, 팀리더로서 <b>PM·PL과 요구사항을 조율</b>했습니다.  고객사·협력사·실무자의 상황을 구축 시나리오로 경험했습니다. <b>4개 프로젝트 중 1위, 최우수상(Grand Prize)</b>을 수상했습니다.</div>
-</div>
-<button class="more" aria-expanded="false">자세히 보기</button>
-<div class="body" hidden><div class="art">
-<p>Salesforce AI CRM 엔지니어 과정에서, 가상의 산업장비 제조사 <b>CorePress를 위한 CRM 솔루션을 구축한 교육용 POC</b>입니다. 실제 고객사에 상용 구축한 프로젝트는 아닙니다.</p>
-<p>이번에는 솔루션을 구축하는 개발팀의 입장에서, 고객사·협력사·실무자에게 어떤 상황이 생길 수 있는지 시나리오로 다뤘습니다. 서로 다른 위치의 요구를 시스템에 반영하는 과정을 경험하며, <b>고객의 업무를 이해하고 개발팀과 소통하는 역량</b>을 넓혔습니다.</p>
-<p>저는 <b>팀리더로서 PM·PL과 조율하며 CorePress의 요구사항을 조정</b>했습니다. 프로젝트의 범위와 구현 방향에 고객의 요구가 반영되도록 논의를 이끌고, 비즈니스 시나리오를 Salesforce의 업무 흐름으로 연결했습니다. Experience Cloud 고객사 포털도 직접 제작했습니다.</p>
-<p>팀은 <b>Experience Cloud → Opportunity → Asset → Case → Field Service → 리포팅</b>으로 이어지는 흐름과 제한된 범위의 Agentforce 활용 시나리오를 다뤘습니다. 저는 최종 발표의 구성과 발표도 맡았습니다.</p>
-<p>포털 접점에서 리드 수집과 영업기회 전환, RFP·RFQ·견적·계약, 설치 이후 Field Service와 Agentforce까지 이어지는 고객 여정을 다뤘습니다. 구현 범위와 설계 의도는 별도 아티클에 정리했습니다.</p><div class="pull">최종 평가에서 <b>4개 프로젝트 중 1위로 최우수상(Grand Prize)</b>을 수상했습니다.</div>
-</div>
-<section class="corepress-resources" aria-label="CorePress 프로젝트 자료">
-<h3>프로젝트 자료와 수상 기록</h3>
-<nav class="corepress-links" aria-label="CorePress 자료 링크"><a class="primary" href="/corepress.html"><span class="corepress-cta-copy"><span class="corepress-cta-title">고객 여정을 CRM으로 연결한 과정</span><span class="corepress-cta-label">CorePress · 프로젝트 아티클 읽기</span></span><span class="corepress-cta-arrow" aria-hidden="true">↗</span></a><a href="/assets/corepress/CorePress_ValueEngineering_v3.12.pdf" target="_blank" rel="noopener">발표자료 PDF</a></nav>
-<p class="corepress-access">Experience Cloud 고객 포털 직접 제작 · 현재 교육용 계정 접근 제한</p>
-<figure><img src="/assets/corepress/award-team.webp" width="480" height="360" loading="lazy" alt="CorePress 팀 최우수 프로젝트 Grand Prize 수상 사진"><figcaption>4개 프로젝트 중 1위 · 최우수 프로젝트 팀(Grand Prize)</figcaption></figure>
-</section>
-</div>
-</article>
+        
 
         <!-- BM -->
         <article class="en" data-cat="bm" data-fit="13" data-time="3">
@@ -1014,28 +1097,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
           </div>
         </article>
 
-        <article class="en" data-cat="ax" data-fit="15.6" data-time="1.5">
-          <div class="en-hd">
-            <div class="en-meta"><span class="en-cat">AX</span><span class="en-org">CorePress · Agentforce · 교육용 팀 POC</span><span class="en-yr">2026</span></div>
-            <div class="en-t">문서와 고객 레코드를 연결해, 답변에서 업무 작성까지 확장했습니다</div>
-            <div class="en-s">PDF 지식과 고객 레코드를 답변 근거로 활용하는 Agentforce 에이전트를 Experience Cloud에 구현했습니다. <b>견적·계약서 자동 입력 구조를 구현하고, Field Service 배정 스코어링에 에이전트를 활용할 기반</b>도 마련했습니다.</div>
-          </div>
-          <button class="more" aria-expanded="false">자세히 보기</button>
-          <div class="body" hidden>
-            <div class="art">
-              <p>가상 산업장비 제조사 CorePress의 <b>교육용 팀 POC</b>에서 Agentforce를 활용한 AX를 구현했습니다. 고객 문의에 답하는 것에서 출발해, 영업 문서 작성과 현장 서비스의 배정 판단을 지원하는 방향으로 확장했습니다.</p>
-              <div class="beat">PDF의 지식과 레코드의 맥락을, 답변의 근거로 연결했습니다.</div>
-              <p><b>데이터 라이브러리와 레코드 그라운딩</b> — PDF 기반 자료를 Data 360의 데이터 라이브러리에 구성하고, 각 레코드도 답변 근거로 활용할 수 있도록 데이터 구조를 잡았습니다. 문서에 담긴 설명과 레코드에 담긴 고객·업무 맥락을 함께 활용하는 구조였습니다.</p>
-              <p><b>Experience Cloud 고객 포털 에이전트</b> — 도입 상담과 CS뿐 아니라 더 넓은 범위의 문의에 답할 수 있는 에이전트를 개발해 고객 포털에 구현했습니다.</p>
-              <p><b>견적·계약서 작성 지원</b> — 과거 레코드를 기반으로 문서의 머지 필드를 자동 입력해, 견적과 계약서를 빠르게 작성할 수 있도록 돕는 에이전트 구조를 구현했습니다.</p>
-              <p><b>Field Service 배정 지원 기반</b> — 디스패처의 배정 판단에 사용하는 스코어링의 정확성을 높이기 위해 에이전트를 활용할 수 있는 기반을 마련했습니다. 배정 정확도 향상은 이후 검증할 과제입니다.</p>
-              <div class="beat">답변을 잘 만드는 것만큼, 답하지 못하는 상황을 설계하는 일이 중요했습니다.</div>
-              <p>구현 과정에서 <b>폴백 구조와 라우팅 설계의 중요성</b>을 배웠습니다. 근거가 부족하거나 처리 범위를 벗어난 문의를 어떻게 다룰지, 어떤 조건에서 다른 처리 경로로 연결할지를 함께 고민해야 했습니다. 에이전트가 처리할 수 있는 범위와 다음 단계로 넘길 기준을 명확히 하는 것이 중요한 설계 과제였습니다.</p>
-              <p>현재는 <b>Salesforce Agentforce Specialist 자격증을 준비</b>하며, 프로젝트에서 경험한 에이전트 설계와 데이터 활용을 더 체계적으로 학습하고 있습니다.</p>
-              <nav class="corepress-links" aria-label="CorePress Agentforce 관련 자료"><a href="/corepress.html">CorePress 전체 프로젝트 아티클 읽기 ↗</a></nav>
-            </div>
-          </div>
-        </article>
+        
 
         <!-- FOR FUN -->
         <article class="en" data-cat="fun" data-fit="16" data-time="16">
@@ -1137,8 +1199,26 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 </div></section>
 
 <!-- ══ 03 PRESS ══ -->
+
+
+<section id="peers"><div class="wrap">
+<div class="cap"><span class="no">03</span><span class="en">Good times, together</span></div>
+<h2>함께해서 더 좋았던 시간</h2>
+<p class="peer-intro">저는 사람들과 함께 무언가를 하는 걸 좋아합니다. 같이 일하는 사람들과 밥을 먹고 이야기를 나누고, 막히는 일이 있으면 머리를 맞대고 풀어가는 시간이 좋습니다. 서로 다른 생각을 보태며 함께 결과를 만들어갈 때 일하는 재미를 느낍니다.</p>
+<div class="peer-album-label"><span>사진을 누르면 크게 볼 수 있어요</span></div>
+<div class="peer-album"><span class="peer-sticker sf"><img src="assets/peers/salesforce.svg" alt=""></span><span class="peer-sticker trail">Trailblazers</span><span class="peer-sticker star">✳</span><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/team-award.jpeg" alt="최우수 프로젝트 팀 수상 후, 동료들과 함께" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/lunch.jpeg" alt="동료들과 음식을 나누며 함께한 점심시간" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/photobooth.jpeg" alt="재미있는 안경을 쓰고 동료들과 찍은 포토이즘 사진" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/event.jpeg" alt="Salesforce 행사장에서 동료들과 찍은 사진" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/mvp-award.jpeg" alt="AI CRM track MVP 수상 현장" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/presentation.jpeg" alt="교육과정에서 마이크를 들고 발표하는 김유신" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/keepsake.jpeg" alt="동료들과 함께한 사진이 실린 인쇄물" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/letters.jpg" alt="수료 후 동료들이 보내준 편지와 유신 force 봉투" loading="lazy"></button></figure><figure><button class="peer-photo" type="button" aria-label="사진 크게 보기"><img src="assets/peers/message.jpeg" alt="교육과정에서 받은 도움과 적응에 대한 감사 메시지" loading="lazy"></button></figure></div>
+<div class="peer-story"><h3>동료들이 전해준 말</h3>
+<p>CorePress에서는 테크니컬 PM이자 팀장으로 PL·팀원들과 요구사항과 구현 방향을 조율하고 최종 발표를 맡았습니다. 팀은 최우수 프로젝트상을 받았고, 저는 과정 내 기여를 동료들에게 인정받아 Program MVP로 선정됐습니다.</p>
+<p>수료 후 받은 편지와 메시지에는 어려운 순간에 함께 방향을 잡았던 일, 낯선 과정에 적응하는 데 도움이 됐다는 이야기가 담겨 있었습니다. 함께한 시간이 서로에게 좋은 기억으로 남았다는 것이 참 감사했습니다.</p></div>
+<div class="peer-quotes"><blockquote><p>“복잡한 기술적인 방향을 명확히 잡아주시고 묵묵히 팀을 리딩해 주신 덕분에 정말 큰 위기들을 무사히 넘길 수 있었습니다.”</p><cite>프로젝트 동료가 보내준 편지 중</cite></blockquote><blockquote><p>“유신님과 운영님 덕분에 다른 조들보다 빨리 가까워질 수 있었고 … 적응도 빨리 할 수 있었습니다.”</p><cite>교육과정 동료가 보내준 메시지 중</cite></blockquote></div>
+<p class="peer-note">수료 후 받은 편지와 메시지에서 발췌했습니다.</p>
+<p><a href="corepress.html">함께 만든 CorePress 프로젝트 보기</a></p>
+</div></section>
+<dialog class="peer-dialog" aria-label="함께한 시간 사진첩"><div class="peer-dialog-top"><span>함께해서 더 좋았던 시간</span><button type="button" class="peer-close" autofocus>닫기</button></div><img alt=""><div class="peer-dialog-bottom"><button class="peer-prev" type="button" aria-label="이전 사진">← 이전</button><span class="peer-dialog-counter" aria-live="polite"></span><button class="peer-next" type="button" aria-label="다음 사진">다음 →</button></div></dialog>
+
+
 <section id="press"><div class="wrap">
-  <div class="cap"><span class="no">03</span><span class="en">Press</span></div>
+  <div class="cap"><span class="no">04</span><span class="en">Press</span></div>
   <h2>제가 만든 변화, 언론에 남은 이야기</h2>
   <p class="dek">플랜즈커피의 사업과 고객사 도입 사례를 다룬 보도입니다. 제가 직접 추진한 PR과 인터뷰도 함께 모았습니다.</p>
   <h3 class="subhd">제가 함께한 이야기</h3>
@@ -1175,7 +1255,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 
 <!-- ══ 04 TOOLS ══ -->
 <section id="tools"><div class="wrap">
-  <div class="cap"><span class="no">04</span><span class="en">Tools</span></div>
+  <div class="cap"><span class="no">05</span><span class="en">Tools</span></div>
   <h2>마케팅과 세일즈를 연결하는 도구와 역량</h2>
   <div class="tools">
     <div class="tool"><div class="tool-head"><div class="tool-k">Sales &amp; Marketing</div><div class="tool-icon" aria-hidden="true"><img src="assets/tools/sales.webp" alt="" width="100" height="88" loading="lazy" decoding="async"></div></div><div class="tool-title">고객을 만나 계약으로 잇습니다</div><div class="tool-v">Trello · Asana · Relate<br>파이프라인 설계 · 채널 운영</div></div>
@@ -1190,7 +1270,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 
 <!-- ══ 05 NOW ══ -->
 <section id="now"><div class="wrap">
-  <div class="cap"><span class="no">05</span><span class="en">Now</span></div>
+  <div class="cap"><span class="no">06</span><span class="en">Now</span></div>
   <h2>유신의 비전, 그리고 쓸모</h2>
   <p class="dek">2017년부터 약 9년간 플랜즈와 함께했습니다. 다루는 문제의 크기를 키우고 싶어서 지분을 정리하고 나왔습니다.</p>
 
@@ -1215,7 +1295,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
   <div class="subhd">자격 · 수상</div>
   <div class="creds">
     <div class="cred"><div class="cred-brand"><img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" alt="Salesforce" loading="lazy" decoding="async"></div><div class="cred-t">Salesforce Certified Platform Administrator</div><div class="cred-d">Salesforce · 2026.08 · 식별번호 8066536</div></div>
-    <div class="cred"><div class="cred-brand"><img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" alt="Salesforce" loading="lazy" decoding="async"></div><div class="cred-t">Program MVP — Salesforce AI CRM Engineer Program</div><div class="cred-d">Salesforce · 2026.09 · 616시간 과정 수료자 중 선정</div></div>
+    <div class="cred"><div class="cred-brand"><img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" alt="Salesforce" loading="lazy" decoding="async"></div><div class="cred-t">Program MVP — Salesforce AI CRM Engineer Program</div><div class="cred-d">Salesforce · 2026.09 · 동료들로부터 과정 내 기여를 인정받아 선정 · <a href="#peers">동료들의 이야기</a></div></div>
     <div class="cred"><div class="cred-brand"><img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" alt="Salesforce" loading="lazy" decoding="async"></div><div class="cred-t">최우수상(Grand Prize) — CorePress Salesforce POC</div><div class="cred-d">Salesforce · 2026.09 · 4개 프로젝트 중 1위 · 팀리더</div></div>
     <div class="cred"><div class="cred-brand"><img src="https://www.sktelecom.com/images/common/footer-logo.svg" alt="SK Telecom" loading="lazy" decoding="async"></div><div class="cred-t">전국 TOP 7 — SKT 청년 창업 프로그램</div><div class="cred-d">SK Telecom · 2017.09 · 교내 대상 후 전국 선발</div></div>
     <div class="cred"><div class="cred-brand"><img src="/assets/kyunghee-emblem.png" alt="경희대학교" loading="lazy" decoding="async"></div><div class="cred-t">대상 — 경희대 창업 공모전</div><div class="cred-d">경희대학교 · 2017</div></div>
@@ -1226,7 +1306,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 </div></section>
 
 <section id="coffee" class="coffee"><div class="wrap">
-  <div class="cap"><span class="no">06</span><span class="en">Coffee &amp; Conversation</span></div>
+  <div class="cap"><span class="no">07</span><span class="en">Coffee &amp; Conversation</span></div>
   <div class="coffee-grid">
     <div class="coffee-copy">
       <div class="coffee-en">Good work starts<br>with a <em>conversation.</em></div>
@@ -1285,7 +1365,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
   function apply(alignResults) {
     var n = 0;
     items.forEach(function (el) {
-      var show = cat === 'all' || el.dataset.cat === cat;
+      var show = cat === 'all' || el.dataset.cat === cat || (el.dataset.topics || '').split(' ').includes(cat);
       el.hidden = !show;
       if (show) n++;
     });
@@ -1472,7 +1552,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 
   // Keep the navigation in the real gutter, including after font loading.
   var index = document.querySelector('.idx');
-  var sections = ['archive', 'method', 'press', 'tools', 'now', 'coffee'].map(function(id) {
+  var sections = ['archive', 'method', 'peers', 'press', 'tools', 'now', 'coffee'].map(function(id) {
     return document.getElementById(id);
   }).filter(Boolean);
   var links = Array.prototype.slice.call(index.querySelectorAll('a'));
@@ -1576,3 +1656,21 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 })();
 
 </script>
+
+<script>
+
+(function(){
+const dialog=document.querySelector('.peer-dialog'),preview=dialog.querySelector('img'),buttons=[...document.querySelectorAll('.peer-photo')];
+let current=0;
+function show(index){current=(index+buttons.length)%buttons.length;const img=buttons[current].querySelector('img');preview.src=img.src;preview.alt=img.alt;dialog.querySelector('.peer-dialog-counter').textContent=(current+1)+' / '+buttons.length;}
+buttons.forEach((button,i)=>button.addEventListener('click',()=>{show(i);dialog.showModal()}));
+dialog.querySelector('.peer-close').addEventListener('click',()=>dialog.close());
+dialog.querySelector('.peer-prev').addEventListener('click',()=>show(current-1));
+dialog.querySelector('.peer-next').addEventListener('click',()=>show(current+1));
+dialog.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'){event.preventDefault();show(current-1)}if(event.key==='ArrowRight'){event.preventDefault();show(current+1)}});
+dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});
+let touchX=null;preview.addEventListener('touchstart',e=>{touchX=e.touches[0].clientX},{passive:true});preview.addEventListener('touchend',e=>{if(touchX!==null){const delta=e.changedTouches[0].clientX-touchX;if(Math.abs(delta)>60)show(current+(delta<0?1:-1));touchX=null}},{passive:true});
+})();
+
+</script>
+
