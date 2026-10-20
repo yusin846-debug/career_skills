@@ -751,6 +751,8 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 #entries{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 26px;align-items:start}#entries>.en,#entries>.archive-group{grid-column:1/-1;margin:0}#entries>.case-technical{grid-column:span 1;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;backdrop-filter:none;overflow:visible}#entries>.case-technical:has(.body:not([hidden])){grid-column:1/-1}.gallery-preview{position:relative;display:block;width:100%;padding:0;border:0;border-radius:5px;overflow:hidden;aspect-ratio:4/3;background:#e8eeee;cursor:pointer}.gallery-preview img{display:block;width:100%;height:100%;object-fit:contain;padding:20px;transition:transform .35s}.gallery-preview:hover img{transform:scale(1.025)}.gallery-preview:focus-visible{outline:3px solid #216771;outline-offset:5px}.preview-label{position:absolute;bottom:12px;left:12px;padding:5px 8px;background:rgba(255,255,255,.92);font-size:10px;color:#314d53}.preview-open{position:absolute;right:12px;top:12px;background:#fff;border-radius:50%;width:30px;height:30px;display:grid;place-items:center;color:#173f47}.gallery-status{font-size:10px;letter-spacing:.08em;color:#43757c;margin:18px 0 11px}.case-technical .en-meta{display:none}.case-technical .en-t{font-size:21px;font-weight:500;letter-spacing:-.03em;line-height:1.45}.case-technical .en-s{font-size:13px;color:#637174;line-height:1.7;margin-top:9px}.case-technical>.more{margin-top:12px;padding:5px 0;font-size:11px}.case-technical .body{margin-top:22px;padding:25px;background:rgba(255,255,255,.7);border-top:1px solid #cbd6d4}.gallery-detail-title{font-weight:500;font-size:22px;line-height:1.5;margin:20px 0}.case-technical .gallery-preview{background:linear-gradient(135deg,#dce8e8,#f4f5f0)}
 @media(max-width:700px){#entries{grid-template-columns:1fr;gap:26px}#entries>.case-technical{grid-column:1/-1}.gallery-preview{aspect-ratio:4/3}.case-technical .body{padding:18px}.gallery-preview img{padding:14px}}
 @media(prefers-reduced-motion:reduce){.gallery-preview img{transition:none}}
+
+.case-technical .en-hd{padding:0}.sales-brief{margin:20px 32px}.case-technical .en-t{margin-top:0}@media(max-width:650px){.sales-brief{margin:18px 20px}}
 </style>
 <!-- ══ HERO ══ -->
 <section class="hero"><video class="hero-vid" autoplay muted loop playsinline poster="https://d8j0ntlcm91z4.cloudfront.net/user_3J8DszeyNsjvFJ4gDWsgObcmpg9/hf_20260910_110655_49ec0a60-35c0-4d99-aab1-ed88fabcb0a8.png" src="https://d8j0ntlcm91z4.cloudfront.net/user_3J8DszeyNsjvFJ4gDWsgObcmpg9/hf_20260910_112325_6b0606b6-3a28-4b85-8687-445ad162f636.mp4"></video><div class="wrap">
@@ -861,7 +863,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
           </div>
         </article>
 
-<article class="en case-technical" data-topics="technical" data-group="technical" data-cat="ax" data-fit="0" data-time="20" id="eggisgoing"><button class="gallery-preview" type="button" aria-expanded="false" aria-label="에그이즈고잉 자세히 보기"><img src="/assets/cases/eggisgoing-flow.svg" alt="에그이즈고잉 개인 기획의 다섯 에이전트와 문서 검토 흐름" loading="lazy"><span class="preview-label">설계 다이어그램</span><span class="preview-open" aria-hidden="true">↗</span></button><div class="gallery-status">CONCEPT · 개인 기획</div>
+<article class="en case-technical" data-topics="technical" data-group="technical" data-cat="ax" data-fit="0" data-time="20" id="eggisgoing"><button class="gallery-preview" type="button" aria-expanded="false" aria-label="에그이즈고잉 자세히 보기"><img src="/assets/cases/eggisgoing-screen.png" alt="에그이즈고잉 회의 관리 UI 프로토타입, 가상 데이터" loading="lazy"><span class="preview-label">실제 화면 기획 · 가상 데이터</span><span class="preview-open" aria-hidden="true">↗</span></button><div class="gallery-status">CONCEPT · 개인 기획</div>
 <div class="en-hd"><div class="en-meta"><span class="en-cat">AX / Agent orchestration</span><span class="en-org">에그이즈고잉 · 개인 기획 POC</span><span class="en-yr">2026</span></div>
 <div class="en-t">에그이즈고잉</div>
 <div class="en-s">회의의 맥락을 검토 가능한 제작 문서와 다음 업무로.</div></div>
@@ -1404,6 +1406,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 
   var list = document.getElementById('entries');
   var items = Array.prototype.slice.call(list.querySelectorAll('.en'));
+  list.querySelectorAll('.case-technical .more').forEach(function(more) { new MutationObserver(function() { more.closest('article').querySelector('.gallery-preview').setAttribute('aria-expanded', more.getAttribute('aria-expanded')); }).observe(more, {attributes:true, attributeFilter:['aria-expanded']}); });
   list.querySelectorAll('.gallery-preview').forEach(function(button) { button.addEventListener('click', function() { var more = button.closest('article').querySelector('.more'); more.click(); button.setAttribute('aria-expanded', more.getAttribute('aria-expanded')); }); });
   var cats = Array.prototype.slice.call(document.querySelectorAll('.bt'));
   var sorts = Array.prototype.slice.call(document.querySelectorAll('.sb'));
