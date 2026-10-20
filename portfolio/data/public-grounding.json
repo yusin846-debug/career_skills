@@ -1,6 +1,6 @@
 {
   "schema_version": "1.3.1",
-  "version_date": "2026-09-13",
+  "version_date": "2026-10-20",
   "status": "approved_for_chatbot",
   "source_warning": "포트폴리오 및 본인 인터뷰 기반. 독립 증빙 검증과 자기보고를 구분한다.",
   "instructions": [
@@ -456,6 +456,36 @@
         "GTM 전체 업무를 2017년부터 모두 총괄",
         "GTM Director 직함 추정"
       ]
+    },
+    {
+      "id": "E50",
+      "title": "플랜즈 담당 매출 범위",
+      "claim": "플랜즈에서 음료 판매 매출, 솔루션 계약 매출, 장비 판매 매출을 합산한 연 매출 20억 원 규모의 업무를 담당했다.",
+      "caveat": "본인이 설명한 담당 범위다. 특정 기준 연도는 미확인이다. 단독 창출·성장 실적, ARR, SaaS 매출, 할당량 달성률로 해석하지 않는다.",
+      "evidence_status": "user_interview",
+      "prohibited_inferences": [],
+      "public_source_url": "https://yushin-portfolio.vercel.app/",
+      "source": "본인 설명 및 포트폴리오 반영 요청 · 2026-10-20"
+    },
+    {
+      "id": "E51",
+      "title": "Salesforce 구현 역량과 현재 학습",
+      "claim": "데이터 라이브러리 구축, 에이전트 개발과 Slack 연동, Experience Cloud LWC 및 백엔드 개발, Agentforce Vibes를 활용한 Flow/Apex 자동화를 수행 가능한 범위로 설명했다. SFDX·MCP·CLI와 Codex·Claude Code를 활용한다. Salesforce Administrator는 2026년 8월 취득했고 Agentforce Specialist는 준비 중이다. AI 에이전트 엔지니어 과정도 학습 중이다.",
+      "caveat": "직접 설명한 역량과 교육·개인 프로젝트 경험이며 모든 항목의 고객사 상용 구축 실적으로 확대하지 않는다. Agentforce Specialist 취득으로 표현하지 않는다.",
+      "evidence_status": "user_interview",
+      "prohibited_inferences": [],
+      "public_source_url": "https://yushin-portfolio.vercel.app/",
+      "source": "본인 설명 및 포트폴리오 반영 요청 · 2026-10-20"
+    },
+    {
+      "id": "E52",
+      "title": "에그이즈고잉 개인 AX POC 기획",
+      "claim": "에그이즈커밍에서 영감을 받은 가상 제작사 에그이즈고잉을 대상으로 한 개인 AX POC 기획이다. Bedrock 기반 오케스트레이션 설계로 전사·화자, 맥락·아이디어 변경, 결정·할 일, 문서 구성, 검증의 5개 에이전트와 결정적 DOCX 렌더러를 구분한다. HumanTask, 부분 재시도, 근거·버전·감사 기록을 설계한다. 첫 MVP는 프로그램·템플릿·산출물을 각각 하나로 제한한다. AWS 흐름을 유지하며 MCP/API를 통한 Agentforce·CRM 연계를 확장안으로 제안한다.",
+      "caveat": "실제 기업 의뢰·납품·상용 도입이 아니다. Bedrock 실환경 실행을 확정하지 않는다. Agentforce/CRM 연계는 미구현 제안이다. 기존 4.5시간은 기억 기반 추정, 2시간 이내는 목표, 화면 1시간 52분은 가상 예시이며 달성 실적이 아니다.",
+      "evidence_status": "user_interview",
+      "prohibited_inferences": [],
+      "public_source_url": "https://yushin-portfolio.vercel.app/eggisgoing.html",
+      "source": "본인 설명 및 포트폴리오 반영 요청 · 2026-10-20"
     }
   ],
   "questions": [
@@ -1442,6 +1472,63 @@
         "Q41",
         "Q39"
       ]
+    },
+    {
+      "id": "Q52",
+      "priority": "P1",
+      "category": "역량과 사례",
+      "question": "플랜즈에서 담당한 매출 규모는 어느 정도인가요?",
+      "aliases": [
+        "20억",
+        "연 매출",
+        "담당 매출",
+        "ARR"
+      ],
+      "evidence_ids": [
+        "E50"
+      ],
+      "answer_mode": "grounded",
+      "answer_draft": "플랜즈에서 음료 판매 매출, 솔루션 계약 매출, 장비 판매 매출을 합산한 연 매출 20억 원 규모의 업무를 담당했다.",
+      "related": []
+    },
+    {
+      "id": "Q53",
+      "priority": "P1",
+      "category": "역량과 사례",
+      "question": "Salesforce와 Agentforce로 무엇을 구현할 수 있나요?",
+      "aliases": [
+        "Agentforce",
+        "Slack 연동",
+        "Flow",
+        "Apex",
+        "SFDX",
+        "자격증"
+      ],
+      "evidence_ids": [
+        "E51"
+      ],
+      "answer_mode": "grounded",
+      "answer_draft": "데이터 라이브러리 구축, 에이전트 개발과 Slack 연동, Experience Cloud LWC 및 백엔드 개발, Agentforce Vibes를 활용한 Flow/Apex 자동화를 수행 가능한 범위로 설명했다. SFDX·MCP·CLI와 Codex·Claude Code를 활용한다. Salesforce Administrator는 2026년 8월 취득했고 Agentforce Specialist는 준비 중이다. AI 에이전트 엔지니어 과정도 학습 중이다.",
+      "related": []
+    },
+    {
+      "id": "Q54",
+      "priority": "P1",
+      "category": "역량과 사례",
+      "question": "에그이즈고잉은 어떤 프로젝트인가요?",
+      "aliases": [
+        "에그이즈커밍",
+        "에그이즈고잉",
+        "Bedrock",
+        "오케스트레이션",
+        "AX POC"
+      ],
+      "evidence_ids": [
+        "E52"
+      ],
+      "answer_mode": "grounded",
+      "answer_draft": "에그이즈커밍에서 영감을 받은 가상 제작사 에그이즈고잉을 대상으로 한 개인 AX POC 기획이다. Bedrock 기반 오케스트레이션 설계로 전사·화자, 맥락·아이디어 변경, 결정·할 일, 문서 구성, 검증의 5개 에이전트와 결정적 DOCX 렌더러를 구분한다. HumanTask, 부분 재시도, 근거·버전·감사 기록을 설계한다. 첫 MVP는 프로그램·템플릿·산출물을 각각 하나로 제한한다. AWS 흐름을 유지하며 MCP/API를 통한 Agentforce·CRM 연계를 확장안으로 제안한다.",
+      "related": []
     }
   ]
 }
