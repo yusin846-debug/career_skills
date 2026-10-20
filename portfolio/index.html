@@ -727,6 +727,12 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 .training-course span{font-size:12px;font-weight:400;color:#66787a;display:inline-block}
 .training-copy{margin:0;max-width:760px;font-size:13px;line-height:1.8;overflow-wrap:anywhere;color:#66787a}
 @media(max-width:700px){.current-training{margin:24px 0;padding:20px}.training-logo{width:60px;flex-basis:60px}.training-header{gap:14px}.training-course{margin-top:16px}}
+
+/* Gallery articles: cover-first editorial dialogs */
+.case-technical .en-t{font-weight:700}.article-title{display:block;border:0;padding:0;background:none;text-align:left;color:inherit;font-family:inherit;cursor:pointer}.article-title:focus-visible{outline:2px solid #216771;outline-offset:5px}
+.project-modal-open{overflow:hidden}#projectDialog{width:min(900px,calc(100vw - 64px));max-width:none;max-height:90dvh;margin:auto;padding:0;border:1px solid #d9e1df;border-radius:12px;background:#f8f9f5;color:#1d2e31;box-shadow:0 28px 100px #0c222644;overflow:auto;overscroll-behavior:contain}#projectDialog::backdrop{background:rgba(17,35,39,.62);backdrop-filter:blur(7px)}.project-dialog-bar{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:16px 25px;border-bottom:1px solid #dce3df;background:#f8f9f5f2;backdrop-filter:blur(12px);font-size:10px;letter-spacing:.12em;color:#637777}#projectDialogClose{border:1px solid #bccbc6;border-radius:25px;background:white;padding:8px 16px;color:#203b3e;cursor:pointer;font:inherit;font-size:13px;letter-spacing:0}#projectDialogClose:focus-visible{outline:3px solid #216771;outline-offset:3px}#projectDialogContent{padding:26px 54px 60px}#projectDialogTitle{font-size:36px;font-weight:700;letter-spacing:-.04em;line-height:1.25;margin:10px 0 16px}#projectDialog .en-s{font-size:16px;line-height:1.8;color:#597174}#projectDialog .project-stack{margin-top:25px}#projectDialog .project-role{margin-bottom:30px}#projectDialog .modal-article{border:0;background:none;padding:0;margin:0;display:block}#projectDialog .case-evidence{margin:28px 0}#projectDialog .gallery-detail-title{font-size:26px;font-weight:650;line-height:1.5;margin:30px 0 20px}#projectDialog .art{font-size:15px;line-height:1.9;max-width:none}.agent-journey{list-style:decimal-leading-zero}.agent-journey li{padding:12px 16px;background:#edf3f1;border-left:2px solid #4b8588}#projectDialog .art h3{font-size:21px;font-weight:650;margin:36px 0 14px}#projectDialog .art p{margin:0 0 20px}#projectDialog .art ol,#projectDialog .art ul{padding-left:22px;margin:16px 0 26px}#projectDialog .art li{margin-bottom:12px}#projectDialog .corepress-resources figure img{max-width:100%;height:auto}#projectDialog .corepress-links{flex-wrap:wrap}
+@media(max-width:700px){#projectDialog{width:100%;height:100dvh;max-height:100dvh;border:0;border-radius:0}.project-dialog-bar{padding:14px 20px}#projectDialogContent{padding:22px 22px 46px}#projectDialogTitle{font-size:29px}#projectDialog .gallery-detail-title{font-size:23px}#projectDialog .technical-spec dl{grid-template-columns:1fr}#projectDialog .art{font-size:14px}}
+
 </style>
 
 <a class="coffee-topbar" href="#coffee"><span aria-hidden="true">☕</span> 유신과 커피챗 어떠세요? <span aria-hidden="true">↗</span></a>
@@ -748,7 +754,7 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 @media(max-width:650px){.sales-brief,.technical-spec dl{grid-template-columns:1fr;gap:13px}.sales-brief>div{display:grid;grid-template-columns:70px 1fr;gap:10px}.sales-outcome{padding-left:0;border-left:0}.technical-spec{padding:15px}.archive-group h3{font-size:23px}}
 </style>
 <style id="development-gallery">
-#entries{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 26px;align-items:start}#entries>.en,#entries>.archive-group{grid-column:1/-1;margin:0}#entries>.case-technical{grid-column:span 1;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;backdrop-filter:none;overflow:visible}#entries>.case-technical:has(.body:not([hidden])){grid-column:1/-1}.gallery-preview{position:relative;display:block;width:100%;padding:0;border:0;border-radius:5px;overflow:hidden;aspect-ratio:4/3;background:#e8eeee;cursor:pointer}.gallery-preview img{display:block;width:100%;height:100%;object-fit:contain;padding:20px;transition:transform .35s}.gallery-preview:hover img{transform:scale(1.025)}.gallery-preview:focus-visible{outline:3px solid #216771;outline-offset:5px}.preview-label{position:absolute;bottom:12px;left:12px;padding:5px 8px;background:rgba(255,255,255,.92);font-size:10px;color:#314d53}.gallery-status{font-size:10px;letter-spacing:.08em;color:#43757c;margin:18px 0 11px}.case-technical .en-meta{display:none}.case-technical .en-t{font-size:21px;font-weight:500;letter-spacing:-.03em;line-height:1.45}.case-technical .en-s{font-size:13px;color:#637174;line-height:1.7;margin-top:9px}.case-technical>.more{margin-top:12px;padding:5px 0;font-size:11px}.case-technical .body{margin-top:22px;padding:25px;background:rgba(255,255,255,.7);border-top:1px solid #cbd6d4}.gallery-detail-title{font-weight:500;font-size:22px;line-height:1.5;margin:20px 0}.case-technical .gallery-preview{background:linear-gradient(135deg,#dce8e8,#f4f5f0)}
+#entries{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 26px;align-items:start}#entries>.en,#entries>.archive-group{grid-column:1/-1;margin:0}#entries>.case-technical{grid-column:span 1;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;backdrop-filter:none;overflow:visible}#entries>.case-technical:has(.body:not([hidden])){grid-column:1/-1}.gallery-preview{position:relative;display:block;width:100%;padding:0;border:0;border-radius:5px;overflow:hidden;aspect-ratio:4/3;background:#e8eeee;cursor:pointer}.gallery-preview img{display:block;width:100%;height:100%;object-fit:contain;padding:20px;transition:transform .35s}.gallery-preview:hover img{transform:scale(1.025)}.gallery-preview:focus-visible{outline:3px solid #216771;outline-offset:5px}.preview-label{position:absolute;bottom:12px;left:12px;padding:5px 8px;background:rgba(255,255,255,.92);font-size:10px;color:#314d53}.gallery-status{font-size:10px;letter-spacing:.08em;color:#43757c;margin:18px 0 11px}.case-technical .en-meta{display:none}.case-technical .en-t{font-size:21px;font-weight:700;letter-spacing:-.03em;line-height:1.45}.case-technical .en-s{font-size:13px;color:#637174;line-height:1.7;margin-top:9px}.case-technical>.more{margin-top:12px;padding:5px 0;font-size:11px}.case-technical .body{margin-top:22px;padding:25px;background:rgba(255,255,255,.7);border-top:1px solid #cbd6d4}.gallery-detail-title{font-weight:500;font-size:22px;line-height:1.5;margin:20px 0}.case-technical .gallery-preview{background:linear-gradient(135deg,#dce8e8,#f4f5f0)}
 @media(max-width:700px){#entries{grid-template-columns:1fr;gap:26px}#entries>.case-technical{grid-column:1/-1}.gallery-preview{aspect-ratio:4/3}.case-technical .body{padding:18px}.gallery-preview img{padding:14px}}
 @media(prefers-reduced-motion:reduce){.gallery-preview img{transition:none}}
 
@@ -821,10 +827,10 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
       </div>
 
       <div class="entries" id="entries">
-<article class="en case-technical" data-group="technical" data-topics="salesforce technical" data-cat="product" data-fit="-2" data-time="15"><button class="gallery-preview" type="button" aria-expanded="false" aria-label="CorePress · 고객 여정 CRM 자세히 보기"><img src="/assets/cases/corepress-crm-cover.webp" alt="고객 포털과 계약, 산업장비를 연결한 민트 유리 리본 콘셉트 아트" loading="lazy"><span class="preview-label">AI 콘셉트 아트 · 실제 화면은 상세에서</span></button><div class="gallery-status">COREPRESS · 동일 팀 POC / CRM·포털</div>
+<article class="en case-technical" data-group="technical" data-topics="salesforce technical" data-cat="product" data-fit="-2" data-time="15"><button class="gallery-preview" type="button" aria-expanded="false" aria-label="CorePress · 고객 여정 CRM 자세히 보기"><img src="/assets/cases/corepress-crm-cover.webp" alt="고객 포털과 계약, 산업장비를 연결한 민트 유리 리본 콘셉트 아트" loading="lazy"></button><div class="gallery-status">COREPRESS · 동일 팀 POC / CRM·포털</div>
 <div class="en-hd">
 <div class="en-meta"><span class="en-cat">Salesforce / Product</span><span class="en-org">CorePress · 교육용 POC</span><span class="en-yr">2026</span></div>
-<div class="en-t">CorePress · 고객 여정 CRM</div>
+<button type="button" class="en-t article-title">CorePress · 고객 여정 CRM</button>
 <div class="en-s">고객 포털에서 영업과 서비스까지 이어지는 교육용 팀 POC.</div>
 </div>
 <div class="project-stack"><div class="stack-line"><span class="stack-kind">구현</span><span class="stack-brand"><img src="/assets/peers/salesforce.svg" alt="Salesforce">Salesforce</span><span>Experience Cloud</span><span>LWC</span></div></div><p class="project-role">개인 기여 · Experience Cloud 포털 제작, 요구사항 조율·발표</p><button class="more" aria-expanded="false">자세히 보기</button>
@@ -843,32 +849,35 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 </section>
 </div>
 </article>
-<article class="en case-technical" data-group="technical" data-topics="salesforce technical" data-cat="ax" data-fit="-1" data-time="1.5"><button class="gallery-preview" type="button" aria-expanded="false" aria-label="CorePress · Agentforce 자세히 보기"><img src="/assets/cases/corepress-agent-cover.webp" alt="지식 문서와 고객 데이터를 연결한 파란 유리 오브제 콘셉트 아트" loading="lazy"><span class="preview-label">AI 콘셉트 아트 · 실제 화면은 상세에서</span></button><div class="gallery-status">COREPRESS · 동일 팀 POC / AI·업무작성</div>
+<article class="en case-technical" data-group="technical" data-topics="salesforce technical" data-cat="ax" data-fit="-1" data-time="1.5"><button class="gallery-preview" type="button" aria-expanded="false" aria-label="CorePress · Agentforce 자세히 보기"><img src="/assets/cases/corepress-agent-cover.webp" alt="지식 문서와 고객 데이터를 연결한 파란 유리 오브제 콘셉트 아트" loading="lazy"></button><div class="gallery-status">COREPRESS · 동일 팀 POC / AI·업무작성</div>
           <div class="en-hd">
             <div class="en-meta"><span class="en-cat">Salesforce / Ax</span><span class="en-org">CorePress · Agentforce · 교육용 팀 POC</span><span class="en-yr">2026</span></div>
-            <div class="en-t">CorePress · Agentforce</div>
+            <button type="button" class="en-t article-title">CorePress · Agentforce</button>
             <div class="en-s">문서와 고객 레코드를 답변과 업무 작성의 근거로.</div>
           </div>
           <div class="project-stack"><div class="stack-line"><span class="stack-kind">교육 POC</span><span class="stack-brand"><img src="/assets/brands/agentforce.svg" alt="Agentforce">Agentforce</span><span>Data Library</span><span>Record Grounding</span></div></div><p class="project-role">프로젝트 범위 · 데이터 라이브러리·레코드 근거와 에이전트 활용</p><button class="more" aria-expanded="false">자세히 보기</button>
-          <div class="body" hidden><figure class="case-evidence"><img src="/assets/corepress/slide-12.webp" alt="CorePress 실제 팀 아키텍처 발표자료" loading="lazy"><figcaption>위 CRM·포털과 같은 CorePress 팀 POC의 아키텍처</figcaption></figure><div class="technical-spec"><div class="case-status">POC · 교육용 팀 프로젝트</div><dl><div><dt>업무 흐름</dt><dd>고객 문의와 영업·서비스 흐름</dd></div><div><dt>설계 · 기여</dt><dd>요구 조율 · 고객 포털 / 에이전트 시나리오</dd></div><div><dt>기술 · 범위</dt><dd>Salesforce · LWC · Agentforce</dd></div></dl></div><h4 class="gallery-detail-title">문서와 고객 레코드를 연결해, 답변에서 업무 작성까지 확장했습니다</h4>
+          <div class="body" hidden><figure class="case-evidence"><img src="/assets/corepress/slide-12.webp" alt="CorePress 실제 팀 아키텍처 발표자료" loading="lazy"><figcaption>위 CRM·포털과 같은 CorePress 팀 POC의 아키텍처</figcaption></figure><div class="technical-spec"><div class="case-status">POC · 교육용 팀 프로젝트</div><dl><div><dt>업무 흐름</dt><dd>포털 문의 → 근거 기반 응답 → 문서 작성 지원</dd></div><div><dt>설계 · 기여</dt><dd>기술 PM · 포털 구축 · 요구사항 조율</dd></div><div><dt>기술 · 범위</dt><dd>Agentforce · Data Library · Record Grounding</dd></div></dl></div><h4 class="gallery-detail-title">고객의 질문을 업무로 연결하는 Agentforce</h4>
             <div class="art">
-              <p>가상 산업장비 제조사 CorePress의 <b>교육용 팀 POC</b>에서 Agentforce를 활용한 AX를 구현했습니다. 고객 문의에 답하는 것에서 출발해, 영업 문서 작성과 현장 서비스의 배정 판단을 지원하는 방향으로 확장했습니다.</p>
-              <div class="beat">PDF의 지식과 레코드의 맥락을, 답변의 근거로 연결했습니다.</div>
-              <p><b>데이터 라이브러리와 레코드 그라운딩</b> — PDF 기반 자료를 Data 360의 데이터 라이브러리에 구성하고, 각 레코드도 답변 근거로 활용할 수 있도록 데이터 구조를 잡았습니다. 문서에 담긴 설명과 레코드에 담긴 고객·업무 맥락을 함께 활용하는 구조였습니다.</p>
-              <p><b>Experience Cloud 고객 포털 에이전트</b> — 도입 상담과 CS뿐 아니라 더 넓은 범위의 문의에 답할 수 있는 에이전트를 개발해 고객 포털에 구현했습니다.</p>
-              <p><b>견적·계약서 작성 지원</b> — 과거 레코드를 기반으로 문서의 머지 필드를 자동 입력해, 견적과 계약서를 빠르게 작성할 수 있도록 돕는 에이전트 구조를 구현했습니다.</p>
-              <p><b>Field Service 배정 지원 기반</b> — 디스패처의 배정 판단에 사용하는 스코어링의 정확성을 높이기 위해 에이전트를 활용할 수 있는 기반을 마련했습니다. 배정 정확도 향상은 이후 검증할 과제입니다.</p>
-              <div class="beat">답변을 잘 만드는 것만큼, 답하지 못하는 상황을 설계하는 일이 중요했습니다.</div>
-              <p>구현 과정에서 <b>폴백 구조와 라우팅 설계의 중요성</b>을 배웠습니다. 근거가 부족하거나 처리 범위를 벗어난 문의를 어떻게 다룰지, 어떤 조건에서 다른 처리 경로로 연결할지를 함께 고민해야 했습니다. 에이전트가 처리할 수 있는 범위와 다음 단계로 넘길 기준을 명확히 하는 것이 중요한 설계 과제였습니다.</p>
-              <p>현재는 <b>Salesforce Agentforce Specialist 자격증을 준비</b>하며, 프로젝트에서 경험한 에이전트 설계와 데이터 활용을 더 체계적으로 학습하고 있습니다.</p>
-              <nav class="corepress-links" aria-label="CorePress Agentforce 관련 자료"><a href="/corepress.html">CorePress 전체 프로젝트 아티클 읽기 ↗</a></nav>
-            </div>
-          </div>
-        </article>
+<h3>01 · 질문에 답하는 것을 넘어</h3>
+<p>산업장비 도입 상담과 고객 지원에서는 제품 자료만으로 답할 수 없는 질문이 생깁니다. 기존 고객의 이력이나 업무 레코드를 함께 살펴야 하고, 상담 이후에는 견적·계약 같은 후속 업무가 이어집니다. CorePress 팀은 이 과정을 <b>고객 포털 안에서 연결하는 Agentforce POC</b>를 구현했습니다.</p>
+<h3>02 · 답변의 출발점은 데이터</h3>
+<p>PDF 기반 자료를 Data 360의 데이터 라이브러리에 구성하고, 업무 레코드도 답변 근거로 활용할 수 있도록 데이터 구조를 설계했습니다. <b>문서에 있는 설명과 레코드에 담긴 업무 맥락</b>을 함께 활용하는 것이 핵심입니다. 포털의 에이전트는 도입 상담과 CS를 포함한 문의 대응을 목표로 했으며, 확인된 시연 범위는 제한된 문의 시나리오의 응답, Asset 맥락 유지, 서비스 요청 경로 안내입니다.</p>
+<h3>03 · 대화에서 문서 작성 지원으로</h3>
+<p>에이전트의 역할을 안내에만 한정하지 않았습니다. 과거 레코드를 기반으로 문서의 머지 필드를 자동 입력해 <b>견적서와 계약서 작성을 돕는 구조</b>를 구현했습니다. 답변을 만드는 일과 업무에 필요한 정보를 채우는 일을 연결한 것입니다. 문서 작성 지원은 계약 체결이나 외부 발송을 자동으로 완료한다는 의미는 아닙니다.</p>
+<h3>04 · 한 번의 문의를 따라가면</h3><ol class="agent-journey"><li><b>질문</b><br>고객이 Experience Cloud 포털에서 장비에 관해 질문합니다.</li><li><b>근거와 맥락</b><br>에이전트가 자료를 근거로 응답하고, 고객의 Asset 맥락을 유지합니다.</li><li><b>다음 경로 안내</b><br>서비스가 필요한 문의에는 서비스 요청 경로를 안내합니다.</li><li><b>공식 업무로 연결</b><br>고객이 포털에서 제출한 서비스 요청이 Case로 이어집니다.</li></ol><p>에이전트가 모든 업무를 직접 실행하는 것이 아니라, 응대와 후속 업무의 경계를 연결하는 흐름입니다. Case 생성은 포털의 서비스 요청 경로와 구분해 설명합니다.</p><p>근거가 부족하거나 처리 범위를 벗어난 문의의 폴백과 라우팅도 중요한 설계 과제였습니다. 어디까지 답하고 어떤 조건에서 다른 경로로 넘길지 기준이 필요했습니다. 구체적인 자동 이관 동작은 확인된 구현 범위에 포함하지 않습니다.</p><h3>05 · 구현한 것과 검증할 것</h3>
+<p>이 POC가 지향한 가치는 <b>자료 탐색, 고객 응대, 문서 입력 사이의 반복 작업을 줄이는 것</b>입니다. 처리 시간이나 답변 정확도 개선 수치는 아직 검증하지 않았습니다. 디스패처의 배정 판단을 돕는 스코어링에도 에이전트를 활용할 기반을 마련했으며, 실제 배정 정확도 향상은 이후 검증할 과제로 남겼습니다.</p>
+<h3>06 · 팀의 구현, 나의 역할</h3>
+<p>위 Agentforce 기능은 <b>6인 팀 프로젝트의 구현 범위</b>입니다. 저는 기술 PM·팀장으로 요구사항을 정렬하고, Experience Cloud 포털 구축과 최종 발표를 맡았습니다. 기능을 나열하기보다 고객의 질문이 어떤 데이터와 후속 업무로 이어져야 하는지 팀의 공통 흐름으로 정리했습니다.</p>
+<p>팀은 4개 프로젝트 중 1위로 최우수상(Grand Prize)을 수상했습니다. 현재는 Agentforce Specialist 자격증을 준비하며 에이전트 설계와 데이터 활용을 더 체계적으로 학습하고 있습니다.</p>
+<nav class="corepress-links" aria-label="CorePress Agentforce 근거 자료"><a href="/assets/corepress/CorePress_ValueEngineering_v3.12.pdf#page=12" target="_blank" rel="noopener">팀 발표자료 · 아키텍처 보기</a><a href="/corepress.html">CorePress 전체 고객 여정 읽기</a></nav>
+</div>
 
-<article class="en case-technical" data-topics="technical" data-group="technical" data-cat="ax" data-fit="0" data-time="20" id="eggisgoing"><button class="gallery-preview" type="button" aria-expanded="false" aria-label="에그이즈고잉 자세히 보기"><img src="/assets/cases/eggisgoing-cover.webp" alt="미디어 제작의 다섯 에이전트를 표현한 노란 리본과 오브제 콘셉트 아트" loading="lazy"><span class="preview-label">AI 콘셉트 아트 · 실제 화면은 상세에서</span></button><div class="gallery-status">CONCEPT · 개인 기획</div>
+</div>
+</article>
+
+<article class="en case-technical" data-topics="technical" data-group="technical" data-cat="ax" data-fit="0" data-time="20" id="eggisgoing"><button class="gallery-preview" type="button" aria-expanded="false" aria-label="에그이즈고잉 자세히 보기"><img src="/assets/cases/eggisgoing-cover.webp" alt="미디어 제작의 다섯 에이전트를 표현한 노란 리본과 오브제 콘셉트 아트" loading="lazy"></button><div class="gallery-status">CONCEPT · 개인 기획</div>
 <div class="en-hd"><div class="en-meta"><span class="en-cat">AX / Agent orchestration</span><span class="en-org">에그이즈고잉 · 개인 기획 POC</span><span class="en-yr">2026</span></div>
-<div class="en-t">에그이즈고잉</div>
+<button type="button" class="en-t article-title">에그이즈고잉</button>
 <div class="en-s">회의의 맥락을 검토 가능한 제작 문서와 다음 업무로.</div></div>
 <div class="project-stack"><div class="stack-line"><span class="stack-kind">설계 기반</span><span class="stack-brand"><img src="/assets/brands/aws.svg" alt="AWS">Amazon Bedrock</span><span>5-agent orchestration</span></div><div class="stack-line planned"><span class="stack-kind">연계 제안</span><span class="stack-brand"><img src="/assets/brands/agentforce.svg" alt="Agentforce">Agentforce</span><span>MCP / API</span></div></div><p class="project-role">개인 기여 · 업무 분석, 오케스트레이션·화면·검증 계획 설계</p><button class="more" aria-expanded="false">자세히 보기</button><div class="body" hidden><figure class="case-evidence"><img src="/assets/cases/eggisgoing-screen.png" alt="실제 작성한 회의 관리 UI 프로토타입, 가상 데이터" loading="lazy"><figcaption>실제 화면 기획을 렌더링한 이미지 · 가상 데이터</figcaption></figure><div class="technical-spec"><div class="case-status">CONCEPT · 개인 기획</div><dl><div><dt>업무 흐름</dt><dd>회의 기록 → 검토 문서 → 후속 업무</dd></div><div><dt>설계 · 기여</dt><dd>5개 에이전트 · HumanTask · DOCX</dd></div><div><dt>기술 · 범위</dt><dd>Bedrock 기반 설계 / CRM 연계는 제안</dd></div></dl></div><h4 class="gallery-detail-title">회의의 맥락을 문서와 다음 업무로 연결하는 에이전트를 기획했습니다</h4><div class="art">
 <p><b>에그이즈커밍에서 영감을 받은 가상 제작사 ‘에그이즈고잉’을 대상으로 스스로 기획한 AX POC</b>입니다. 실제 기업의 의뢰·납품 또는 상용 도입 사례가 아닙니다.</p>
@@ -1395,9 +1404,10 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
   <span>2017 — 2026</span>
 </footer></div>
 
+<dialog id="projectDialog" aria-labelledby="projectDialogTitle"><div class="project-dialog-bar"><span>PROJECT JOURNAL</span><button type="button" id="projectDialogClose" aria-label="프로젝트 게시물 닫기">닫기 ×</button></div><div id="projectDialogContent"></div></dialog>
 <script>
 (function () {
-  document.querySelectorAll('.more').forEach(function (btn) {
+  document.querySelectorAll('.en:not(.case-technical) .more').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var body = btn.nextElementSibling;
       var open = btn.getAttribute('aria-expanded') === 'true';
@@ -1409,8 +1419,48 @@ a:hover > .channel-glass {border-color:rgba(255,255,255,.9);background:linear-gr
 
   var list = document.getElementById('entries');
   var items = Array.prototype.slice.call(list.querySelectorAll('.en'));
-  list.querySelectorAll('.case-technical .more').forEach(function(more) { new MutationObserver(function() { more.closest('article').querySelector('.gallery-preview').setAttribute('aria-expanded', more.getAttribute('aria-expanded')); }).observe(more, {attributes:true, attributeFilter:['aria-expanded']}); });
-  list.querySelectorAll('.gallery-preview').forEach(function(button) { button.addEventListener('click', function() { var more = button.closest('article').querySelector('.more'); more.click(); button.setAttribute('aria-expanded', more.getAttribute('aria-expanded')); }); });
+  var dialog = document.getElementById('projectDialog');
+  var dialogContent = document.getElementById('projectDialogContent');
+  var dialogClose = document.getElementById('projectDialogClose');
+  var returnFocus = null;
+  function closeProject() { dialog.close(); }
+  function openProject(article, trigger) {
+    returnFocus = trigger;
+    dialogContent.replaceChildren();
+    var status = article.querySelector('.gallery-status').cloneNode(true);
+    var title = document.createElement('h2');
+    title.id = 'projectDialogTitle';
+    title.textContent = article.querySelector('.en-t').textContent;
+    var intro = article.querySelector('.en-s').cloneNode(true);
+    var stack = article.querySelector('.project-stack').cloneNode(true);
+    var role = article.querySelector('.project-role').cloneNode(true);
+    var body = article.querySelector('.body').cloneNode(true);
+    body.hidden = false;
+    body.classList.add('modal-article');
+    dialogContent.append(status, title, intro, stack, role, body);
+    dialog.showModal();
+    document.body.classList.add('project-modal-open');
+    dialog.scrollTop = 0;
+    dialogClose.focus();
+  }
+  list.querySelectorAll('.case-technical').forEach(function(article) {
+    article.querySelectorAll('.gallery-preview, .more, .article-title').forEach(function(button) {
+      button.removeAttribute('aria-expanded');
+      button.setAttribute('aria-haspopup', 'dialog');
+      button.setAttribute('aria-controls', 'projectDialog');
+      button.addEventListener('click', function() { openProject(article, button); });
+    });
+  });
+  dialogClose.addEventListener('click', closeProject);
+  dialog.addEventListener('click', function(event) { if (event.target === dialog) { var r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) closeProject(); } });
+  dialog.addEventListener('close', function() { document.body.classList.remove('project-modal-open'); if (returnFocus) returnFocus.focus(); });
+  dialog.addEventListener('keydown', function(event) {
+    if (event.key !== 'Tab') return;
+    var focusable = Array.prototype.filter.call(dialog.querySelectorAll('button, a[href], input, select, textarea, [tabindex="0"]'), function(el) { return !el.disabled && el.getClientRects().length; });
+    var first = focusable[0], last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  });
   var cats = Array.prototype.slice.call(document.querySelectorAll('.bt'));
   var sorts = Array.prototype.slice.call(document.querySelectorAll('.sb'));
   var count = document.getElementById('bcount');
