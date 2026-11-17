@@ -1,6 +1,6 @@
 {
   "schema_version": "1.3.1",
-  "version_date": "2026-10-20",
+  "version_date": "2026-11-17",
   "status": "approved_for_chatbot",
   "source_warning": "포트폴리오 및 본인 인터뷰 기반. 독립 증빙 검증과 자기보고를 구분한다.",
   "instructions": [
@@ -249,9 +249,9 @@
     {
       "id": "E24",
       "title": "교육·자격",
-      "claim": "공개 페이지에는 Salesforce AI CRM 엔지니어 616시간 과정 수료와 Salesforce Certified Platform Administrator 취득이 기재돼 있다.",
+      "claim": "포트폴리오에는 Salesforce AI CRM 엔지니어 과정 수료, Salesforce Certified Platform Administrator(2026.08, 식별번호 8066536), OpenAI Academy의 Scope AI Solutions와 Optimize AI Application Performance(각각 2026.11 수료·배지, 2027.05 만료), NVIDIA Deploying and Optimizing AI Inference at Scale(2026.11 과정 수료)이 기재돼 있다.",
       "evidence_status": "published_self_report",
-      "caveat": "페이지·원장 교차 대조 기준이다. 이 작업에서 발급기관 조회를 새로 수행하지 않았다.",
+      "caveat": "Salesforce 자격증과 OpenAI·NVIDIA의 교육 수료·배지를 구분한다. 제공된 이력 및 공개 포트폴리오 반영 기준이며, 발급기관의 실시간 인증·수료 조회를 수행한 것은 아니다.",
       "prohibited_inferences": [],
       "public_source_url": "https://yushin-portfolio.vercel.app/#now"
     },
@@ -267,9 +267,9 @@
     {
       "id": "E26",
       "title": "도구 범위",
-      "claim": "공개 도구 목록은 Salesforce·Agentforce·SQL·JavaScript, Trello·Asana·Relate, Figma·Sketch·Adobe 등이다.",
+      "claim": "공개 도구 목록에는 Salesforce·Agentforce·SQL·JavaScript, Trello·Asana·Relate, Excel·PowerPoint, Figma·Sketch·Adobe 등이 있다. Salesforce는 업무 경험과 교육용 구현의 범위를 구분하며 Excel·PowerPoint 숙련도는 본인 설명을 따른다.",
       "evidence_status": "published_self_report",
-      "caveat": "도구 목록만으로 숙련도·운영 규모·개발자 직무 적합성을 판정하지 않는다.",
+      "caveat": "도구 목록이나 교육 수료만으로 상용 구축 경험, 숙련도·운영 규모·개발자 직무 적합성을 판정하지 않는다.",
       "prohibited_inferences": [],
       "public_source_url": "https://yushin-portfolio.vercel.app/#tools"
     },
@@ -1052,7 +1052,11 @@
       "question": "자격증과 수상 이력은 무엇이고 확인할 수 있나요?",
       "aliases": [
         "certification",
-        "자격증 진위"
+        "자격증 진위",
+        "OpenAI 배지",
+        "NVIDIA 수료",
+        "AI 자격증",
+        "최근 수료증"
       ],
       "answer_mode": "limited",
       "evidence_ids": [
@@ -1060,7 +1064,7 @@
         "E25",
         "E31"
       ],
-      "answer_draft": "Salesforce Certified Platform Administrator와 616시간 과정 수료, CorePress 발표 대상과 과정 MVP가 공개돼 있습니다. 자격·수상 내용은 페이지에서 볼 수 있고, 추가 증빙이 필요하면 유신님께 요청할 수 있습니다."
+      "answer_draft": "Salesforce Certified Platform Administrator(2026.08) 자격과 Salesforce AI CRM 엔지니어 과정 수료·CorePress 최우수상·Program MVP 이력이 공개돼 있습니다. 2026년 11월에는 OpenAI Academy의 Scope AI Solutions·Optimize AI Application Performance 수료 배지와 NVIDIA의 Deploying and Optimizing AI Inference at Scale 과정 수료도 추가했습니다. 상세 증빙은 본인에게 요청할 수 있습니다."
     },
     {
       "id": "Q32",
